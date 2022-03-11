@@ -20,6 +20,7 @@
   margin: 0;
   padding: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 200;
 }
 
 body {
@@ -36,15 +37,7 @@ a {
   font-weight: lighter;
 }
 
-/* HEADER STYLES */
-header {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-  z-index: 9999;
-  padding: 0 20px;
-}
-
+/* HEADER & FOOTER-SHARED STYLES */
 header,
 footer {
   color: var(--primary);
@@ -55,8 +48,17 @@ footer {
   text-align: center;
 }
 
-header a {
-  color: var(--primary);
+header a, footer a {
+    color: var(--primary);
+  }
+
+/* HEADER-SPECIFIC STYLES */
+header {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 9999;
+  padding: 0 20px;
 }
 
 header h1 {
@@ -76,3 +78,10 @@ header nav ul {
 }
 
 /* header nav ul a:hover {} */
+
+
+/* FOOTER-SPECIFIC STYLES */
+/* footer {
+    font-weight: 100;
+    font-size: 15px;
+} */
