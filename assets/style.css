@@ -1,0 +1,8 @@
+.flexbox-container {
+    border: 4px solid rgb(27, 70, 60);
+    padding: 10px;
+}
+
+.flexbox-item {
+    border: 2px solid rgb(145, 18, 18);
+}
