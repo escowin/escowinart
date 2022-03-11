@@ -51,6 +51,11 @@ header {
   padding: 0 20px;
 }
 
+header a {
+    color: var(--primary);
+}
+
+
 header h1 {
     font-weight: 300;
 }
@@ -67,6 +72,4 @@ header nav ul {
   list-style: none;
 }
 
-header nav ul a {
-    color: var(--primary);
-}
+/* header nav ul a:hover {} */
