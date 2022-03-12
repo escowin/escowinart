@@ -74,7 +74,7 @@ header nav {
   margin: 6px;
 }
 
-header nav ul, #connect {
+header nav ul, #contact-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -117,9 +117,9 @@ main article a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: stretch;
+    align-items: center;
     padding: 15px 10px;
-    border-bottom: 2px solid var(--tertiary);
+    /* border-bottom: 2px solid var(--tertiary); */
     text-align: center;
     /* margin: 10px; */
 
@@ -135,9 +135,12 @@ main article a {
 
 /* CONTACT STYLES */
 /* icons & text need to be vertically centered to one another */
-/* shrink icons to be more in line with text size */
 
+#contact-container li {
+  padding: 3px;
+}
 .icon {
-  width: 25px;
-  height: 25px;
+  width: 15px;
+  height: 15px;
+  /* position: relative; */
 }
