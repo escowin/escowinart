@@ -63,6 +63,11 @@ header {
 
 header h1 {
   font-weight: 300;
+  padding-top: 5px;
+}
+
+header h1 img {
+  max-width: 300px;
 }
 
 header nav {
@@ -128,4 +133,6 @@ main article a {
   max-width: 100%;
 }
 
-
+/* CONTACT STYLES */
+/* icons & text need to be vertically centered to one another */
+/* shrink icons to be more in line with text size */
