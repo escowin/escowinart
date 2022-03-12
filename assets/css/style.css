@@ -136,3 +136,8 @@ main article a {
 /* CONTACT STYLES */
 /* icons & text need to be vertically centered to one another */
 /* shrink icons to be more in line with text size */
+
+.icon {
+  width: 25px;
+  height: 25px;
+}
