@@ -113,22 +113,23 @@ main article a {
   color: var(--primary);
 }
 
-.artworks {
+.art {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: stretch;
     padding: 5px 10px;
     border-bottom: 2px solid var(--tertiary);
+    text-align: center;
     /* margin: 10px; */
 
 }
 
-.artwork {
+.card {
   width: 300px;
 }
 
-.artwork img {
+.card img {
   max-width: 100%;
 }
 
