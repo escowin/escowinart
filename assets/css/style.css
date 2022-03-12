@@ -69,10 +69,10 @@ header nav {
   margin: 6px;
 }
 
-header nav ul {
+header nav ul, #connect {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   list-style: none;
 }
@@ -87,7 +87,6 @@ header nav ul {
 } */
 
 /* MAIN-SPECIFIC */
-
 #hero {
     background-image: url("./assets/images/placeholder.png");
     height: 500px;
@@ -103,7 +102,18 @@ main article a {
     color: var(--tertiary);
 }
 
-.paintings {
+/* PORTFOLIO-SPECIFIC */
+#portfolio  {
+  background-color: var(--primary);
+  color: var(--tertiary);
+}
+
+.subhead, .subhead a {
+  background-color: var(--tertiary);
+  color: var(--primary);
+}
+
+.artworks {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -114,10 +124,13 @@ main article a {
 
 }
 
-.painting {
+.artwork {
   width: 300px;
 }
 
-.painting img {
+.artwork img {
   max-width: 100%;
 }
+
+
+/* CONTACT STYLES */
