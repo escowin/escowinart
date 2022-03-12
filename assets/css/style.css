@@ -32,7 +32,7 @@ a {
   text-decoration: none;
 }
 
-.small-caps, .subhead {
+.small-caps, .subhead, h3 {
   font-variant: small-caps;
   font-weight: lighter;
 }
@@ -103,11 +103,21 @@ main article a {
     color: var(--tertiary);
 }
 
-.art {
+.paintings {
+    display: flex;
     flex-wrap: wrap;
-    display: inline-flex;
-    align-items: center;
+    justify-content: space-around;
+    align-items: stretch;
     padding: 5px 10px;
     border-bottom: 2px solid var(--tertiary);
+    /* margin: 10px; */
 
+}
+
+.painting {
+  width: 300px;
+}
+
+.painting img {
+  max-width: 100%;
 }
