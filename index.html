@@ -1,106 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./assets/css/style.css">
-        <title>Escowin Art</title>
-    </head>
 
-    <body>
-        <header class="small-caps">
-            <h1><a href="#">Escowin Art</a></h1>
-            <nav>
-                <!-- merch, blog, about, and contact will need <a href> to seperate pages -->
-                <ul>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#shop">Shop</a></li>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Escowin Art</title>
+</head>
 
-        <main class="small-caps">
-            <section id="hero">
-                <!-- splashy artwork. links to shop -->
-                <!-- <img src="./assets/images/placeholder.png" alt="this is a placeholder" /> -->
+<body>
+    <header class="small-caps">
+        <h1><a href="#">Escowin Art</a></h1>
+        <nav>
+            \ <ul>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main class="small-caps">
+        <section id="hero">
+            <!-- splashy artwork. links to shop -->
+            <!-- <img src="./assets/images/placeholder.png" alt="this is a placeholder" /> -->
+
+        </section>
+
+        <!-- portfolio -->
+        <article id="portfolio">
+            <h2 class="subhead">Portfolio</a></h2>
+            <section class="container">
+                <!-- fine art -->
+                <div class="card" id="fine-art">
+                    <a href="./fineart.html">
+                        <img src="./assets/images/placeholder.png">
+                    </a>
+                    <h3 class="title">Fine Art</h3>
+                    <p class="description">Oil on canvas</p>
+                </div>
+
+                <!-- illustration -->
+                <div class="card" id="illustration">
+                    <a href="./illustration.html">
+                        <img src="./assets/images/placeholder.png">
+                    </a>
+                    <h3 class="title">Illustration</h3>
+                    <p class="description">Light on screen</p>
+                </div>
+
+                <!-- graphic -->
+                <div class="card" id="graphic">
+                    <a href="./graphic.html">
+                        <img src="./assets/images/placeholder.png">
+                    </a>
+                    <h3 class="title">Graphic</h3>
+                    <p class="description">Vector manipulation</p>
+                </div>
+
+                <!-- code -->
+                <div class="card" id="code">
+                    <a href="https://github.com/escowin/challenge-02">
+                        <img src="./assets/images/placeholder.png" alt="click for recursion">
+                    </a>
+                    <h3 class="title">Code</h3>
+                    <p class="description">0's & 1's</p>
+                </div>
             </section>
+        </article>
 
-            <!-- portfolio -->        
-            <article id="portfolio">
-                <h2 class="subhead"><a href="./portfolio.hmtl">Portfolio</a></h2>
+        <!-- merch -->
+        <article id="shop">
+            <!-- links to store -->
+            <h2 class="subhead">Shop</h2>
+            <section class="container">
+                <div class="card" id="paintings">
+                    <a href="#">
+                        <img src="./assets/images/placeholder.png">
+                    </a>
+                    <h3 class="title">Paintings</h3>
+                    <p class="description">o r i g i n a l</p>
+                </div>
 
-                <section class="art">
-                    <div class="card" id="fine-art">
-                        <a href="#">
-                            <img src="./assets/images/placeholder.png">
-                        </a>
-                        <h3 class="title">Fine Art</h3>
-                        <p class="description">Oil on canvas</p>                        
-                    </div>
+                <div class="card" id="prints">
+                    <a href="#">
+                        <img src="./assets/images/placeholder.png">
+                    </a>
+                    <h3 class="title">Prints</h3>
+                    <p class="description">c o p i e s</p>
+                </div>
 
-                    <div class="card" id="illustration">
-                        <a href="#">
-                            <img src="./assets/images/placeholder.png">
-                        </a>
-                        <h3 class="title">Illustration</h3>
-                        <p  class="description">Light on screen</p>                        
-                    </div>
+                <div class="card" id="merch">
+                    <a href="#">
+                        <img src="./assets/images/placeholder.png">
+                    </a>
+                    <h3 class="title">Cloth</h3>
+                    <p class="description">d r i p</p>
+                </div>
+            </section>
+        </article>
 
-                    <div class="card" id="graphic">
-                        <a href="#">
-                            <img src="./assets/images/placeholder.png">
-                        </a>
-                        <h3 class="title">Graphic</h3>
-                        <p  class="description">Drip</p>                        
-                    </div>
+        <!-- contact -->
+        <article id="contact">
+            <h2 class="subhead">Contact</h2>
+            <ul class="container" id="connect">
+                <li><a href="mailto: edwin@escowinart.com">edwin@escowinart.com</a></li>
+                <li><a href="https://github.com/escowin/">GitHub</a></li>
+                <li><a href="https://instagram.com/escowinart/">Instagram</a></li>
+                <li><a href="https://linkedin.com/in/escowin/">LinkedIn</a></li>
+            </ul>
+        </article>
+    </main>
 
-                    <div class="card" id="code">
-                        <a href="#">
-                            <img src="./assets/images/placeholder.png">
-                        </a>
-                        <h3 class="title">Code</h3>
-                        <p  class="description">0's & 1's</p>                        
-                    </div>
-                </section>
-            </article>
+    <!-- footer -->
+    <footer class="small-caps">
+        <h2>&mdash; <a href="https://github.com/escowin/escowinart/">Coding</a> by Edwin M. Escobar &mdash;</h2>
+        <div>
+            <p>&copy; 2022 Escowin Art</p>
+        </div>
+    </footer>
+</body>
 
-            <!-- merch -->
-            <article id="shop">
-                <!-- links to store -->
-                <h2 class="subhead">Shop</h2>
-                <section>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur totam dolorum amet nemo! Temporibus ducimus nisi velit cupiditate repellat corporis maiores nesciunt, eius placeat facere quo eos! Voluptates, deserunt impedit!</p>
-                </section>
-            </article>
-
-            <!-- about -->
-            <article id="about">
-                <!-- who am i -->
-            </article>
-
-            <!-- contact -->
-            <article id="contact">
-                <h2 class="subhead">Contact</h2>
-                <ul id="connect">
-                    <li><a href="#">edwin@escowinart.com</a></li>
-                    <li><a href="#">GitHub</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">LinkedIn</a></li>
-                </ul>
-            </article>
-        </main>
-
-        <!-- footer -->
-        <footer class="small-caps">
-
-            <h2>&mdash; <a href="https://github.com/escowin/escowinart">Coding</a> by Edwin M. Escobar &mdash;</h2>
-            <div>
-                <p>&copy; 2022 Escowin Art</p>
-            </div>
-        </footer>
-    </body>
 </html>

@@ -81,10 +81,11 @@ header nav ul, #connect {
 
 
 /* FOOTER-SPECIFIC STYLES */
-/* footer {
-    font-weight: 100;
+footer {
     font-size: 15px;
-} */
+    font-kerning: none;
+    padding: 10px;
+}
 
 /* MAIN-SPECIFIC */
 #hero {
@@ -95,17 +96,11 @@ header nav ul, #connect {
 
 main article {
     background-color: var(--primary);
-    border-bottom: 3px solid var(--secondary);
+    /* border-bottom: 3px solid var(--secondary); */
 }
 
 main article a {
     color: var(--tertiary);
-}
-
-/* PORTFOLIO-SPECIFIC */
-#portfolio  {
-  background-color: var(--primary);
-  color: var(--tertiary);
 }
 
 .subhead, .subhead a {
@@ -113,12 +108,12 @@ main article a {
   color: var(--primary);
 }
 
-.art {
+.container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: stretch;
-    padding: 5px 10px;
+    padding: 15px 10px;
     border-bottom: 2px solid var(--tertiary);
     text-align: center;
     /* margin: 10px; */
@@ -134,4 +129,3 @@ main article a {
 }
 
 
-/* CONTACT STYLES */
