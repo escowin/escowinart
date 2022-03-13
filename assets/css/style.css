@@ -24,7 +24,7 @@
 }
 
 body {
-  background-color: var(--secondary);
+  background-color: var(--tertiary);
   color: var(--tertiary);
 }
 
@@ -32,7 +32,9 @@ a {
   text-decoration: none;
 }
 
-.small-caps, .subhead, h3 {
+.small-caps,
+.subhead,
+h3 {
   font-variant: small-caps;
   font-weight: lighter;
 }
@@ -48,9 +50,10 @@ footer {
   text-align: center;
 }
 
-header a, footer a {
-    color: var(--primary);
-  }
+header a,
+footer a {
+  color: var(--primary);
+}
 
 /* HEADER-SPECIFIC STYLES */
 header {
@@ -74,7 +77,8 @@ header nav {
   margin: 6px;
 }
 
-header nav ul, #contact-container {
+header nav ul,
+#contact-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -84,62 +88,68 @@ header nav ul, #contact-container {
 
 /* header nav ul a:hover {} */
 
-
 /* FOOTER-SPECIFIC STYLES */
 footer {
-    font-size: 15px;
-    font-kerning: none;
-    padding: 10px;
+  font-size: 15px;
+  font-kerning: none;
+  padding: 10px;
 }
 
 /* MAIN-SPECIFIC */
 .hero {
-    background-image: url("../images/artwork/edwin-escobar-set-005.jpg");
-    background-size: cover;
-    background-position: top;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    height: 650px;
-    color: var(--primary);
+  background-image: url("../images/artwork/edwin-escobar-set-005.jpg");
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  height: 650px;
+  color: var(--primary);
+}
+
+main {
+  background-color: var(--primary);
 }
 
 main article {
-    background-color: var(--primary);
-    padding: 10px 0 30px 0;
+  padding-top: 10px 0 30px 0;
 }
 
 main article a {
-    color: var(--tertiary);
+  color: var(--tertiary);
 }
 
 article h2 {
   padding: 3px 20px;
 }
 
-.subhead, .subhead a {
+article section {
+  height: max-content;
+}
+.subhead,
+.subhead a {
   background-color: var(--tertiary);
   color: var(--primary);
 }
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    padding: 15px 10px;
-    /* border-bottom: 2px solid var(--tertiary); */
-    text-align: center;
-    /* margin: 10px; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 10px;
+  /* border-bottom: 2px solid var(--tertiary); */
+  text-align: center;
+  /* margin: 10px; */
 }
 
 .card {
-  height: 300px;
+  width: 300px;
 }
 
 .card img {
-  max-height: 100%;
+  max-width: 100%;
 }
 
 /* CONTACT STYLES */
