@@ -93,15 +93,21 @@ footer {
 }
 
 /* MAIN-SPECIFIC */
-#hero {
-    background-image: url("./assets/images/placeholder.png");
-    height: 500px;
-    width: 100%;
+.hero {
+    background-image: url("../images/artwork/edwin-escobar-set-005.jpg");
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    height: 650px;
+    color: var(--primary);
 }
 
 main article {
     background-color: var(--primary);
-    /* border-bottom: 3px solid var(--secondary); */
+    padding: 10px 0 30px 0;
 }
 
 main article a {
@@ -122,15 +128,14 @@ main article a {
     /* border-bottom: 2px solid var(--tertiary); */
     text-align: center;
     /* margin: 10px; */
-
 }
 
 .card {
-  width: 300px;
+  height: 300px;
 }
 
 .card img {
-  max-width: 100%;
+  max-height: 100%;
 }
 
 /* CONTACT STYLES */
