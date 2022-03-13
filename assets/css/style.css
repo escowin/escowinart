@@ -114,6 +114,10 @@ main article a {
     color: var(--tertiary);
 }
 
+article h2 {
+  padding: 3px 20px;
+}
+
 .subhead, .subhead a {
   background-color: var(--tertiary);
   color: var(--primary);
