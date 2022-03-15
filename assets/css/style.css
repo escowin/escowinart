@@ -12,7 +12,7 @@
   --primary: #e6e6e6;
   --secondary: #7272729c;
   --tertiary: #28282c;
-  /* --quaternary: #771414; */
+  --quaternary: #cf0b0b;
 }
 
 * {
@@ -86,7 +86,15 @@ header nav ul,
   list-style: none;
 }
 
-/* header nav ul a:hover {} */
+header nav ul li {
+  padding: 0 30px 0 30px;
+  border: 20px;
+}
+
+header nav ul li a:hover {
+  color: var(--quaternary);
+  text-shadow: 5px 5px 20px var(--primary);
+}
 
 /* FOOTER-SPECIFIC STYLES */
 footer {
@@ -162,4 +170,9 @@ article section {
   width: 15px;
   height: 15px;
   /* position: relative; */
+}
+
+#contact-container a:hover {
+  color: var(--quaternary);
+  text-shadow: 5px 5px 20px var(--tertiary);
 }
