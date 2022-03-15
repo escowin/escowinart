@@ -135,6 +135,7 @@ article h2 {
 article section {
   height: max-content;
 }
+
 .subhead,
 .subhead a {
   background-color: var(--tertiary);
@@ -156,6 +157,7 @@ article section {
   background-color: var(--tertiary);
   color: var(--primary);
   padding: 15px;
+  margin: 10px;
   box-shadow: 5px 5px 10px rgba(40, 40, 44, 0.3);
   transition: background-color 1s;
 }
@@ -180,6 +182,7 @@ article section {
   border-radius: 10px;
   background-color: var(--tertiary);
   transition: background-color 1s;
+  margin: 5px;
 }
 
 #contact-container li:hover {
@@ -201,3 +204,5 @@ article section {
   width: 15px;
   height: 15px;
 }
+
+/* MEDIA QUERIES */
