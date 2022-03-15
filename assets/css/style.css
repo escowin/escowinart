@@ -181,12 +181,14 @@ article section {
   padding: 15px;
   width: 300px;
   border-radius: 10px;
+  background-color: var(--tertiary);
   transition: background-color 1s;
 }
 
-/* #contact-container li a {
+#contact-container a {
   color: var(--primary);
-} */
+  transition: color 1s;
+}
 
 .icon {
   width: 15px;
@@ -195,7 +197,8 @@ article section {
 }
 
 #contact-container li:hover {
-  background-color: var(--tertiary);
+  background-color: var(--primary);
+  color: var(--tertiary);
   box-shadow: 5px 5px 10px rgba(40, 40, 44, 0.3);
 }
 
