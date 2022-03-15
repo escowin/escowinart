@@ -185,24 +185,23 @@ article section {
   transition: background-color 1s;
 }
 
+#contact-container li:hover {
+  background-color: var(--primary);
+  box-shadow: 5px 5px 10px rgba(40, 40, 44, 0.3);
+}
+
 #contact-container a {
   color: var(--primary);
   transition: color 1s;
+}
+
+#contact-container a:hover {
+  color: var(--quaternary);
+  text-shadow: 5px 5px 20px var(--tertiary);
 }
 
 .icon {
   width: 15px;
   height: 15px;
   /* position: relative; */
-}
-
-#contact-container li:hover {
-  background-color: var(--primary);
-  color: var(--tertiary);
-  box-shadow: 5px 5px 10px rgba(40, 40, 44, 0.3);
-}
-
-#contact-container a:hover {
-  color: var(--quaternary);
-  text-shadow: 5px 5px 20px var(--tertiary);
 }
