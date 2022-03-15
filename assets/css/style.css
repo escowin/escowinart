@@ -97,7 +97,7 @@ footer {
 
 /* MAIN-SPECIFIC */
 .hero {
-  background-image: url("./images/artwork/edwin-escobar-set-005.jpg");
+  background-image: url("../images/artwork/edwin-escobar-set-005.jpg");
   background-size: cover;
   background-position: top;
   display: flex;
