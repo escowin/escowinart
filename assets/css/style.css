@@ -10,7 +10,7 @@
 
 :root {
   --primary: #e6e6e6;
-  --secondary: #7272729c;
+  --secondary: #9b97979c;
   --tertiary: #28282c;
   --quaternary: #cf0b0b;
 }
@@ -91,9 +91,9 @@ header nav ul li {
   border: 20px;
 }
 
-header nav ul li a:hover {
+header nav ul li a:hover, footer a:hover {
   color: var(--quaternary);
-  text-shadow: 5px 5px 20px var(--primary);
+  /* text-shadow: 5px 5px 20px var(--primary); */
 }
 
 /* FOOTER-SPECIFIC STYLES */
@@ -154,10 +154,21 @@ article section {
 
 .card {
   width: 300px;
+  border-radius: 10px;
+  background-color: var(--tertiary);
+  color: var(--primary);
+  padding: 15px;
+  box-shadow: 5px 5px 10px rgba(40, 40, 44, 0.6);
+}
+
+.card:hover {
+  background-color: var(--primary);
+  color: var(--quaternary);
 }
 
 .card img {
   max-width: 100%;
+  border-radius: 5px;
 }
 
 /* CONTACT STYLES */
