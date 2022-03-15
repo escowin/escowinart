@@ -94,7 +94,6 @@ header nav ul li {
 
 header nav ul li a:hover, footer a:hover {
   color: var(--quaternary);
-  /* text-shadow: 5px 5px 20px var(--primary); */
 }
 
 /* FOOTER-SPECIFIC STYLES */
@@ -148,9 +147,7 @@ article section {
   justify-content: space-around;
   align-items: center;
   padding: 15px 10px;
-  /* border-bottom: 2px solid var(--tertiary); */
   text-align: center;
-  /* margin: 10px; */
 }
 
 .card {
@@ -166,7 +163,7 @@ article section {
 .card:hover {
   background-color: var(--primary);
   color: var(--quaternary);
-
+  text-shadow: 5px 5px 20px var(--tertiary);
 }
 
 .card img {
@@ -203,5 +200,4 @@ article section {
 .icon {
   width: 15px;
   height: 15px;
-  /* position: relative; */
 }
