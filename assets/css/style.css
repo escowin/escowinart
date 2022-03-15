@@ -158,7 +158,7 @@ article section {
   background-color: var(--tertiary);
   color: var(--primary);
   padding: 15px;
-  box-shadow: 5px 5px 10px rgba(40, 40, 44, 0.6);
+  box-shadow: 5px 5px 10px rgba(40, 40, 44, 0.3);
 }
 
 .card:hover {
