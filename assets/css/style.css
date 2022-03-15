@@ -53,6 +53,7 @@ footer {
 header a,
 footer a {
   color: var(--primary);
+  transition: color 1s;
 }
 
 /* HEADER-SPECIFIC STYLES */
@@ -159,11 +160,13 @@ article section {
   color: var(--primary);
   padding: 15px;
   box-shadow: 5px 5px 10px rgba(40, 40, 44, 0.3);
+  transition: background-color 1s;
 }
 
 .card:hover {
   background-color: var(--primary);
   color: var(--quaternary);
+
 }
 
 .card img {
@@ -175,12 +178,25 @@ article section {
 /* icons & text need to be vertically centered to one another */
 
 #contact-container li {
-  padding: 3px;
+  padding: 15px;
+  width: 300px;
+  border-radius: 10px;
+  transition: background-color 1s;
 }
+
+/* #contact-container li a {
+  color: var(--primary);
+} */
+
 .icon {
   width: 15px;
   height: 15px;
   /* position: relative; */
+}
+
+#contact-container li:hover {
+  background-color: var(--tertiary);
+  box-shadow: 5px 5px 10px rgba(40, 40, 44, 0.3);
 }
 
 #contact-container a:hover {
