@@ -221,9 +221,9 @@ article section {
 
 /* TABLET VIEW */
 @media screen and (max-width: 768px) {
-  /* .hero {
+  .hero {
     height: 375px;
-  } */
+  }
 
   h2 {
     text-align: center;
@@ -254,9 +254,9 @@ article section {
     text-align: center;
   }
 
-  /* .hero {
+  .hero {
     height: 190px;
-  } */
+  }
 
   #contact-container {
     text-align: left;
