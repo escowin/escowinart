@@ -92,7 +92,8 @@ header nav ul li {
   border: 20px;
 }
 
-header nav ul li a:hover, footer a:hover {
+header nav ul li a:hover,
+footer a:hover {
   color: var(--quaternary);
 }
 
@@ -208,15 +209,25 @@ article section {
 /* MEDIA QUERIES */
 
 /* MOBILE VIEW */
+@media screen and (max-width: 575px) {
+  /* collapsible navigation screen, drop menu, scale down hero img */
 
-/* collapsible navigation screen, drop menu, scale down hero img */
-
-/* MENU :click:
+  /* MENU :click:
   Portfolio
   Shop
   About
   Blog
   Contact */
 
-  /* CENTER H2 */
-  /* CONACT <li>, left align contents, padding left */
+  h2 {
+    text-align: center;
+  }
+
+  #contact-container {
+    text-align: left;
+  }
+
+  footer {
+    font-size: 10px;
+  }
+}
