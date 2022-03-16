@@ -208,6 +208,24 @@ article section {
 
 /* MEDIA QUERIES */
 
+/* TABLET VIEW */
+@media screen and (max-width: 768px) {
+
+  .hero {
+    height: 375px;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  #contact-container {
+    text-align: left;
+  }
+
+}
+
+
 /* MOBILE VIEW */
 @media screen and (max-width: 575px) {
   /* collapsible navigation screen, drop menu, scale down hero img */
