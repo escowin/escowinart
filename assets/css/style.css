@@ -105,27 +105,19 @@ footer {
 }
 
 /* MAIN-SPECIFIC */
-/* issue: hero image needs to auto-scale */
 .hero {
-  background-image: url("../images/artwork/edwin-escobar-set-005.jpg");
-  background-size: cover;
-  background-position: center;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-items: flex-start;
-  height: 650px;
   color: var(--primary);
+  margin: 0%;
+  padding: 0%;
 }
 
-
-/* .hero h2 {
-background-color: rgba(40, 40, 44, 0.8);
-box-shadow: 5px 5px 20px var(--tertiary);
-padding: 20px;
-margin: 20px;
-border-radius: 15px;
-} */
+.hero img {
+  width: 100vw;
+}
 
 
 main {
@@ -218,13 +210,8 @@ article section {
 }
 
 /* MEDIA QUERIES */
-
 /* TABLET VIEW */
 @media screen and (max-width: 768px) {
-  .hero {
-    height: 375px;
-  }
-
   h2 {
     text-align: center;
   }
@@ -236,7 +223,7 @@ article section {
 
 /* MOBILE VIEW */
 @media screen and (max-width: 575px) {
-  /* collapsible navigation screen, drop menu, scale down hero img */
+  /* collapsible navigation screen, drop menu */
 
   /* MENU :click:
   Portfolio
@@ -254,9 +241,9 @@ article section {
     text-align: center;
   }
 
-  .hero {
+  /* .hero {
     height: 190px;
-  }
+  } */
 
   #contact-container {
     text-align: left;
