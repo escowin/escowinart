@@ -219,8 +219,17 @@ article section {
   Blog
   Contact */
 
+  /* temp header fix */
+  header nav ul li {
+    padding: 5px
+  }
+
   h2 {
     text-align: center;
+  }
+
+  .hero {
+    height: 190px;
   }
 
   #contact-container {
