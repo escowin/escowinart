@@ -92,7 +92,8 @@ header nav ul li {
   border: 20px;
 }
 
-header nav ul li a:hover, footer a:hover {
+header nav ul li a:hover,
+footer a:hover {
   color: var(--quaternary);
 }
 
@@ -135,6 +136,7 @@ article h2 {
 article section {
   height: max-content;
 }
+
 .subhead,
 .subhead a {
   background-color: var(--tertiary);
@@ -156,6 +158,7 @@ article section {
   background-color: var(--tertiary);
   color: var(--primary);
   padding: 15px;
+  margin: 10px;
   box-shadow: 5px 5px 10px rgba(40, 40, 44, 0.3);
   transition: background-color 1s;
 }
@@ -180,6 +183,7 @@ article section {
   border-radius: 10px;
   background-color: var(--tertiary);
   transition: background-color 1s;
+  margin: 5px;
 }
 
 #contact-container li:hover {
@@ -200,4 +204,39 @@ article section {
 .icon {
   width: 15px;
   height: 15px;
+}
+
+/* MEDIA QUERIES */
+
+/* MOBILE VIEW */
+@media screen and (max-width: 575px) {
+  /* collapsible navigation screen, drop menu, scale down hero img */
+
+  /* MENU :click:
+  Portfolio
+  Shop
+  About
+  Blog
+  Contact */
+
+  /* temp header fix */
+  header nav ul li {
+    padding: 5px
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .hero {
+    height: 190px;
+  }
+
+  #contact-container {
+    text-align: left;
+  }
+
+  footer {
+    font-size: 10px;
+  }
 }
