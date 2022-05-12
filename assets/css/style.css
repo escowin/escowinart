@@ -155,7 +155,7 @@ article section {
   text-align: center;
 }
 
-.card {
+.card, #me {
   width: 300px;
   border-radius: 10px;
   background-color: var(--tertiary);
@@ -176,6 +176,31 @@ article section {
   max-width: 100%;
   border-radius: 5px;
 }
+
+/* ABOUT */
+#me {
+  display: flex;
+  width: 95vw;
+  padding: 3vw;
+  text-align: left;
+  align-items: center;
+}
+
+#profile-pic img {
+  width: 20vw;
+  border-radius: 50%;
+  transition-duration: 1s;
+}
+
+#profile-pic img:hover {
+  box-shadow: 3px 3px 25px var(--primary);
+}
+
+#profile-text {
+  padding: 10%;
+  line-height: 1.75;
+}
+
 
 /* CONTACT STYLES */
 /* icons & text need to be vertically centered to one another */
