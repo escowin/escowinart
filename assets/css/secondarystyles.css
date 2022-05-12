@@ -5,9 +5,9 @@
     --quaternary: #cf0b0b;
   }
 
-* {
-    /* border: 1px solid red; */
-}
+/* * {
+    border: 1px solid red;
+} */
 
 body {
     background-color: var(--secondary);
@@ -16,13 +16,15 @@ body {
 /* RESUME */
 #resume {
     color: var(--tertiary);
-    padding: 20px;
-    /* align-items: center; */
+    padding: 20px 60px;
     border-bottom: 1px solid var(--tertiary);
-    /* width: 80vw; */
 }
 
-#resume-header, .section-headers {
+#resume section {
+    width: 90vw;
+}
+
+#resume-header {
     margin-bottom: 10px;
 }
 
