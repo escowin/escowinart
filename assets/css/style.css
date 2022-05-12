@@ -266,12 +266,40 @@ article section {
     text-align: center;
   }
 
+  #github-link {
+    display: none;
+  }
+
   /* .hero {
     height: 190px;
   } */
 
+  #me {
+    padding: 5%;
+  }
+
+  #profile-pic img {
+    width: 25vw;
+  }
+  
+  #profile-text {
+    padding: 15px;
+  }
+
+  #profile-text p {
+    display: none;
+  }
+
+  .card, #contact-container li {
+    width: 95vw;
+  }
+
   #contact-container {
-    text-align: left;
+    text-align: center;
+  }
+
+  #contact-container img {
+    display: none;
   }
 
   footer {
