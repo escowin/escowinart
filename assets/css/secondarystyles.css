@@ -40,6 +40,7 @@ body {
 .resume-header-center {
     text-align: center;
 }
+
 .resume-header-right {
     text-align: right;
 }
@@ -69,11 +70,6 @@ body {
     color: var(--secondary);
 }
 
-
-/* .year {
-    padding-left: 20px;
-} */
-
 .year {
     border-right: 1px solid var(--tertiary);
 }
@@ -88,3 +84,43 @@ body {
     padding: 15px;
     text-align: center;
 }
+
+/* MOBILE VIEW */
+@media screen and (max-width: 575px) {
+    /* * {
+        border: 1px solid red;
+    } */
+
+    #resume-link, .mobile-hide, .sub, .location {
+        display: none;
+    }
+
+    #resume {
+        display: block;
+        padding: 10px;
+        justify-content: center;
+    }
+
+    #resume-header-top {
+        display: inline-block;
+        width: 100%;
+        border-bottom: 2px solid var(--tertiary);
+    }
+
+    #resume-header p, #resume-header h2 {
+        width: 100%;
+    }
+
+    #resume-header-bottom {
+        display: block;
+        padding: 5px 0;
+    }
+
+    .resume-header-right {
+        text-align: center;
+    }
+  
+    .exp p {
+        font-size: 1.75vh;
+    }
+  }
