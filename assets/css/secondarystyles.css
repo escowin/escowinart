@@ -58,12 +58,15 @@ body {
 }
 
 .resume-layout {
-    justify-content: space-between;
     border-right: 2px solid var(--tertiary);
 }
 
 .resume-layout p {
     padding: 5px 10px;
+}
+
+.space-between {
+    justify-content: space-between;
 }
 
 .sub {
@@ -77,6 +80,7 @@ body {
 .location {
     border-left: 1px solid var(--tertiary);
     text-align: right;
+    /* width: 225px; */
 }
 
 /* RESUME FOOTER */
@@ -86,7 +90,7 @@ body {
 }
 
 .mobile-view {
-    display: hide;
+    display: none;
 }
 
 /* MOBILE VIEW */
@@ -95,7 +99,7 @@ body {
         border: 1px solid red;
     } */
 
-    #resume-link, .mobile-hide, .location {
+    #resume-link, .mobile-hide {
         display: none;
     }
 
