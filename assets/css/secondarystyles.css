@@ -85,13 +85,17 @@ body {
     text-align: center;
 }
 
+.mobile-view {
+    display: hide;
+}
+
 /* MOBILE VIEW */
 @media screen and (max-width: 575px) {
     /* * {
         border: 1px solid red;
     } */
 
-    #resume-link, .mobile-hide, .sub, .location {
+    #resume-link, .mobile-hide, .location {
         display: none;
     }
 
@@ -122,5 +126,27 @@ body {
   
     .exp p {
         font-size: 1.75vh;
+    }
+
+    .resume-layout .mobile-view {
+       width: 100%;
+    }
+
+    .mobile-view h3 {
+        padding-left: 10px;
+        font-size: 100%;
+    }
+
+    /* .mobile-view h3 span {
+        border-left: 1px solid var(--secondary);
+        font-size: 10px;
+        padding-left: 10px;
+        text-align: right;
+        color: var(--secondary);
+    } */
+
+    .mobile-view p {
+        padding: 5px 0px 5px 25px;
+        font-size: 14px;
     }
   }
