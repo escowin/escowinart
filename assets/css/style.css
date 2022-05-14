@@ -140,6 +140,11 @@ article section {
   height: max-content;
 }
 
+.subhead {
+  padding: 10px 25px;
+  box-shadow: 0px 10px 15px var(--tertiary);
+}
+
 .subhead,
 .subhead a {
   background-color: var(--tertiary);
@@ -326,5 +331,26 @@ article section {
 
   footer {
     font-size: 10px;
+  }
+
+  /* PORTFOLIO */
+  #fineart-portfolio h3 {
+    text-align: center;
+  }
+
+  #fineart-portfolio .flex {
+    display: inline-block;
+  }
+
+  #fineart-portfolio img {
+    width: 100%;
+  }
+
+  #fineart-portfolio .artwork-details {
+    padding-top: 20px;
+  }
+
+  #fineart-portfolio .artwork-details p {
+    padding-left: 20px;
   }
 }
