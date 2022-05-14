@@ -1,156 +1,153 @@
 :root {
-    --primary: #e6e6e6;
-    --secondary: #9b97979c;
-    --tertiary: #28282c;
-    --quaternary: #cf0b0b;
-  }
+  --primary: #e6e6e6;
+  --secondary: #9b97979c;
+  --tertiary: #28282c;
+  --quaternary: #cf0b0b;
+}
 
 /* * {
     border: 1px solid red;
 } */
 
 body {
-    background-color: var(--secondary);
+  background-color: var(--secondary);
 }
 
 /* RESUME */
 #resume {
-    color: var(--tertiary);
-    padding: 20px 60px;
-    border-bottom: 1px solid var(--tertiary);
+  color: var(--tertiary);
+  padding: 20px 60px;
+  border-bottom: 1px solid var(--tertiary);
 }
 
 #resume section {
-    width: 90vw;
+  width: 90vw;
 }
 
 #resume-header {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
-#resume-header-top, #resume-header-bottom {
-    display: flex;
-    justify-content: space-between;
+#resume-header-top,
+#resume-header-bottom {
+  display: flex;
+  justify-content: space-between;
 }
 
-#resume-header p, #resume-header h2 {
-    width: 25%;
+#resume-header p,
+#resume-header h2 {
+  width: 25%;
 }
 
 .resume-header-center {
-    text-align: center;
+  text-align: center;
 }
 
 .resume-header-right {
-    text-align: right;
+  text-align: right;
 }
 
 .section-headers {
-    border-top: 2px solid var(--tertiary);
-    border-bottom: 2px solid var(--tertiary);
-    border-left: 2px solid var(--tertiary);
-    padding: 10px 25px;
+  border-top: 2px solid var(--tertiary);
+  border-bottom: 2px solid var(--tertiary);
+  border-left: 2px solid var(--tertiary);
+  padding: 10px 25px;
 }
 
 .flex {
-    display: flex;
-    line-height: 1.5;
+  display: flex;
+  line-height: 1.5;
 }
 
 .resume-layout {
-    border-right: 2px solid var(--tertiary);
+  border-right: 2px solid var(--tertiary);
 }
 
 .resume-layout p {
-    padding: 5px 10px;
-}
+  padding: 5px 10px;
+  justify-content: space-between;
 
-.space-between {
-    justify-content: space-between;
 }
 
 .sub {
-    color: var(--secondary);
+  color: var(--secondary);
 }
 
 .year {
-    border-right: 1px solid var(--tertiary);
+  border-right: 1px solid var(--tertiary);
 }
 
 .location {
-    border-left: 1px solid var(--tertiary);
-    text-align: right;
-    /* width: 225px; */
+  border-left: 1px solid var(--tertiary);
+  text-align: right;
+  /* width: 225px; */
 }
 
 /* RESUME FOOTER */
 #resume-footer {
-    padding: 15px;
-    text-align: center;
+  padding: 15px;
+  text-align: center;
 }
 
 .mobile-view {
-    display: none;
+  display: none;
 }
 
 /* MOBILE VIEW */
 @media screen and (max-width: 575px) {
-    /* * {
-        border: 1px solid red;
-    } */
-
-    #resume-link, .mobile-hide {
-        display: none;
-    }
-
-    #resume {
-        display: block;
-        padding: 10px;
-        justify-content: center;
-    }
-
-    #resume-header-top {
-        display: inline-block;
-        width: 100%;
-        border-bottom: 2px solid var(--tertiary);
-    }
-
-    #resume-header p, #resume-header h2 {
-        width: 100%;
-    }
-
-    #resume-header-bottom {
-        display: block;
-        padding: 5px 0;
-    }
-
-    .resume-header-right {
-        text-align: center;
-    }
-  
-    .exp p {
-        font-size: 1.75vh;
-    }
-
-    .resume-layout .mobile-view {
-       width: 100%;
-    }
-
-    .mobile-view h3 {
-        padding-left: 10px;
-        font-size: 100%;
-    }
-
-    /* .mobile-view h3 span {
-        border-left: 1px solid var(--secondary);
-        font-size: 10px;
-        padding-left: 10px;
-        text-align: right;
-        color: var(--secondary);
-    } */
-
-    .mobile-view p {
-        padding: 5px 0px 5px 25px;
-        font-size: 14px;
-    }
+  #resume-link,
+  .mobile-hide,
+  .location {
+    display: none;
   }
+
+  .mobile-view {
+      display: inline;
+  }
+
+  #github-link {
+    display: inline;
+  }
+
+  #resume {
+    display: block;
+    padding: 10px;
+    justify-content: center;
+  }
+
+  #resume-header-top {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 2px solid var(--tertiary);
+  }
+
+  #resume-header p,
+  #resume-header h2 {
+    width: 100%;
+  }
+
+  #resume-header-bottom {
+    display: block;
+    padding: 5px 0;
+  }
+
+  .resume-header-right {
+    text-align: center;
+  }
+
+  .exp p {
+    font-size: 1.75vh;
+  }
+
+  .resume-layout {
+    width: 100%;
+  }
+
+  .left {
+      width: 65%;
+  }
+
+  .right {
+      text-align: right;
+  }
+}
