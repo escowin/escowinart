@@ -95,7 +95,7 @@ body {
   .resume-layout {
     font-size: 90%;
   }
-  
+
   .tablet-hide {
     display: none;
   }
@@ -132,7 +132,6 @@ body {
   #resume-header-top {
     display: inline-block;
     width: 100%;
-    border-bottom: 2px solid var(--tertiary);
   }
 
   #resume-header p,
