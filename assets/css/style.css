@@ -258,8 +258,16 @@ article section {
   padding: 0 25px;
 }
 
-h4 {
+.artwork-details h4 {
   font-weight: bold;
+}
+
+.artwork-details p {
+  padding-left: 10px;
+}
+
+.artwork-details .dimensions {
+  padding-bottom: 10px;
 }
 
 /* MEDIA QUERIES */
