@@ -236,7 +236,7 @@ article section {
   height: 15px;
 }
 
-/* PORTFOLIO */
+/* PORTFOLIO | FINE ART*/
 .portfolio .sets {
   padding: 20px;
 }
@@ -275,25 +275,43 @@ article section {
   padding-bottom: 10px;
 }
 
-
-#series-days * {
-  /* border: 1px solid red; */
-}
-
-#series-days h4 {
-  padding: 10px 5px 5px 5px;
+/* PORTFOLIO | ILLUSTRATION */
+#series-days h4,
+#series-hebdomas h4 {
+  padding: 10px 5px 5px 15px;
 }
 
 .img-container {
-  /* width: 100%; */
-  padding: 5px 10px;
+  padding: 5px 15px;
   border-radius: 40px;
 }
 
 .img-container img {
   width: 20%;
+  box-shadow: 5px 5px 5px var(--secondary);
 }
 
+#series-hebdomas .img-container img,
+#series-citylife .img-container img {
+  width: auto;
+  height: 26vh;
+  padding: 5px;
+}
+
+#bluestrawberry-2020,
+#series-hebdomas .img-container,
+#series-citylife .img-container {
+  flex-wrap: wrap;
+}
+
+#bluestrawberry-2020 {
+  justify-content: space-between;
+}
+
+#bluestrawberry-2020 img {
+  width: auto;
+  height: 35vh;
+}
 
 /* MEDIA QUERIES */
 /* TABLET VIEW */
