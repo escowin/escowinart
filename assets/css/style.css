@@ -313,6 +313,33 @@ article section {
   height: 35vh;
 }
 
+/* #graphic-design-portfolio * {
+  border: 1px solid red;
+} */
+
+#graphic-design-portfolio .img-container {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#graphic-design-portfolio .img-container div {
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+#graphic-design-portfolio .img-container h4 {
+  display: none
+}
+
+#graphic-design-portfolio .img-container img {
+  width: auto;
+  height: 45vh;
+  border-radius: 40px;
+  box-shadow: 15px 15px 15px var(--secondary);
+}
+
+
 /* MEDIA QUERIES */
 /* TABLET VIEW */
 @media screen and (max-width: 768px) {
@@ -390,5 +417,13 @@ article section {
 
   #fineart-portfolio .artwork-details p {
     padding-left: 20px;
+  }
+
+  #graphic-design-portfolio .img-container {
+    display: block;
+  }
+  #graphic-design-portfolio .img-container img {
+    width: 100%;
+    height: auto;
   }
 }
