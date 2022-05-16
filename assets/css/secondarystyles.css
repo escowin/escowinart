@@ -69,12 +69,6 @@ body {
   text-align: right;
 }
 
-.location {
-  border-left: 1px solid var(--tertiary);
-}
-
-
-
 /* RESUME FOOTER */
 #resume-footer {
   padding: 15px;
