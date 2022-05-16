@@ -394,7 +394,7 @@ article section {
   }
 
   /* PORTFOLIO */
-  #fineart-portfolio h3 {
+  .portfolio h3 {
     text-align: center;
   }
 
@@ -406,11 +406,11 @@ article section {
     width: 100%;
   }
 
-  #fineart-portfolio .artwork-details {
+  .artwork-details {
     padding-top: 20px;
   }
 
-  #fineart-portfolio .artwork-details p {
+  .artwork-details p {
     padding-left: 20px;
   }
 
@@ -423,5 +423,12 @@ article section {
   #graphic-design-portfolio img {
     width: 100%;
     height: auto;
+  }
+
+  #illustration-portfolio h4 {
+    text-align: center;
+    border-bottom: 1px solid var(--tertiary);
+    border-radius: 10px;
+    margin: 10px 0;
   }
 }
