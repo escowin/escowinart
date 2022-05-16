@@ -194,11 +194,12 @@ article section {
 #profile-pic img {
   width: 20vw;
   border-radius: 50%;
-  transition-duration: 1s;
+  box-shadow: 3px 3px 25px var(--primary);
+  transition-duration: 2s;
 }
 
 #profile-pic img:hover {
-  box-shadow: 3px 3px 25px var(--primary);
+  box-shadow: 3px 3px 25px var(--quaternary);
 }
 
 #profile-text {
@@ -293,8 +294,6 @@ article section {
 
 #series-hebdomas .img-container img,
 #series-citylife .img-container img {
-  width: auto;
-  height: 26vh;
   padding: 5px;
 }
 
@@ -322,17 +321,17 @@ article section {
   flex-wrap: wrap;
 }
 
-#graphic-design-portfolio .img-container div {
+#graphic-design-portfolio div {
   justify-content: center;
   text-align: center;
   padding-bottom: 20px;
 }
 
-#graphic-design-portfolio .img-container h4 {
+#graphic-design-portfolio h4 {
   display: none
 }
 
-#graphic-design-portfolio .img-container img {
+#graphic-design-portfolio img {
   width: auto;
   height: 45vh;
   border-radius: 40px;
@@ -419,10 +418,13 @@ article section {
     padding-left: 20px;
   }
 
+  #illustration-portfolio .img-container,
   #graphic-design-portfolio .img-container {
     display: block;
   }
-  #graphic-design-portfolio .img-container img {
+
+  #illustration-portfolio img,
+  #graphic-design-portfolio img {
     width: 100%;
     height: auto;
   }
