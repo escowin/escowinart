@@ -28,7 +28,8 @@ body {
   width: 25%;
 }
 
-.resume-header-center {
+.resume-header-center,
+#resume-footer {
   text-align: center;
 }
 
@@ -72,7 +73,6 @@ body {
 /* RESUME FOOTER */
 #resume-footer {
   padding: 15px;
-  text-align: center;
 }
 
 .mobile-view {
