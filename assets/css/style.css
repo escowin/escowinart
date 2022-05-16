@@ -312,10 +312,6 @@ article section {
   height: 35vh;
 }
 
-/* #graphic-design-portfolio * {
-  border: 1px solid red;
-} */
-
 #graphic-design-portfolio .img-container {
   justify-content: space-between;
   flex-wrap: wrap;
