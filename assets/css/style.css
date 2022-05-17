@@ -284,7 +284,9 @@ article section {
 
 #series-hebdomas .img-container img,
 #series-citylife .img-container img {
-  padding: 5px;
+  /* padding: 5px; */
+  width: auto;
+  height: 200px
 }
 
 #bluestrawberry-2020,
@@ -292,6 +294,7 @@ article section {
 #series-citylife .img-container {
   flex-wrap: wrap;
 }
+
 
 #bluestrawberry-2020 {
   justify-content: space-between;
