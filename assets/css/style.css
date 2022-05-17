@@ -282,8 +282,8 @@ article section {
   box-shadow: 5px 5px 5px var(--secondary);
 }
 
-#series-hebdomas .img-container img,
-#series-citylife .img-container img {
+#series-hebdomas img,
+#series-citylife img {
   /* padding: 5px; */
   width: auto;
   height: 200px
@@ -294,7 +294,6 @@ article section {
 #series-citylife .img-container {
   flex-wrap: wrap;
 }
-
 
 #bluestrawberry-2020 {
   justify-content: space-between;
@@ -337,6 +336,15 @@ article section {
 
   #contact-container {
     text-align: left;
+  }
+
+  #bluestrawberry-2020 {
+    justify-content: center;
+  }
+
+  #bluestrawberry-2020 img {
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -419,5 +427,10 @@ article section {
     border-bottom: 1px solid var(--tertiary);
     border-radius: 10px;
     margin: 10px 0;
+  }
+
+  #series-hebdomas img {
+    width: 100%;
+    height: auto;
   }
 }
