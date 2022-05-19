@@ -75,33 +75,17 @@ h2,
 }
 
 /* main */
-.container * {
+.container {
   padding: 2.5%;
 }
 
 .subhead {
   padding: .5vh;
 }
+
 .shadow {
   box-shadow: 5px 5px 15px var(--secondary);
 }
-.card, 
-.card img {
-  border-radius: 40px;
-  width: 100%;
-}
-
-.card img {
-  padding: 0;
-}
-
-
-.card:hover {
-  background-color: var(--primary);
-  color: var(--quaternary);
-}
-
-
 
 /* main | hero */
 #hero img {
@@ -109,6 +93,9 @@ h2,
 }
 
 /* main | about */
+#about {
+  border: 1px solid red;
+}
 #me {
   border-radius: 40px;
 }
@@ -128,7 +115,30 @@ h2,
 }
 
 /* main | portfolios */
-#portfolios * {
+/* #portfolios * {
   border: 1px solid red;
+} */
+
+.card,
+.card * {
+  border-radius: 25px;
 }
 
+.card {
+  justify-content: center;
+  padding: 2.5%;
+}
+
+.card a {
+  padding: 0;
+}
+
+.card img {
+  padding: 0;
+  width: 100%;
+}
+
+.card:hover {
+  background-color: var(--primary);
+  color: var(--quaternary);
+}
