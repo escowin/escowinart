@@ -10,12 +10,12 @@
 </head>
 
 <body>
-    <header class="small-caps">
-        <h1><a href="#"><img src="./assets/images/icons/logo-header.png" alt="Escowin Art"></a></h1>
+    <header class="dark">
+        <h1 class="flex"><a href="#"><img src="./assets/images/icons/logo-header.png" id="logo" alt="Escowin Art"></a></h1>
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li class="desktop-hide"><a href="#about">About</a></li>
+                <li class="desktop-hide"><a href="#portfolios">Portfolios</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="./resume.html">Resume</a></li>
                 <li id="github-link"><a href="https://github.com/escowin" target="_blank">Github</a></li>
@@ -23,45 +23,45 @@
         </nav>
     </header>
 
-    <main class="small-caps">
-        <section class="hero">
+    <main>
+        <article id="hero">
             <img src="./assets/images/artwork/edwin-escobar-set-005.jpg">
-        </section>
-
-        <!-- about -->
-        <article id="about">
-            <h2 class="subhead">About</a></h2>
-            <section class="container">
-                <div id="me">
-                    <aside id="profile-pic">
-                        <img src="./assets/images/profile.jpg" alt="pic of me looking deep into the camera">
-                    </aside>
-                    <article id="profile-text">
-                        <h3 class="title">I paint paintings and code code.</h3>
-                        <p>Do art & tech stuff here in Austin ↴</p>
-                    </article>
-                </div>
-            </section>
         </article>
 
-        <!-- portfolio -->
-        <article id="portfolio">
-            <h2 class="subhead">Portfolio</a></h2>
-            <section class="container">
-                <div id="fine-art" class="card">
+        <!-- about -->
+        <article id="about" class="container">
+            <h2 class="subhead dark">About</h2>
+            <div>
+                <section id="me" class="flex dark">
+                    <div id="profile-pic">
+                        <img src="./assets/images/profile.jpg" alt="pic of me looking deep into the camera">
+                    </div>
+                    <div id="profile-text">
+                        <h3>Edwin m. escobar</h3>
+                        <p>I do art & tech stuff here in Austin ↴</p>
+                    </div>
+                </section>
+            </div>
+        </article>
+
+        <!-- portfolios -->
+        <article id="portfolios" class="container shadow">
+            <h2 class="subhead dark">Portfolios</a></h2>
+            <section id="fine-art" class="container">
+                <div  class="dark card shadow">
                     <a href="./fineart.html">
                         <img src="./assets/images/portfolio-fineart.jpg" alt="fine art oeuvre">
+                        <h3>Fine Art</h3>
+                        <p>Oil on canvas</p>
                     </a>
-                    <h3 class="title">Fine Art</h3>
-                    <p class="description">Oil on canvas</p>
                 </div>
+                 
 
-                <div id="illustration" class="card">
-                    <a href="./illustration.html">
-                        <img src="./assets/images/portfolio-illustration.jpg" alt="illustration portfolio">
-                    </a>
-                    <h3 class="title">Illustration</h3>
-                    <p class="description">Light on screen</p>
+                <!-- <div id="illustration" class="dark card flex">
+                        <a href="./illustration.html">
+                            <img src="./assets/images/portfolio-illustration.jpg" alt="illustration portfolio">
+                        <h3 class="title">Illustration</h3>
+                        <p class="description">Light on screen</p>
                 </div>
 
                 <div id="graphic-design" class="card">
@@ -78,13 +78,13 @@
                     </a>
                     <h3 class="title">Code</h3>
                     <p class="description">0's & 1's</p>
-                </div>
+                </div> -->
             </section>
         </article>
 
         <!-- contact -->
-        <article id="contact">
-            <h2 class="subhead">Contact</h2>
+        <article id="contact" class="container">
+            <h2 class="subhead dark">Contact</h2>
             <ul class="container" id="contact-container">
                 <a href="mailto: edwin@escowinart.com">
                     <li>
@@ -115,10 +115,10 @@
     </main>
 
     <!-- footer -->
-    <footer class="small-caps">
+    <footer class="dark">
         <h2>&mdash; <a href="https://github.com/escowin/escowinart/" target="_blank">Code</a> by Edwin M. Escobar &mdash;</h2>
         <p>&copy; 2022 Escowin Art</p>
     </footer>
 </body>
 
-</html> -->
+</html>
