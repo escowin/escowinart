@@ -157,7 +157,7 @@ border-radius: 20px;
   display: none;
 }
 
-/* fineart | portfolio */
+/* portfolio | fineart */
 .artwork {
   border-bottom: 1px solid var(--tertiary);
 }
@@ -167,4 +167,13 @@ border-radius: 20px;
 }
 .artwork-title {
   font-weight: bold;
+}
+
+/* portfolio | illustration */
+#illustration-portfolio .artwork {
+  border-bottom: none;
+}
+
+.series-header {
+  padding-bottom: 1vh;
 }
