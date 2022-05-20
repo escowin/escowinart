@@ -5,56 +5,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/secondarystyles.css">
     <link rel="icon" href="./assets/images/icons/logo-browser.png">
-    <title>Escowin Art</title>
+    <title>Graphic Design | Portfolio</title>
 </head>
 
 <body>
-    <header class="small-caps">
-        <h1><a href="./index.html"><img src="./assets/images/icons/logo-header.png" alt="Escowin Art"></a></h1>
+    <header id="header" class="dark shadow">
+        <h1 class="flex"><a href="./index.html"><img src="./assets/images/icons/logo-header.png" id="logo" alt="Escowin Art"></a></h1>
         <nav>
             <ul>
                 <li><a href="./index.html#about">About</a></li>
-                <li><a href="./index.html#portfolio">Portfolio</a></li>
-                <li><a href="./index.html#contact">Contact</a></li>                
-                <li id="resume-link"><a href="./resume.html">Resume</a></li>
-                <li id="github-link"><a href="https://github.com/escowin" target="_blank">Github</a></li>
+                <li><a href="./index.html#portfolios">Portfolios</a></li>
+                <li><a href="./index.html#contact">Contact</a></li>
+                <li><a href="./resume.html">Resume</a></li>
+                <li><a href="https://github.com/escowin" target="_blank">Github</a></li>
             </ul>
         </nav>
     </header>
 
-    <main id="graphic-design-portfolio" class="portfolio">
-        <h2 id="graphic-design" class="subhead">Portfolio | Graphic Design</h2>
-        <article id="vector-stuff" class="sets">
-            <h3>Keep cool with Coolidge</h3>
-            <section class="art flex img-container">
+    <main id="graphic-design-portfolio" class="container">
+        <h2 id="graphic-design" class="subhead dark shadow portfolio">Portfolio | Graphic Design</h2>
+        <article id="vector-stuff" class="artwork-card dark">
+            <h3 class="subhead artwork-header">Keep cool with Coolidge</h3>
+            <section class="artwork">
                 <img src="./assets/images/artwork/graphicdesign/edwin-escobar-20220515-cool-with-coolidge.jpg">
-                <!-- <div>
-                    <img src="./assets/images/artwork/graphicdesign/edwin-escobar-20220515-mindlessly-parrot-social-media.png">
-                    <h4 class="title">Mindlessly parrot social media</h4>
-                </div>
-                <div class="mobile-hide">
-                    <img src="./assets/images/artwork/graphicdesign/edwin-escobar-20210220-capitalism.png" />
-                    <h4 class="title">Capitalism</h4>
-                </div>
-                <div>
-                    <img src="./assets/images/artwork/graphicdesign/edwin-escobar-20210225-made-in-a-lab.png" />
-                    <h4 class="title">Made in a lab</h4>
-                </div>
-                <div class="mobile-hide">
-                    <img src="./assets/images/artwork/graphicdesign/edwin-escobar-20220515-stop-being-poor.png" />
-                </div> -->
             </section>
         </article>
     </main>
 
     <!-- footer -->
-    <footer class="small-caps">
-        <h2>&mdash; <a href="https://github.com/escowin/escowinart/">Code</a> by Edwin M. Escobar &mdash;</h2>
-        <div>
-            <p>&copy; 2022 Escowin Art</p>
-        </div>
+    <footer id="footer" class="dark">
+        <h2><a href="https://github.com/escowin/escowinart/" target="_blank">code</a> by Edwin M. Escobar</h2>
+        <p class="sub">&copy; 2022 Escowin Art</p>
     </footer>
 </body>
 
