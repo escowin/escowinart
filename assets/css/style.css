@@ -42,7 +42,7 @@
 }
 
 .shadow {
-  box-shadow: 5px 5px 15px var(--tertiary);
+  box-shadow: 0 5px 15px var(--tertiary);
 }
 
 .sub {
@@ -75,6 +75,8 @@ li {
 /* footer */
 #footer {
   font-size: 75%;
+  margin-top: 1vh;
+  box-shadow: 0 -5px 10px var(--tertiary);
 }
 
 #footer,
@@ -137,9 +139,8 @@ h2,
 .card *,
 .artwork-card,
 .artwork-card *,
-.portfolio
-{
-border-radius: 20px;
+.portfolio {
+  border-radius: 20px;
 }
 
 .card img,
@@ -165,6 +166,7 @@ border-radius: 20px;
 .artwork-details {
   padding-bottom: 10px;
 }
+
 .artwork-title {
   font-weight: bold;
 }
@@ -176,4 +178,46 @@ border-radius: 20px;
 
 .series-header {
   padding-bottom: 1vh;
+}
+
+
+/* MEDIA SCREEN | TABLET */
+@media screen and (min-width: 768px) {
+  #logo {
+    width: 30vw;
+  }
+
+  #navigation {
+    justify-content: space-around;
+  }
+
+  #me {
+    border-radius: 100px;
+    width: 100%;
+  }
+
+  #profile-pic {
+    width: 20vw;
+  }
+
+  #portfolios .container {
+    width: 50%;
+  }
+
+  .tablet {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .tablet-hide {
+    display: none;
+  }
+
+  #contact-links li {
+    width: 20%;
+  }
+
+  #footer {
+    padding: 1vh;
+  }
 }
