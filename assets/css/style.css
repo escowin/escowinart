@@ -217,7 +217,7 @@ h2,
     display: none;
   }
 
-  #contact-links li {
+  #contact-links a {
     width: 20%;
   }
 
@@ -251,12 +251,8 @@ h2,
     width: 20vw;
   }
 
-  #logo:hover {
-    color: var(--quaternary);
-  }
   #navigation li {
     padding: .25vw;
-
   }
 
   #hero {
@@ -282,5 +278,10 @@ h2,
 
   #contact-links {
     text-align: center;
+    padding: 1%;
+  }
+
+  #contact .container a {
+    width: 23.5%;
   }
 }
