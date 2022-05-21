@@ -102,6 +102,10 @@ h2,
 }
 
 /* main | about */
+#about .subhead {
+  margin-top: 0;
+}
+
 #me {
   border-radius: 75px;
   padding: 15px;
@@ -219,5 +223,64 @@ h2,
 
   #footer {
     padding: 1vh;
+  }
+}
+
+/* MEDIA SCREEN | LAPTOP SMALL */
+@media screen and (min-width: 1024px) {
+  .desktop {
+    display: contents;
+  }
+
+  #hero {
+    display: none;
+  }
+
+  #profile-pic {
+    width: 15vw;
+  }
+
+  #profile-text {
+    line-height: 1.75;
+  }
+}
+
+/* MEDIA SCREEN | LAPTOP LARGE */
+@media screen and (min-width: 1440px) {
+  #logo {
+    width: 20vw;
+  }
+
+  #logo:hover {
+    color: var(--quaternary);
+  }
+  #navigation li {
+    padding: .25vw;
+
+  }
+
+  #hero {
+    display: contents;
+  }
+
+  #profile-pic {
+    width: 10vw;
+  }
+
+  #portfolios .container {
+    width: 25%;
+    padding: 1%;
+  }
+
+  #portfolios .card h3 {
+    padding-left: 1vw;
+  }
+
+  #portfolios .desktop {
+    display: block;
+  }
+
+  #contact-links {
+    text-align: center;
   }
 }
