@@ -226,7 +226,7 @@ h2,
   }
 }
 
-/* MEDIA SCREEN | LAPTOP SMALL */
+/* MEDIA SCREEN | LAPTOP-S */
 @media screen and (min-width: 1024px) {
   .desktop {
     display: contents;
@@ -245,7 +245,7 @@ h2,
   }
 }
 
-/* MEDIA SCREEN | LAPTOP LARGE */
+/* MEDIA SCREEN | LAPTOP-L */
 @media screen and (min-width: 1440px) {
   #logo {
     width: 20vw;
@@ -256,7 +256,7 @@ h2,
   }
 
   #hero {
-    display: contents;
+    display: none;
   }
 
   #profile-pic {
@@ -283,5 +283,20 @@ h2,
 
   #contact .container a {
     width: 23.5%;
+  }
+
+  #about {
+    background: rgba(255, 255, 255, 0.2) url("../images/artwork/edwin-escobar-set-005.jpg");
+    background-size: contain;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+  }
+
+  #about .container {
+    opacity: .98;
+  }
+
+  #portfolios .subhead {
+    margin-top: 0;
   }
 }
