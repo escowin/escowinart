@@ -13,7 +13,6 @@
   font-variant: small-caps;
   font-weight: lighter;
   text-decoration: none;
-  transition-duration: 1s;
 }
 
 /* mobile first */
@@ -35,6 +34,7 @@
 
 .dark a {
   color: var(--primary);
+  transition-duration: 2s;
 }
 
 .dark a:hover {
@@ -132,6 +132,7 @@ h2,
 .artwork-card {
   justify-content: center;
   padding: 10px 15px;
+  transition-duration: 2s;
 }
 
 .card:hover {
