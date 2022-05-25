@@ -82,7 +82,7 @@ li {
 #footer,
 h2,
 .card,
-.artwork-card {
+#finearts-portfolio .artwork-card {
   text-align: center;
 }
 
@@ -128,10 +128,13 @@ h2,
 }
 
 /* main | portfolios */
+.card {
+  padding: 10px 15px;
+}
+
 .card,
 .artwork-card {
   justify-content: center;
-  padding: 10px 15px;
   transition-duration: 2s;
 }
 
@@ -164,9 +167,6 @@ h2,
   border-bottom: 1px solid var(--tertiary);
 }
 
-.artwork-details {
-  padding-bottom: 10px;
-}
 
 .artwork-title {
   font-weight: bold;
@@ -177,9 +177,14 @@ h2,
   border-bottom: none;
 }
 
-.series-header {
-  padding-bottom: 1vh;
+.series-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3vh 1.5vw;
+  text-shadow: 5px 0 30px var(--tertiary);
 }
+
 
 
 /* MEDIA SCREEN | TABLET */
