@@ -162,30 +162,44 @@ h2,
   font-size: 80%;
 }
 
-/* portfolio | fineart */
-.artwork {
-  border-bottom: 1px solid var(--tertiary);
+/* portfolio */
+.series-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-shadow: 5px 0 30px var(--tertiary);
 }
 
+/* portfolio | fineart */
+#fineart-portfolio {
+  border-bottom: 1px solid var(--tertiary);
+  text-align: center;
+}
+
+#fineart-portfolio {
+  line-height: 1.75;
+}
+
+#fineart-portfolio img {
+  box-shadow: 0 0 75px var(--secondary);
+}
 
 .artwork-title {
   font-weight: bold;
+}
+
+.set * {
+  border: 1px solid red;
 }
 
 /* portfolio | illustration */
 #illustration-portfolio .artwork {
   border-bottom: none;
 }
-
-.series-title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+#illustration-portfolio .series-title {
   padding: 3vh 1.5vw;
-  text-shadow: 5px 0 30px var(--tertiary);
+
 }
-
-
 
 /* MEDIA SCREEN | TABLET */
 @media screen and (min-width: 768px) {
