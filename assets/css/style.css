@@ -92,8 +92,7 @@ h2,
 }
 
 .subhead {
-  padding: .5vh;
-  margin: 2vh 0;
+  padding: 2.5vh;
 }
 
 /* main | hero */
@@ -163,19 +162,17 @@ h2,
 }
 
 /* portfolio */
-.series-title {
+.series-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  text-shadow: 5px 0 30px var(--tertiary);
+  text-shadow: 0 5px 20px var(--tertiary);
 }
 
+.portfolio {
+  padding: 0;
+}
 /* portfolio | fineart */
-#fineart-portfolio {
-  border-bottom: 1px solid var(--tertiary);
-  text-align: center;
-}
-
 #fineart-portfolio {
   line-height: 1.75;
 }
@@ -184,14 +181,31 @@ h2,
   box-shadow: 0 0 75px var(--secondary);
 }
 
+.artwork-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dimensions, .medium {
+  font-size: smaller;
+}
+
+.dimensions {
+  padding-right: 1vw;
+}
 .artwork-title {
   font-weight: bold;
+  text-align: start;
 }
 
-.set * {
+/* .set * {
   border: 1px solid red;
-}
+} */
 
+.set {
+  padding-bottom: 2.75vh;
+}
 /* portfolio | illustration */
 #illustration-portfolio .artwork {
   border-bottom: none;
