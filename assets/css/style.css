@@ -206,13 +206,16 @@ h2,
 .set {
   padding-bottom: 2.75vh;
 }
+
 /* portfolio | illustration */
 #illustration-portfolio .artwork {
   border-bottom: none;
 }
+
 #illustration-portfolio .series-title {
   padding: 3vh 1.5vw;
-
+  justify-content: space-between;
+  display: flex;
 }
 
 /* MEDIA SCREEN | TABLET */
