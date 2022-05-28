@@ -68,15 +68,23 @@ ul {
   justify-content: space-between;
 }
 
-li {
+#header li {
   padding: 1vw;
 }
 
 /* footer */
 #footer {
-  font-size: 75%;
+  font-size: 65%;
   margin-top: 1vh;
   box-shadow: 0 -5px 10px var(--tertiary);
+  /* border-radius: 25% 25% 0 0; */
+}
+
+#footer h2 {
+  padding-top: 1vh;
+}
+#footer a {
+  color: var(--secondary);
 }
 
 #footer,
@@ -95,19 +103,20 @@ h2,
   padding: .5vh 0 1vh 0;
   margin-top: 0;
   border-radius: 0 0 50% 50%;
-  font-size: 1.5em;
+  font-size: 1.25em;
 }
 
 /* main | about */
 #about {
-  background: rgba(255, 255, 255, 0.1) url("../images/artwork/edwin-escobar-set-005.jpg");
+  background: url("../images/artwork/edwin-escobar-set-005.jpg");
   background-size: contain;
   background-attachment: fixed;
-  background-blend-mode: overlay;
+  background-position: center;
+
 }
 
 #me {
-  border-radius: 50px 5px 25px 50px;
+  border-radius: 10px 5px 50px 50px;
   padding: 10px;
   align-items: center;
   display: flex;
@@ -132,12 +141,14 @@ h2,
 
 #profile-pic {
   width: 20vw;
-  border-radius: 50% 10% 10% 50%;
-  box-shadow: 5px 0 10px var(--secondary);
+  border-radius: 10% 10% 50% 50%;
+  /* box-shadow: 0 2px 10px var(--secondary); */
+  transition-duration: 2s;
 }
 
 #profile-pic:hover {
-  box-shadow: 5px 0 10px var(--quaternary);
+  box-shadow: 5px 5px 10px var(--quaternary);
+  border: none;
 }
 
 /* main | portfolios */
