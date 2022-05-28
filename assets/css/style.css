@@ -162,6 +162,14 @@ h2,
 }
 
 /* portfolio */
+.portfolio-container {
+  line-height: 1.75;
+}
+
+.portfolio {
+  padding: 0;
+}
+
 .series-header {
   display: flex;
   justify-content: space-between;
@@ -169,13 +177,7 @@ h2,
   text-shadow: 0 5px 20px var(--tertiary);
 }
 
-.portfolio {
-  padding: 0;
-}
 /* portfolio | fineart */
-#fineart-portfolio {
-  line-height: 1.75;
-}
 
 #fineart-portfolio img {
   box-shadow: 0 0 75px var(--secondary);
@@ -199,7 +201,7 @@ h2,
   text-align: start;
 }
 
-/* .set * {
+/* #graphic-design-portfolio *, #illustration-portfolio * {
   border: 1px solid red;
 } */
 
@@ -212,11 +214,12 @@ h2,
   border-bottom: none;
 }
 
-#illustration-portfolio .series-title {
+#illustration-portfolio .series-title, #graphic-design-portfolio .series-title {
   padding: 3vh 1.5vw;
   justify-content: space-between;
   display: flex;
 }
+
 
 /* MEDIA SCREEN | TABLET */
 @media screen and (min-width: 768px) {
