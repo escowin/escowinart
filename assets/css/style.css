@@ -92,33 +92,47 @@ h2,
 }
 
 .subhead {
-  padding: 2.5vh;
-}
-
-/* main | hero */
-#hero img {
-  width: 100%;
+  padding: .5vh 0 1vh 0;
+  margin-top: 0;
+  border-radius: 0 0 50% 50%;
+  font-size: 1.5em;
 }
 
 /* main | about */
-#about .subhead {
-  margin-top: 0;
+#about {
+  background: rgba(255, 255, 255, 0.1) url("../images/artwork/edwin-escobar-set-005.jpg");
+  background-size: contain;
+  background-attachment: fixed;
+  background-blend-mode: overlay;
 }
 
 #me {
-  border-radius: 75px;
-  padding: 15px;
+  border-radius: 50px 5px 25px 50px;
+  padding: 10px;
   align-items: center;
   display: flex;
+  opacity: 99%;
 }
 
 #profile-text {
   padding-left: 4vw;
 }
 
+#profile-text * {
+  padding: 1vh;
+}
+
+#name {
+  border-bottom: 1px solid var(--secondary);
+}
+
+#blip {
+  padding-top: 1vw;
+}
+
 #profile-pic {
-  width: 25vw;
-  border-radius: 50%;
+  width: 20vw;
+  border-radius: 50% 10% 10% 50%;
   box-shadow: 5px 0 10px var(--secondary);
 }
 
@@ -127,8 +141,52 @@ h2,
 }
 
 /* main | portfolios */
+#portfolios a {
+  position: relative;
+  height: 200px;
+  display: block;
+  background-size: cover;
+  box-shadow: inset 0px 10px 50px 0 var(--tertiary),
+   inset 0px -10px 50px 0 var(--secondary);
+  mix-blend-mode: difference; 
+}
+
+/* #portfolios * {
+  border: 1px solid red;
+} */
+
+#portfolios h3 {
+  height: 100%;
+  padding-top: 45.5%;
+  text-shadow: 5px 5px 5px var(--tertiary);
+  /* text-align: ; */
+  font-size: 1.25em;
+  /* font-stretch: expanded; */
+}
+
+
+#fine-art a {
+  background-image: url(../images/portfolio-fineart.jpg);
+}
+
+#illustration a {
+  background-image: url(../images/portfolio-illustration.jpg);
+}
+
+#graphic-design a {
+  background-image: url(../images/artwork/graphicdesign/edwin-escobar-20220515-cool-with-coolidge.jpg);
+}
+
+#code a {
+  background-image: url(../images/portfolio-code.jpg);
+}
+
 .card {
   padding: 10px 15px;
+}
+
+.card, .card * {
+  border-radius: 5% 5% 25% 25%;
 }
 
 .card,
@@ -142,8 +200,6 @@ h2,
   color: var(--quaternary);
 }
 
-.card,
-.card *,
 .artwork-card,
 .artwork-card *,
 .portfolio {
@@ -154,7 +210,6 @@ h2,
 .artwork img {
   width: 100%;
 }
-
 
 /* main | contact */
 #contact-links li {
