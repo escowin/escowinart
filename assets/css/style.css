@@ -45,8 +45,18 @@
   box-shadow: 0 5px 15px var(--tertiary);
 }
 
+.focus:hover {
+  background-color: var(--primary);
+  opacity: 100%;
+  box-shadow: 0px 50px 50px var(--tertiary);
+}
+
 .sub {
   color: var(--secondary);
+}
+
+.tab {
+  display: none;
 }
 
 /* header */
@@ -175,7 +185,6 @@ h2,
   /* font-stretch: expanded; */
 }
 
-
 #fine-art a {
   background-image: url(../images/portfolio-fineart.jpg);
 }
@@ -244,9 +253,17 @@ h2,
 }
 
 /* portfolio | fineart */
+#fineart-portfolio .subhead {
+  border-radius: 20px 20px 25% 25%;
+  margin-bottom: 1vh;
+}
 
 #fineart-portfolio img {
   box-shadow: 0 0 75px var(--secondary);
+}
+
+#fineart-portfolio .artwork-card {
+  padding: 1%;
 }
 
 .artwork-details {
@@ -359,6 +376,10 @@ h2,
     /* text-align: end; */
   }
 
+  #fineart-portfolio .tab {
+    display: contents;
+  }
+
   .dimensions {
     text-indent: 2vw;
   }
@@ -385,6 +406,10 @@ h2,
   /* fine art portfolio */
   .artwork-details {
     display: flex;
+  }
+
+  #fineart-portfolio .tab {
+    display: none;
   }
 
   .dimensions {
@@ -428,11 +453,15 @@ h2,
 
   /* fine art portfolio */
   .subhead {
-    font-size: 1.5em;
+    font-size: 175%;
     text-indent: 1vw;
   }
 
+  .medium {
+    text-shadow: none;
+  }
+
   .artwork-details {
-    font-size: 1.25em;
+    font-size: 125%;
   }
 }
