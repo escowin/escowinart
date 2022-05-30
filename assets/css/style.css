@@ -298,10 +298,6 @@
   }
 
 /* portfolio | graphic design */
-  /* #graphic-design-portfolio * {
-    border: 1px solid red;
-  } */
-
   #graphic-design-portfolio .artwork {
     width: 100%;
     padding: 1.5%;
@@ -383,7 +379,6 @@
 
     .artwork-details {
       display: block;
-      /* text-align: end; */
     }
 
     #fineart-portfolio .tab {
