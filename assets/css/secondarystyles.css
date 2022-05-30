@@ -2,11 +2,28 @@ body {
   background-color: var(--secondary);
 }
 
+.mobile-hide {
+  display: contents;
+}
+
+.tablet-hide {
+  display: contents;
+}
+
 /* RESUME */
 #resume {
   color: var(--tertiary);
   padding: 20px 60px;
   border-bottom: 1px solid var(--tertiary);
+}
+
+#resume a {
+  color: var(--tertiary);
+  transition-duration: 2s;
+}
+
+#resume a:hover {
+  color: var(--quaternary);
 }
 
 #resume section {
@@ -17,15 +34,14 @@ body {
   margin-bottom: 25px;
 }
 
+#resume-header article * {
+  width: 33%;
+}
+
 #resume-header-top,
 #resume-header-bottom {
   display: flex;
   justify-content: space-between;
-}
-
-#resume-header p,
-#resume-header h2 {
-  width: 25%;
 }
 
 .resume-header-center,

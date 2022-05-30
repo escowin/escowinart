@@ -106,7 +106,7 @@
   }
 
 /* main */
-  .container {
+  #main .container {
     padding: 2.5%;
   }
 
@@ -251,7 +251,7 @@
   }
 
   .portfolio-container .subhead {
-    border-radius: 20px 20px 25% 25%;
+    border-radius: 0 0 50% 50%;
     margin-bottom: 1vh;
   }
 
@@ -297,6 +297,19 @@
     display: flex;
   }
 
+/* portfolio | graphic design */
+  /* #graphic-design-portfolio * {
+    border: 1px solid red;
+  } */
+
+  #graphic-design-portfolio .artwork {
+    width: 100%;
+    padding: 1.5%;
+  }
+
+  #graphic-design-portfolio .set {
+    transition-duration: 2s;
+  }
 
 /* MEDIA SCREEN | TABLET */
 @media screen and (min-width: 768px) {
@@ -353,13 +366,14 @@
       padding: 1vh;
     }
 
-  /* fine art portfolio */
+  /* portfolio - all */
     .artwork {
       display: flex;
       justify-content: space-between;
     }
 
-    .artwork img {
+  /* fine art portfolio */
+    #fineart-portfolio .artwork img {
       width: 55vw;
     }
 
@@ -381,10 +395,6 @@
     }
   
   /* illustration portfolio */
-  #illustration-portfolio * {
-    /* border: 1px solid red; */
-  }
-
   #illustration-portfolio .artwork {
     display: flex;
     flex-wrap: wrap;
@@ -402,6 +412,17 @@
   #illustration-portfolio h3 {
     font-size: 1.5em;
   }
+
+  #graphic-design-portfolio .artwork-card{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #graphic-design-portfolio .set {
+    max-width: 55%;
+    padding: 1.5%;
+  }
+
 }
 
 /* MEDIA SCREEN | LAPTOP-S */
@@ -472,7 +493,6 @@
 
   /* fine art portfolio */
   .subhead {
-    font-size: 175%;
     text-indent: 1vw;
   }
 
@@ -488,4 +508,8 @@
   .series-title h3 {
     text-shadow: none;
   }
-  /* illustration portfolio */
+
+  #illustration-portfolio img {
+    width: 20%;
+  }
+}
