@@ -297,17 +297,6 @@ h2,
     justify-content: space-around;
   }
 
-  #hero {
-    display: none;
-  }
-
-  #about {
-    background: rgba(255, 255, 255, 0.1) url("../images/artwork/edwin-escobar-set-005.jpg");
-    background-size: contain;
-    background-attachment: fixed;
-    background-blend-mode: overlay;
-  }
-
   #about .container {
     padding-bottom: 5%;
   }
@@ -319,10 +308,12 @@ h2,
 
   #profile-pic {
     width: 20vw;
+    border-radius: 50%;
   }
-
-  #portfolios .subhead {
-    margin-top: 0;
+  
+  #portfolios h3 {
+    padding-top: 50%;
+    font-size: 1.5em;
   }
 
   #portfolios .container {
@@ -349,6 +340,28 @@ h2,
   #footer {
     padding: 1vh;
   }
+
+  /* fine art portfolio */
+  .artwork {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .artwork img {
+    width: 55vw;
+  }
+
+  .details-container {
+    width: 45vw;
+  }
+  .artwork-details {
+    display: block;
+    /* text-align: end; */
+  }
+
+  .dimensions {
+    text-indent: 2vw;
+  }
 }
 
 /* MEDIA SCREEN | LAPTOP-S */
@@ -357,12 +370,26 @@ h2,
     display: contents;
   }
 
+  #portfolios h3 {
+    padding-top: 35%;
+  }
+
   #profile-pic {
     width: 15vw;
   }
 
   #profile-text {
     line-height: 1.75;
+  }
+
+  /* fine art portfolio */
+  .artwork-details {
+    display: flex;
+  }
+
+  .dimensions {
+    font-size: .75em;
+    text-indent: 0;
   }
 }
 
@@ -376,10 +403,6 @@ h2,
     padding: .25vw;
   }
 
-  #hero {
-    display: none;
-  }
-
   #profile-pic {
     width: 10vw;
   }
@@ -389,12 +412,9 @@ h2,
     padding: 1%;
   }
 
-  #portfolios .card h3 {
-    padding-left: 1vw;
-  }
-
-  #portfolios .desktop {
-    display: block;
+  #portfolios h3 {
+    padding-top: 55%;
+    font-size: 1.15em;
   }
 
   #contact-links {
@@ -404,5 +424,15 @@ h2,
 
   #contact .container a {
     width: 23.5%;
+  }
+
+  /* fine art portfolio */
+  .subhead {
+    font-size: 1.5em;
+    text-indent: 1vw;
+  }
+
+  .artwork-details {
+    font-size: 1.25em;
   }
 }
