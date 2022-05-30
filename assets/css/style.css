@@ -16,372 +16,391 @@
 }
 
 /* mobile first */
-.flex {
-  display: flex;
-  justify-content: center;
-}
+  .flex {
+    display: flex;
+    justify-content: center;
+  }
 
-.desktop {
-  display: none;
-}
+  .desktop {
+    display: none;
+  }
 
 /* dark on light */
-.dark {
-  background-color: var(--tertiary);
-  color: var(--primary);
-  text-decoration: none;
-}
+  .dark {
+    background-color: var(--tertiary);
+    color: var(--primary);
+    text-decoration: none;
+  }
 
-.dark a {
-  color: var(--primary);
-  transition-duration: 2s;
-}
+  .dark a {
+    color: var(--primary);
+    transition-duration: 2s;
+  }
 
-.dark a:hover {
-  color: var(--quaternary);
-}
+  .dark a:hover {
+    color: var(--quaternary);
+  }
 
-.shadow {
-  box-shadow: 0 5px 15px var(--tertiary);
-}
+  .shadow {
+    box-shadow: 0 5px 15px var(--tertiary);
+  }
 
-.focus:hover {
-  background-color: var(--primary);
-  opacity: 100%;
-  box-shadow: 0px 50px 50px var(--tertiary);
-}
+  .focus:hover {
+    background-color: var(--primary);
+    opacity: 100%;
+    box-shadow: 0px 50px 50px var(--tertiary);
+    transition-duration: 2s;
+  }
 
-.sub {
-  color: var(--secondary);
-}
+  .sub {
+    color: var(--secondary);
+  }
 
-.tab {
-  display: none;
-}
+  .tab {
+    display: none;
+  }
 
 /* header */
-#header {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-  z-index: 9999;
-  width: 100vw;
-}
+  #header {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 9999;
+    width: 100vw;
+  }
 
-#logo {
-  width: 50vw;
-}
+  #logo {
+    width: 50vw;
+  }
 
-ul {
-  display: flex;
-  list-style: none;
-  justify-content: space-between;
-}
+  ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+  }
 
-#header li {
-  padding: 1vw;
-}
+  #header li {
+    padding: 1vw;
+  }
 
 /* footer */
-#footer {
-  font-size: 65%;
-  margin-top: 1vh;
-  box-shadow: 0 -5px 10px var(--tertiary);
-  /* border-radius: 25% 25% 0 0; */
-}
+  #footer {
+    font-size: 65%;
+    margin-top: 1vh;
+    box-shadow: 0 -5px 10px var(--tertiary);
+  }
 
-#footer h2 {
-  padding-top: 1vh;
-}
-#footer a {
-  color: var(--secondary);
-}
+  #footer h2 {
+    padding-top: 1vh;
+  }
+  
+  #footer a {
+    color: var(--secondary);
+  }
 
-#footer,
-h2,
-.card,
-#finearts-portfolio .artwork-card {
-  text-align: center;
-}
+  #footer,
+  h2,
+  .card,
+  #finearts-portfolio .artwork-card {
+    text-align: center;
+  }
 
 /* main */
-.container {
-  padding: 2.5%;
-}
+  .container {
+    padding: 2.5%;
+  }
 
-.subhead {
-  padding: .5vh 0 1vh 0;
-  margin-top: 0;
-  border-radius: 0 0 50% 50%;
-  font-size: 1.25em;
-}
+  .subhead {
+    padding: .5vh 0 1vh 0;
+    margin-top: 0;
+    border-radius: 0 0 50% 50%;
+    font-size: 1.25em;
+  }
 
 /* main | about */
-#about {
-  background: url("../images/artwork/edwin-escobar-set-005.jpg");
-  background-size: contain;
-  background-attachment: fixed;
-  background-position: center;
+  #about {
+    background: url("../images/artwork/edwin-escobar-set-005.jpg");
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: center;
 
-}
-
-#me {
-  border-radius: 10px 5px 50px 50px;
-  padding: 10px;
-  align-items: center;
-  display: flex;
-  opacity: 99%;
-}
-
-#profile-text {
-  padding-left: 4vw;
-}
-
-#profile-text * {
-  padding: 1vh;
-}
-
-#name {
-  border-bottom: 1px solid var(--secondary);
-}
-
-#blip {
-  padding-top: 1vw;
-}
-
-#profile-pic {
-  width: 20vw;
-  border-radius: 10% 10% 50% 50%;
-  /* box-shadow: 0 2px 10px var(--secondary); */
-  transition-duration: 2s;
-}
-
-#profile-pic:hover {
-  box-shadow: 5px 5px 10px var(--quaternary);
-  border: none;
-}
-
-/* main | portfolios */
-#portfolios a {
-  position: relative;
-  height: 200px;
-  display: block;
-  background-size: cover;
-  box-shadow: inset 0px 10px 50px 0 var(--tertiary),
-   inset 0px -10px 50px 0 var(--secondary);
-  mix-blend-mode: difference; 
-}
-
-/* #portfolios * {
-  border: 1px solid red;
-} */
-
-#portfolios h3 {
-  height: 100%;
-  padding-top: 45.5%;
-  text-shadow: 5px 5px 5px var(--tertiary);
-  /* text-align: ; */
-  font-size: 1.25em;
-  /* font-stretch: expanded; */
-}
-
-#fine-art a {
-  background-image: url(../images/portfolio-fineart.jpg);
-}
-
-#illustration a {
-  background-image: url(../images/portfolio-illustration.jpg);
-}
-
-#graphic-design a {
-  background-image: url(../images/artwork/graphicdesign/edwin-escobar-20220515-cool-with-coolidge.jpg);
-}
-
-#code a {
-  background-image: url(../images/portfolio-code.jpg);
-}
-
-.card {
-  padding: 10px 15px;
-}
-
-.card, .card * {
-  border-radius: 5% 5% 25% 25%;
-}
-
-.card,
-.artwork-card {
-  justify-content: center;
-  transition-duration: 2s;
-}
-
-.card:hover {
-  background-color: var(--secondary);
-  color: var(--quaternary);
-}
-
-.artwork-card,
-.artwork-card *,
-.portfolio {
-  border-radius: 20px;
-}
-
-.card img,
-.artwork img {
-  width: 100%;
-}
-
-/* main | contact */
-#contact-links li {
-  font-size: 80%;
-}
-
-/* portfolio */
-.portfolio-container {
-  line-height: 1.75;
-}
-
-.portfolio {
-  padding: 0;
-}
-
-.series-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-shadow: 0 5px 20px var(--tertiary);
-}
-
-/* portfolio | fineart */
-#fineart-portfolio .subhead {
-  border-radius: 20px 20px 25% 25%;
-  margin-bottom: 1vh;
-}
-
-#fineart-portfolio img {
-  box-shadow: 0 0 75px var(--secondary);
-}
-
-#fineart-portfolio .artwork-card {
-  padding: 1%;
-}
-
-.artwork-details {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.dimensions, .medium {
-  font-size: smaller;
-}
-
-.dimensions {
-  padding-right: 1vw;
-}
-.artwork-title {
-  font-weight: bold;
-  text-align: start;
-}
-
-/* #graphic-design-portfolio *, #illustration-portfolio * {
-  border: 1px solid red;
-} */
-
-.set {
-  padding-bottom: 2.75vh;
-}
-
-/* portfolio | illustration */
-#illustration-portfolio .artwork {
-  border-bottom: none;
-}
-
-#illustration-portfolio .series-title, #graphic-design-portfolio .series-title {
-  padding: 3vh 1.5vw;
-  justify-content: space-between;
-  display: flex;
-}
-
-
-/* MEDIA SCREEN | TABLET */
-@media screen and (min-width: 768px) {
-  #logo {
-    width: 30vw;
-  }
-
-  #navigation {
-    justify-content: space-around;
-  }
-
-  #about .container {
-    padding-bottom: 5%;
   }
 
   #me {
-    border-radius: 100px;
-    width: 100%;
+    border-radius: 10px 5px 50px 50px;
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    opacity: 99%;
+  }
+
+  #profile-text {
+    padding-left: 4vw;
+  }
+
+  #profile-text * {
+    padding: 1vh;
+  }
+
+  #name {
+    border-bottom: 1px solid var(--secondary);
+  }
+
+  #blip {
+    padding-top: 1vw;
   }
 
   #profile-pic {
     width: 20vw;
-    border-radius: 50%;
+    border-radius: 10% 10% 50% 50%;
+    transition-duration: 2s;
   }
-  
+
+  #profile-pic:hover {
+    box-shadow: 5px 5px 10px var(--quaternary);
+    border: none;
+  }
+
+/* main | portfolios */
+  #portfolios a {
+    position: relative;
+    height: 200px;
+    display: block;
+    background-size: cover;
+    box-shadow: inset 0px 10px 50px 0 var(--tertiary),
+    inset 0px -10px 50px 0 var(--secondary);
+    mix-blend-mode: difference; 
+  }
+
   #portfolios h3 {
-    padding-top: 50%;
-    font-size: 1.5em;
+    height: 100%;
+    padding-top: 45.5%;
+    text-shadow: 5px 5px 5px var(--tertiary);
+    font-size: 1.25em;
   }
 
-  #portfolios .container {
-    width: 50%;
+  #fine-art a {
+    background-image: url(../images/portfolio-fineart.jpg);
   }
 
-  .tablet {
-    display: flex;
-    flex-wrap: wrap;
+  #illustration a {
+    background-image: url(../images/portfolio-illustration.jpg);
   }
 
-  .tablet-hide {
-    display: none;
+  #graphic-design a {
+    background-image: url(../images/artwork/graphicdesign/edwin-escobar-20220515-cool-with-coolidge.jpg);
   }
 
-  #contact-links a {
-    width: 20%;
+  #code a {
+    background-image: url(../images/portfolio-code.jpg);
   }
 
+  .card {
+    padding: 10px 15px;
+  }
+
+  .card, .card * {
+    border-radius: 5% 5% 25% 25%;
+  }
+
+  .card,
+  .artwork-card {
+    justify-content: center;
+    transition-duration: 2s;
+  }
+
+  .card:hover {
+    background-color: var(--secondary);
+    color: var(--quaternary);
+  }
+
+  .artwork-card,
+  .artwork-card *,
+  .portfolio {
+    border-radius: 20px;
+  }
+
+  .card img,
+  .artwork img {
+    width: 100%;
+  }
+
+/* main | contact */
   #contact-links li {
-    font-size: 100%;
+    font-size: 80%;
   }
 
-  #footer {
-    padding: 1vh;
+/* portfolio - all */
+  .portfolio-container {
+    line-height: 1.75;
   }
 
-  /* fine art portfolio */
-  .artwork {
+  .portfolio {
+    padding: 0;
+  }
+
+  .series-header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    text-shadow: 0 5px 20px var(--tertiary);
   }
 
-  .artwork img {
-    width: 55vw;
+  .series-title {
+    text-shadow: 0 5px 20px var(--tertiary);
   }
 
-  .details-container {
-    width: 45vw;
+  .portfolio-container .subhead {
+    border-radius: 20px 20px 25% 25%;
+    margin-bottom: 1vh;
   }
+
+/* portfolio | fineart */
+  #fineart-portfolio img {
+    box-shadow: 0 0 75px var(--secondary);
+  }
+
+  #fineart-portfolio .artwork-card {
+    padding: 1%;
+  }
+
   .artwork-details {
-    display: block;
-    /* text-align: end; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  #fineart-portfolio .tab {
-    display: contents;
+  .dimensions, .medium {
+    font-size: smaller;
   }
 
   .dimensions {
-    text-indent: 2vw;
+    padding-right: 1vw;
+  }
+  .artwork-title {
+    font-weight: bold;
+    text-align: start;
+  }
+
+  .set {
+    padding-bottom: 2.75vh;
+  }
+
+/* portfolio | illustration */
+  #illustration-portfolio .artwork {
+    border-bottom: none;
+  }
+
+  #illustration-portfolio .series-title, #graphic-design-portfolio .series-title {
+    padding: 3vh 1.5vw;
+    justify-content: space-between;
+    display: flex;
+  }
+
+
+/* MEDIA SCREEN | TABLET */
+@media screen and (min-width: 768px) {
+  /* index */
+    #logo {
+      width: 30vw;
+    }
+
+    #navigation {
+      justify-content: space-around;
+    }
+
+    #about .container {
+      padding-bottom: 5%;
+    }
+
+    #me {
+      border-radius: 100px;
+      width: 100%;
+    }
+
+    #profile-pic {
+      width: 20vw;
+      border-radius: 50%;
+    }
+    
+    #portfolios h3 {
+      padding-top: 50%;
+      font-size: 1.5em;
+    }
+
+    #portfolios .container {
+      width: 50%;
+    }
+
+    .tablet {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .tablet-hide {
+      display: none;
+    }
+
+    #contact-links a {
+      width: 20%;
+    }
+
+    #contact-links li {
+      font-size: 100%;
+    }
+
+    #footer {
+      padding: 1vh;
+    }
+
+  /* fine art portfolio */
+    .artwork {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .artwork img {
+      width: 55vw;
+    }
+
+    .details-container {
+      width: 45vw;
+    }
+
+    .artwork-details {
+      display: block;
+      /* text-align: end; */
+    }
+
+    #fineart-portfolio .tab {
+      display: contents;
+    }
+
+    .dimensions {
+      text-indent: 2vw;
+    }
+  
+  /* illustration portfolio */
+  #illustration-portfolio * {
+    /* border: 1px solid red; */
+  }
+
+  #illustration-portfolio .artwork {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 1% 1% 1%;
+  }
+
+  #illustration-portfolio img {
+    max-width: 33%;
+  }
+
+  #illustration-portfolio .focus {
+    transition-duration: 2s;
+  }
+
+  #illustration-portfolio h3 {
+    font-size: 1.5em;
   }
 }
 
@@ -461,7 +480,12 @@ h2,
     text-shadow: none;
   }
 
-  .artwork-details {
+  .artwork-details,
+  .series-title {
     font-size: 125%;
   }
-}
+
+  .series-title h3 {
+    text-shadow: none;
+  }
+  /* illustration portfolio */
