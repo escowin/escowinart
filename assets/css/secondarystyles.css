@@ -11,15 +11,9 @@ body {
 }
 
 /* RESUME */
-
-
-main * {
-  /* border: 1px solid red; */
-}
 #resume {
   color: var(--tertiary);
   padding: 20px 60px;
-  border-bottom: 1px solid var(--tertiary);
   align-items: center;
 }
 
