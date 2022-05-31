@@ -11,10 +11,16 @@ body {
 }
 
 /* RESUME */
+
+
+main * {
+  /* border: 1px solid red; */
+}
 #resume {
   color: var(--tertiary);
   padding: 20px 60px;
   border-bottom: 1px solid var(--tertiary);
+  align-items: center;
 }
 
 #resume a {
@@ -24,10 +30,6 @@ body {
 
 #resume a:hover {
   color: var(--quaternary);
-}
-
-#resume section {
-  width: 90vw;
 }
 
 #resume-header {
