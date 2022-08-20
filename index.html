@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="icon" href="./assets/images/icons/logo-browser.png">
     <title>Escowin Art</title>
@@ -11,92 +12,74 @@
 
 <body>
     <header id="header" class="dark shadow">
-        <h1 class="flex"><a href="#"><img src="./assets/images/icons/logo-header.png" id="logo" alt="Escowin Art"></a></h1>
+        <div class="flex">
+            <a href="#"><img src="./assets/images/icons/logo-header.png" id="logo" alt="Escowin Art"></a>
+        </div>
         <nav>
             <ul id="navigation">
+                <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#portfolios">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="./resume.html">Resumė</a></li>
-                <li><a href="https://github.com/escowin" target="_blank">Github</a></li>
             </ul>
         </nav>
     </header>
 
     <main id="main">
+        <!-- portfolios -->
+        <section id="portfolio">
+            <h2 class="subhead dark shadow">Portfolio</h2>
+            <div class="container" id="portfolios">
+                <article class="portfolio" id="fine-art">
+                    <a href="./fineart.html"><h3>Fine art</h3></a>
+                </article>
+                <article class="portfolio" id="illustration">
+                    <a href="./fineart.html"><h3>Illustration</h3></a>
+                </article>
+                <article class="portfolio" id="graphic-design">
+                    <a href="./fineart.html"><h3>Graphic design</h3></a>
+                </article>
+                <article class="portfolio" id="coding">
+                    <a href="./fineart.html"><h3>Coding</h3></a>
+                </article>
+            </div>
+        </section>
+
         <!-- about -->
-        <article id="about">
+        <section id="about">
             <h2 class="subhead dark shadow">About</h2>
             <div class="container">
-                <section id="me" class="dark shadow">
-                    <img id="profile-pic" src="./assets/images/profile.jpg" alt="pic of me looking deep into the camera">
-                    <div id="profile-text">
-                        <h3 id="name">Edwin m. escobar &#8739; atx</h3>
-                        <p id="blip">&#11025;name&mdash;work&#11022;</p>
+                <article class="dark shadow" id="about-contents">
+                    <div id="about-pic"></div>
+                    <div id="about-text">
+                        <h3 id="name">Edwin m. escobar</h3>
+                        <p id="blip">artist and web developer based out of austin, tx.</p>
                     </div>
-                </section>
+                </article>
             </div>
-        </article>
-
-        <!-- portfolios -->
-        <article id="portfolios">
-            <h2 class="subhead dark shadow">Portfolio</h2>
-            <div class="tablet"> 
-                <section class="container">
-                    <div id="fine-art" class="dark card shadow">
-                        <a href="./fineart.html">
-                            <h3>Fine art<span class=" desktop"> &#8739; oils</span></h3>
-                        </a>
-                    </div>
-                </section>
-
-                <section class="container">
-                    <div id="illustration" class="dark card shadow">
-                        <a href="./illustration.html">
-                            <h3>Illustration<span class="desktop"> &#8739; pixels</span></h3>
-                        </a>
-                    </div>
-                </section>
-
-                <section class="container">
-                    <div id="graphic-design" class="dark card shadow">
-                        <a href="./graphicdesign.html">
-                            <h3>Graphic design<span class="desktop"> &#8739; vectors</span></h3>
-                        </a>
-                    </div>
-                </section>
-    
-                <section class="container">
-                    <div id="code" class="dark card shadow">
-                        <a href="https://escowin.github.io/professional-portfolio/" target="_blank">
-                            <h3>Code<span class="desktop"> &#8739; web development</span></h3>
-                        </a>
-                    </div>
-                </section>
-            </div>
-        </article>
+        </section>
 
         <!-- contact -->
-        <article id="contact">
+        <section id="contact">
             <h2 class="subhead dark shadow">Contact</h2>
             <ul id="contact-links" class="container">
-                <a class="card dark shadow" href="mailto: edwin@escowinart.com" target="_blank">
+                <a class="btn shadow dark" href="mailto: edwin@escowinart.com" target="_blank">
                     <li>Email</li>
                 </a>
 
-                <a class="card shadow dark" href="https://github.com/escowin/" target="_blank">
+                <a class="btn shadow dark" href="https://github.com/escowin/" target="_blank">
                     <li>Github</li>
                 </a>
 
-                <a class="card shadow dark" href="https://instagram.com/escowinart/" target="_blank">
+                <a class="btn shadow dark" href="https://instagram.com/escowinart/" target="_blank">
                     <li>Instagram</li>
                 </a>
 
-                <a class="card shadow dark" href="https://linkedin.com/in/escowin/" target="_blank">
+                <a class="btn shadow dark" href="https://linkedin.com/in/escowin/" target="_blank">
                     <li>Linkedin</li>
                 </a>
             </ul>
-        </article>
+        </section>
     </main>
 
     <!-- footer -->

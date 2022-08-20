@@ -1,394 +1,431 @@
 :root {
-  --primary: #e6e6e6;
-  --secondary: #9b97979c;
-  --tertiary: #28282c;
-  --quaternary: #cf0b0b;
+  --primary: rgb(230, 230, 230);
+  --secondary: rgba(155, 151, 151, 0.612);
+  --tertiary: rgba(40, 40, 44, .98);
+  --quaternary: rgb(207, 11, 11);
+  --box-shadow: 0 1vw 2vw;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
 }
 
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-variant: small-caps;
   font-weight: lighter;
   text-decoration: none;
+  /* font-kerning: none; */
 }
 
-/* mobile first */
-  .flex {
-    display: flex;
-    justify-content: center;
-  }
+/* typography */
 
-  .desktop {
-    display: none;
-  }
 
-/* dark on light */
-  .dark {
-    background-color: var(--tertiary);
-    color: var(--primary);
-    text-decoration: none;
-  }
+a {
+  color: inherit;
+  height: 100%;
+  border-radius: inherit;
+  transition: 2s;
+  text-decoration: none;
+}
 
-  .dark a {
-    color: var(--primary);
-    transition-duration: 2s;
-  }
+a:active,
+a:hover {
+  color: var(--quaternary);
+}
 
-  .dark a:hover {
-    color: var(--quaternary);
-  }
+.flex {
+  display: flex;
+  justify-content: center;
+}
 
-  .shadow {
-    box-shadow: 0 5px 15px var(--tertiary);
-  }
+.desktop {
+  display: none;
+}
 
-  .focus:hover {
-    background-color: var(--primary);
-    opacity: 100%;
-    box-shadow: 0px 50px 50px var(--tertiary);
-    transition-duration: 2s;
-  }
+/* dark-bg, light-txt */
+.dark {
+  background-color: var(--tertiary);
+  color: var(--primary);
+}
 
-  .sub {
-    color: var(--secondary);
-  }
+.shadow {
+  box-shadow: 0 5px 15px var(--tertiary);
+}
 
-  .tab {
-    display: none;
-  }
+.focus:hover {
+  background-color: var(--primary);
+  opacity: 100%;
+  box-shadow: 0px 50px 50px var(--tertiary);
+  transition-duration: 1s;
+}
+
+.sub {
+  color: var(--secondary);
+}
+
+.tab {
+  display: none;
+}
 
 /* header */
-  #header {
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    z-index: 9999;
-    width: 100vw;
-  }
+header {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 9999;
+  width: 100vw;
+}
 
-  #logo {
-    width: 50vw;
-  }
+#header {
+  padding: .125rem 1rem;
+}
 
-  ul {
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-  }
+#logo {
+  width: 50vw;
+  margin-top: .25rem;
+}
 
-  #header li {
-    padding: 1vw;
-  }
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
 
 /* footer */
-  #footer {
-    font-size: 65%;
-    margin-top: 1vh;
-    box-shadow: 0 -5px 10px var(--tertiary);
-  }
+#footer {
+  font-size: 65%;
+  margin-top: 1vh;
+  box-shadow: 0 -5px 10px var(--tertiary);
+}
 
-  #footer h2 {
-    padding-top: 1vh;
-  }
-  
-  #footer a {
-    color: var(--secondary);
-  }
+#footer h2 {
+  padding-top: 1vh;
+}
 
-  #footer,
-  h2,
-  .card,
-  #finearts-portfolio .artwork-card {
-    text-align: center;
-  }
+#footer a {
+  color: var(--secondary);
+}
+
+#footer,
+h2,
+.card,
+#finearts-portfolio .artwork-card {
+  text-align: center;
+}
 
 /* main */
-  #main .container {
-    padding: 2.5%;
-  }
+#main .container {
+  padding: 1rem .5rem 1.25rem .5rem;
+}
 
-  .subhead {
-    padding: .5vh 0 1vh 0;
-    margin-top: 0;
-    border-radius: 0 0 50% 50%;
-    font-size: 1.25em;
-  }
+.subhead {
+  padding: .5vh 0 1vh 0;
+  margin-top: 0;
+  border-radius: 0 0 50rem 50rem;
+  font-size: 1.25em;
+}
+
+
+/* main | portfolios */
+#portfolios {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5vw;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  color: var(--primary);
+  background-color: var(--tertiary);
+  min-height: 8rem;
+  background-position: center;
+  background-size: cover;
+  box-shadow: var(--box-shadow) var(--tertiary), inset var(--box-shadow) var(--secondary);
+}
+
+.portfolio a {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.portfolio h3 {
+  background-color: var(--tertiary);
+  padding: .5vw 2vw;
+  width: max-content;
+  box-shadow: var(--box-shadow) var(--tertiary);
+  opacity: 90%;
+  border-radius: 0 .75rem;
+  transition-duration: 2s;
+
+}
+
+.portfolio:active h3,
+.portfolio:hover h3 {
+  width: 100%;
+}
+
+#fine-art {
+  background-image: url('../images/portfolio-fineart.jpg');
+}
+
+#illustration {
+  background-image: url('../images/portfolio-illustration.jpg');
+}
+
+#graphic-design {
+  background-image: url('../images/artwork/graphicdesign/edwin-escobar-20220515-cool-with-coolidge.jpg');
+}
+
+#coding {
+  background-image: url('../images/portfolio-code.jpg');
+}
+
 
 /* main | about */
-  #about {
-    background: url("../images/artwork/edwin-escobar-set-005.jpg");
-    background-size: contain;
-    background-attachment: fixed;
-    background-position: center;
+#about-contents {
+  display: flex;
+  border-radius: 50rem;
+  opacity: 98%;
+  padding: .5rem;
+}
 
+#about-pic {
+  background-image: url('../images/profile.jpg');
+  background-color: transparent;
+  background-size: cover;
+  width: 25vw;
+  height: 25vw;
+  border-radius: 50%;
+  box-shadow: inset var(--box-shadow) var(--tertiary);
+}
+
+#about-text {
+  padding-left: 2.5vw;
+  flex-grow: 1;
+}
+
+#name {
+  border-bottom: 1px solid var(--secondary);
+  width: 70%;
+}
+
+#about-text p {
+  padding-left: .25vw;
+  width: 70%;
+}
+
+/* main.contact */
+.btn {
+  padding: .5rem 1.25rem;
+  border-radius: 50rem;
+}
+
+
+/* to-do: move gallery styles below into portfolio-styles.css; fix .portfolio a h3 transition */
+.card {
+  padding: 10px 15px;
+}
+
+.card,
+.card * {
+  border-radius: 5% 5% 25% 25%;
+}
+
+.card,
+.artwork-card {
+  justify-content: center;
+  transition-duration: 2s;
+}
+
+.card:hover {
+  background-color: var(--secondary);
+  color: var(--quaternary);
+}
+
+.artwork-card,
+.artwork-card *,
+.portfolio {
+  border-radius: .75rem;
+}
+
+.card img,
+.artwork img {
+  width: 100%;
+}
+
+/* main | contact */
+#contact-links li {
+  font-size: 80%;
+}
+
+/* portfolio - all */
+.portfolio-container {
+  line-height: 1.75;
+}
+
+.portfolio {
+  padding: 0;
+}
+
+.series-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-shadow: 0 5px 20px var(--tertiary);
+}
+
+.series-title {
+  text-shadow: 0 5px 20px var(--tertiary);
+}
+
+.portfolio-container .subhead {
+  border-radius: 0 0 50% 50%;
+  margin-bottom: 1vh;
+}
+
+/* portfolio | fineart */
+#fineart-portfolio img {
+  box-shadow: 0 0 75px var(--secondary);
+}
+
+#fineart-portfolio .artwork-card {
+  padding: 1%;
+}
+
+.artwork-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dimensions,
+.medium {
+  font-size: smaller;
+}
+
+.dimensions {
+  padding-right: 1vw;
+}
+
+.artwork-title {
+  font-weight: bold;
+  text-align: start;
+}
+
+.set {
+  padding-bottom: 2.75vh;
+}
+
+/* portfolio | illustration */
+#illustration-portfolio .artwork {
+  border-bottom: none;
+}
+
+#illustration-portfolio .series-title,
+#graphic-design-portfolio .series-title {
+  padding: 3vh 1.5vw;
+  justify-content: space-between;
+  display: flex;
+}
+
+/* portfolio | graphic design */
+#graphic-design-portfolio .artwork {
+  width: 100%;
+  padding: 1.5%;
+}
+
+#graphic-design-portfolio .set {
+  transition-duration: 2s;
+}
+
+/* MEDIA SCREEN | TABLET */
+@media screen and (min-width: 768px) {
+
+  /* index */
+  #logo {
+    width: 30vw;
   }
 
-  #me {
-    border-radius: 10px 5px 50px 50px;
-    padding: 10px;
-    align-items: center;
-    display: flex;
-    opacity: 99%;
+  #navigation {
+    justify-content: space-around;
   }
 
-  #profile-text {
-    padding-left: 4vw;
+  #about .container {
+    padding-bottom: 5%;
   }
 
-  #profile-text * {
-    padding: 1vh;
-  }
-
-  #name {
-    border-bottom: 1px solid var(--secondary);
-  }
-
-  #blip {
-    padding-top: 1vw;
+  #profile {
+    border-radius: 100px;
+    width: 100%;
   }
 
   #profile-pic {
     width: 20vw;
-    border-radius: 10% 10% 50% 50%;
-    transition-duration: 2s;
-  }
-
-  #profile-pic:hover {
-    box-shadow: 5px 5px 10px var(--quaternary);
-    border: none;
-  }
-
-/* main | portfolios */
-  #portfolios a {
-    position: relative;
-    height: 200px;
-    display: block;
-    background-size: cover;
-    box-shadow: inset 0px 10px 50px 0 var(--tertiary),
-    inset 0px -10px 50px 0 var(--secondary);
-    mix-blend-mode: difference; 
+    border-radius: 50%;
   }
 
   #portfolios h3 {
-    height: 100%;
-    padding-top: 45.5%;
-    text-shadow: 5px 5px 5px var(--tertiary);
-    font-size: 1.25em;
+    padding-top: 50%;
+    font-size: 1.5em;
   }
 
-  #fine-art a {
-    background-image: url(../images/portfolio-fineart.jpg);
+  #portfolios .container {
+    width: 50%;
   }
 
-  #illustration a {
-    background-image: url(../images/portfolio-illustration.jpg);
+  .tablet {
+    display: flex;
+    flex-wrap: wrap;
   }
 
-  #graphic-design a {
-    background-image: url(../images/artwork/graphicdesign/edwin-escobar-20220515-cool-with-coolidge.jpg);
+  .tablet-hide {
+    display: none;
   }
 
-  #code a {
-    background-image: url(../images/portfolio-code.jpg);
+  #contact-links a {
+    width: 20%;
   }
 
-  .card {
-    padding: 10px 15px;
-  }
-
-  .card, .card * {
-    border-radius: 5% 5% 25% 25%;
-  }
-
-  .card,
-  .artwork-card {
-    justify-content: center;
-    transition-duration: 2s;
-  }
-
-  .card:hover {
-    background-color: var(--secondary);
-    color: var(--quaternary);
-  }
-
-  .artwork-card,
-  .artwork-card *,
-  .portfolio {
-    border-radius: 20px;
-  }
-
-  .card img,
-  .artwork img {
-    width: 100%;
-  }
-
-/* main | contact */
   #contact-links li {
-    font-size: 80%;
+    font-size: 100%;
   }
 
-/* portfolio - all */
-  .portfolio-container {
-    line-height: 1.75;
+  #footer {
+    padding: 1vh;
   }
 
-  .portfolio {
-    padding: 0;
-  }
-
-  .series-header {
+  /* portfolio - all */
+  .artwork {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    text-shadow: 0 5px 20px var(--tertiary);
   }
 
-  .series-title {
-    text-shadow: 0 5px 20px var(--tertiary);
+  /* fine art portfolio */
+  #fineart-portfolio .artwork img {
+    width: 55vw;
   }
 
-  .portfolio-container .subhead {
-    border-radius: 0 0 50% 50%;
-    margin-bottom: 1vh;
-  }
-
-/* portfolio | fineart */
-  #fineart-portfolio img {
-    box-shadow: 0 0 75px var(--secondary);
-  }
-
-  #fineart-portfolio .artwork-card {
-    padding: 1%;
+  .details-container {
+    width: 45vw;
   }
 
   .artwork-details {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: block;
   }
 
-  .dimensions, .medium {
-    font-size: smaller;
+  #fineart-portfolio .tab {
+    display: contents;
   }
 
   .dimensions {
-    padding-right: 1vw;
-  }
-  .artwork-title {
-    font-weight: bold;
-    text-align: start;
+    text-indent: 2vw;
   }
 
-  .set {
-    padding-bottom: 2.75vh;
-  }
-
-/* portfolio | illustration */
-  #illustration-portfolio .artwork {
-    border-bottom: none;
-  }
-
-  #illustration-portfolio .series-title, #graphic-design-portfolio .series-title {
-    padding: 3vh 1.5vw;
-    justify-content: space-between;
-    display: flex;
-  }
-
-/* portfolio | graphic design */
-  #graphic-design-portfolio .artwork {
-    width: 100%;
-    padding: 1.5%;
-  }
-
-  #graphic-design-portfolio .set {
-    transition-duration: 2s;
-  }
-
-/* MEDIA SCREEN | TABLET */
-@media screen and (min-width: 768px) {
-  /* index */
-    #logo {
-      width: 30vw;
-    }
-
-    #navigation {
-      justify-content: space-around;
-    }
-
-    #about .container {
-      padding-bottom: 5%;
-    }
-
-    #me {
-      border-radius: 100px;
-      width: 100%;
-    }
-
-    #profile-pic {
-      width: 20vw;
-      border-radius: 50%;
-    }
-    
-    #portfolios h3 {
-      padding-top: 50%;
-      font-size: 1.5em;
-    }
-
-    #portfolios .container {
-      width: 50%;
-    }
-
-    .tablet {
-      display: flex;
-      flex-wrap: wrap;
-    }
-
-    .tablet-hide {
-      display: none;
-    }
-
-    #contact-links a {
-      width: 20%;
-    }
-
-    #contact-links li {
-      font-size: 100%;
-    }
-
-    #footer {
-      padding: 1vh;
-    }
-
-  /* portfolio - all */
-    .artwork {
-      display: flex;
-      justify-content: space-between;
-    }
-
-  /* fine art portfolio */
-    #fineart-portfolio .artwork img {
-      width: 55vw;
-    }
-
-    .details-container {
-      width: 45vw;
-    }
-
-    .artwork-details {
-      display: block;
-    }
-
-    #fineart-portfolio .tab {
-      display: contents;
-    }
-
-    .dimensions {
-      text-indent: 2vw;
-    }
-  
   /* illustration portfolio */
   #illustration-portfolio .artwork {
     display: flex;
@@ -408,7 +445,7 @@
     font-size: 1.5em;
   }
 
-  #graphic-design-portfolio .artwork-card{
+  #graphic-design-portfolio .artwork-card {
     display: flex;
     justify-content: space-between;
   }
