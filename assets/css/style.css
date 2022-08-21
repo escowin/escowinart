@@ -112,18 +112,18 @@ h2,
   padding: 1rem .5rem 1.25rem .5rem;
 }
 
-.subhead-wrapper {
+.subhead-wrapper,
+.subhead {
   border-radius: 0 0 50rem 50rem;
 }
 
 .subhead {
   padding: .5vh 0 1vh 0;
   margin-top: 0;
-  border-radius: 0 0 50rem 50rem;
   font-size: 1.25em;
 }
 
-/* main | portfolios */
+/* main.portfolio */
 #portfolios {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -162,6 +162,7 @@ h2,
 
 #fine-art {
   background-image: url('../images/portfolio-fineart.jpg');
+  background-position: center 45%;
 }
 
 #illustration {
@@ -173,7 +174,7 @@ h2,
 }
 
 #coding {
-  background-image: url('../images/portfolio-code.jpg');
+  background-image: url('../images/portfolio-coding.jpg');
 }
 
 /* main | about */
@@ -348,5 +349,4 @@ a:hover {
   .btn {
     padding: .25rem 2.5rem;
   }
-
 }
