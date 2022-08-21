@@ -1,0 +1,263 @@
+/* import relevant styles from style.css */
+
+.card {
+    padding: 10px 15px;
+}
+
+.card,
+.card * {
+    border-radius: 5% 5% 25% 25%;
+}
+
+.card,
+.artwork-card {
+    justify-content: center;
+    transition-duration: 2s;
+}
+
+.card:hover {
+    background-color: var(--secondary);
+    color: var(--quaternary);
+}
+
+.artwork-card,
+.artwork-card *,
+.portfolio {
+    border-radius: .75rem;
+}
+
+.card img,
+.artwork img {
+    width: 100%;
+}
+
+/* main | contact */
+#contact-links li {
+    font-size: 80%;
+}
+
+/* portfolio - all */
+.portfolio-container {
+    line-height: 1.75;
+}
+
+.portfolio {
+    padding: 0;
+}
+
+.series-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-shadow: 0 5px 20px var(--tertiary);
+}
+
+.series-title {
+    text-shadow: 0 5px 20px var(--tertiary);
+}
+
+.portfolio-container .subhead {
+    border-radius: 0 0 50% 50%;
+    margin-bottom: 1vh;
+}
+
+/* portfolio | fineart */
+#fineart-portfolio img {
+    box-shadow: 0 0 75px var(--secondary);
+}
+
+#fineart-portfolio .artwork-card {
+    padding: 1%;
+}
+
+.artwork-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dimensions,
+.medium {
+    font-size: smaller;
+}
+
+.dimensions {
+    padding-right: 1vw;
+}
+
+.artwork-title {
+    font-weight: bold;
+    text-align: start;
+}
+
+.set {
+    padding-bottom: 2.75vh;
+}
+
+/* portfolio | illustration */
+#illustration-portfolio .artwork {
+    border-bottom: none;
+}
+
+#illustration-portfolio .series-title,
+#graphic-design-portfolio .series-title {
+    padding: 3vh 1.5vw;
+    justify-content: space-between;
+    display: flex;
+}
+
+/* portfolio | graphic design */
+#graphic-design-portfolio .artwork {
+    width: 100%;
+    padding: 1.5%;
+}
+
+#graphic-design-portfolio .set {
+    transition-duration: 2s;
+}
+
+
+  /* portfolio - all */
+  .artwork {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* fine art portfolio */
+  #fineart-portfolio .artwork img {
+    width: 55vw;
+  }
+
+  .details-container {
+    width: 45vw;
+  }
+
+  .artwork-details {
+    display: block;
+  }
+
+  #fineart-portfolio .tab {
+    display: contents;
+  }
+
+  .dimensions {
+    text-indent: 2vw;
+  }
+
+  /* illustration portfolio */
+  #illustration-portfolio .artwork {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 1% 1% 1%;
+  }
+
+  #illustration-portfolio img {
+    max-width: 33%;
+  }
+
+  #illustration-portfolio .focus {
+    transition-duration: 2s;
+  }
+
+  #illustration-portfolio h3 {
+    font-size: 1.5em;
+  }
+
+  #graphic-design-portfolio .artwork-card {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #graphic-design-portfolio .set {
+    max-width: 55%;
+    padding: 1.5%;
+  }
+
+/* MEDIA SCREEN | LAPTOP-S */
+@media screen and (min-width: 1024px) {
+  .desktop {
+    display: contents;
+  }
+
+  #portfolios h3 {
+    padding-top: 35%;
+  }
+
+  #profile-pic {
+    width: 15vw;
+  }
+
+  #profile-text {
+    line-height: 1.75;
+  }
+
+  /* fine art portfolio */
+  .artwork-details {
+    display: flex;
+  }
+
+  #fineart-portfolio .tab {
+    display: none;
+  }
+
+  .dimensions {
+    font-size: .75em;
+    text-indent: 0;
+  }
+}
+
+/* MEDIA SCREEN | LAPTOP-L */
+@media screen and (min-width: 1440px) {
+  #logo {
+    width: 20vw;
+  }
+
+  #navigation li {
+    padding: .25vw;
+  }
+
+  #profile-pic {
+    width: 10vw;
+  }
+
+  #portfolios .container {
+    width: 25%;
+    padding: 1%;
+  }
+
+  #portfolios h3 {
+    padding-top: 55%;
+    font-size: 1.15em;
+  }
+
+  #contact-links {
+    text-align: center;
+    padding: 1%;
+  }
+
+  #contact .container a {
+    width: 23.5%;
+  }
+
+  /* fine art portfolio */
+  .subhead {
+    text-indent: 1vw;
+  }
+
+  .medium {
+    text-shadow: none;
+  }
+
+  .artwork-details,
+  .series-title {
+    font-size: 125%;
+  }
+
+  .series-title h3 {
+    text-shadow: none;
+  }
+
+  #illustration-portfolio img {
+    width: 20%;
+  }
+}
