@@ -1,5 +1,9 @@
-* {
-  /* border: 1px dotted blue; */
+/* * {
+  border: 1px dotted blue;
+} */
+
+:root {
+  --dark-opaque: rgb(19, 19, 21);
 }
 /* scrollbar */
 body::-webkit-scrollbar {
@@ -30,6 +34,7 @@ body {
   justify-content: space-between;
   height: 100vh;
   overflow-x: hidden;
+  background-color: var(--dark-opaque);
 }
 
 .horizontal-wrapper {
@@ -140,8 +145,6 @@ body {
   padding: 0 .75rem .75rem .75rem;
 }
 
-
-
 #illustration-portfolio .horizontal-wrapper::-webkit-scrollbar {
   display: none;
 }
@@ -181,6 +184,26 @@ body {
   }
 }
 
+/* display.tablet */
+@media screen and (min-width: 768px) {
+  .series {
+    padding-top: 1vh;
+  }
+
+  .subhead {
+    text-align: left;
+  }
+
+  .subhead, .series {
+    padding-left: 1.75rem;
+  }
+
+  .artwork-header, .series {
+    word-spacing: .25rem;
+  }
+}
+
+/* display.desktop */
 @media screen and (min-width: 1024px) {
   #fineart-portfolio .container {
     margin: 1rem;
@@ -190,23 +213,22 @@ body {
     grid-template-columns: 35vw 1fr;
   }
 
-  /* width */
-  .horizontal-wrapper::-webkit-scrollbar {
+  /* horizontal scrollbar */
+  ::-webkit-scrollbar-thumb {
+    background: var(--tertiary);
+    transition: 1s;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary);
+  }
+
+  #fineart-portfolio .horizontal-wrapper::-webkit-scrollbar {
     height: .35rem;
   }
 
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-  }
-
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #888;
-  }
-
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+  #illustration-portfolio .horizontal-wrapper::-webkit-scrollbar {
+    display: block;
+    height: .45rem;
   }
 }
