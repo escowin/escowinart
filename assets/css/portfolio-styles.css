@@ -1,9 +1,7 @@
-/* note: refactor code below, apply stylesheet to portfolio pages */
-* {
-  --top-left: 1.75rem 0 0 0;
-  --bottom-right: 0 0 1.75rem 0;
+/* scrollbar */
+body::-webkit-scrollbar {
+  display: none;
 }
-
 
 /* typography */
 .medium {
@@ -28,6 +26,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
+  overflow-x: hidden;
 }
 
 .horizontal-wrapper {
@@ -38,7 +37,8 @@ body {
   height: 100%;
 }
 
-.portfolio-container, #fineart-portfolio .container {
+.portfolio-container,
+#fineart-portfolio .container {
   display: flex;
   flex-direction: column;
 }
@@ -46,7 +46,6 @@ body {
 #fineart-portfolio .container {
   justify-content: center;
 }
-
 
 .artwork-header {
   display: inline-flex;
@@ -142,14 +141,32 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
-  /* #fineart-portfolio {
-    display: grid;
-    grid-template-columns: repeat(2, 40%);
-    align-items: flex-start;
-    gap: 2vw;
+@media screen and (min-width: 1024px) {
+  #fineart-portfolio .container {
+    margin: 1rem;
   }
-  #fineart-portfolio h2 {
-    grid-column: span 2;
-  } */
+
+  .artwork-details {
+    grid-template-columns: 35vw 1fr;
+  }
+
+  /* width */
+  .horizontal-wrapper::-webkit-scrollbar {
+    height: .35rem;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
 }
