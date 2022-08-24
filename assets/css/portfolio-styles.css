@@ -88,8 +88,21 @@ body {
   padding: .25rem 0 0 1.25rem;
   border-top-left-radius: 50rem;
 }
-#fineart-portfolio .horizontal-wrapper {
+
+.graphic-header {
+  border-top-left-radius: 50rem;
+  padding-left: 2rem;
+}
+
+#fineart-portfolio .horizontal-wrapper,
+#graphic-design-portfolio .horizontal-wrapper {
   height: 100%;
+}
+
+#graphic-design-portfolio img {
+  max-width: 90vw;
+  max-height: 70vh;
+  box-shadow: var(--box-shadow) rgba(255, 255, 255, 0.75);
 }
 
 #fineart-portfolio .container {
@@ -98,6 +111,11 @@ body {
   margin: 1.25rem 1rem 0 .5rem;
   box-shadow: 0 0 1rem var(--tertiary);
   background-color: var(--tertiary);
+}
+
+#graphic-design-portfolio .container {
+  padding: 0;
+  margin: 1rem;
 }
 
 #set-005 .artwork-container {
@@ -137,9 +155,11 @@ body {
   background-size: cover;
   height: 45vh;
 }
+
 #illustration-portfolio .artwork-container {
   border-radius: 2rem;
 }
+
 
 #illustration-portfolio .container {
   padding: 0 .75rem .75rem .75rem;
