@@ -6,6 +6,11 @@
   --box-shadow: 0 1vw 2vw;
 }
 
+/* scrollbar */
+body::-webkit-scrollbar {
+  display: none;
+}
+
 *, *::after, *::before {
   box-sizing: border-box;
 }
