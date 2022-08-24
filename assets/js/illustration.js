@@ -1,2 +1,2 @@
 // user can rearrange artwork
-$(".artwork").sortable();
+$(".artwork-container").sortable();
