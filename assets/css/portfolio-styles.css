@@ -46,9 +46,10 @@ body {
   justify-content: center;
 }
 
-.artwork-header {
+#fineart-portfolio .artwork-header {
   display: inline-flex;
   align-items: center;
+
 }
 
 .artwork-details {
