@@ -175,6 +175,10 @@ body {
   .artwork-details {
     grid-template-columns: 65vw 1fr;
   }
+
+  #illustration-portfolio img {
+    height: 35vh;
+  }
 }
 
 @media screen and (min-width: 1024px) {
