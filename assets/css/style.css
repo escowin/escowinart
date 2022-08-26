@@ -330,6 +330,10 @@ a:hover {
     padding-left: 2.5rem;
   }
 
+  .space {
+    margin-left: .25rem;
+  }
+
   #about-contents {
     align-items: center;
   }
