@@ -302,6 +302,7 @@ a:hover {
 
   .portfolio {
     min-height: 40vh;
+    background-position: left;
   }
   
   .subhead {
