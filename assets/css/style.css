@@ -11,6 +11,10 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+body {
+  height: 100vh;
+}
+
 *, *::after, *::before {
   box-sizing: border-box;
 }
