@@ -299,6 +299,10 @@ a:hover {
     grid-template-columns: repeat(4, 1fr);
     gap: 1vw;
   }
+
+  .portfolio {
+    min-height: 40vh;
+  }
   
   .subhead {
     padding-top: .25rem;
@@ -332,6 +336,6 @@ a:hover {
   }
 
   .btn {
-    padding: .25rem 2.5rem;
+    padding: .5rem 3.75rem;
   }
 }
