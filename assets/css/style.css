@@ -93,10 +93,19 @@ ul {
 main {
   flex: 1 0 auto;
   background-color: var(--primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .container {
-  padding: 1rem .5rem 1.25rem .5rem;
+  padding: 1rem 0 1.25rem .5rem;
+}
+
+#portfolio {
+  flex-grow: 1;
+  display: grid;
+  grid-template-rows: auto 1fr;
 }
 
 .subhead-wrapper,
@@ -153,16 +162,18 @@ main {
   background-image: url('../images/portfolio-coding.jpg');
 }
 
+.wrapper {
+  border-radius: 50rem 0 0 50rem;
+}
+
 #about-contents {
   display: flex;
-  border-radius: 50rem;
+  border-radius: inherit;
   padding: .5rem;
   align-items: center;
 }
 
-.wrapper {
-  border-radius: 50rem;
-}
+
 
 .subhead-wrapper, .wrapper {
   background: fixed url('../images/artwork/edwin-escobar-set-005.jpg');
@@ -212,8 +223,10 @@ a {
   transition: 2s;
 }
 
-#footer,
-h2 {
+.subhead {
+  padding-left: 2rem;
+}
+#footer {
   text-align: center;
 }
 
