@@ -4,6 +4,7 @@
   --tertiary: rgba(19, 19, 21, 0.9);
   --quaternary: rgb(207, 11, 11);
   --box-shadow: 0 1vw 2vw;
+  --focus:  rgba(102, 29, 29, 0.75);
 }
 
 *, *::after, *::before {
@@ -255,6 +256,11 @@ a:hover {
 .btn:active,
 .btn:hover {
   box-shadow: 0 0 1vw var(--quaternary);
+}
+
+/* js styles */
+.focus {
+  background: linear-gradient(to left, var(--focus), transparent);
 }
 
 /* display.tablet */

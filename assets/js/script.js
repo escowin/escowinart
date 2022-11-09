@@ -4,15 +4,25 @@ const aboutLinkEl = document.getElementById('about-link');
 const contactLinkEl = document.getElementById('contact-link');
 
 // logic
+function resetStyles(resetValue) {
+    // note | need to work out the logic in resetting class values of the previously clicked element with each click
+    let resetEl = document.getElementById(`${resetValue}`);
+
+    console.log(resetEl);
+};
+
 function portfolioFocus(section) {
+    resetClassName(section);
     let focusEl = document.getElementById(`${section}`);
-    console.log(focusEl)
+
+    focusEl.className = 'focus';
+    console.log(focusEl);
 }
 
 function clickedLink(link) {
     // linking the menu link with its corresponding section
     portfolioFocus(link);
-    console.log(link)
+    // console.log(link)
 };
 
 function currentYear() {
