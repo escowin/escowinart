@@ -4,8 +4,15 @@ const aboutLinkEl = document.getElementById('about-link');
 const contactLinkEl = document.getElementById('contact-link');
 
 // logic
-function clickedLink() {
-    console.log('hey')
+function portfolioFocus(section) {
+    let focusEl = document.getElementById(`${section}`);
+    console.log(focusEl)
+}
+
+function clickedLink(link) {
+    // linking the menu link with its corresponding section
+    portfolioFocus(link);
+    console.log(link)
 };
 
 function currentYear() {
@@ -18,8 +25,17 @@ function currentYear() {
     dateEl.textContent = date; 
 };
 
-// calls
-portfolioLinkEl.addEventListener('click', () => clickedLink());
-aboutLinkEl.addEventListener("click", () => clickedLink());
-contactLinkEl.addEventListener("click", () => clickedLink());
+// calls | passing in the constant value to alter visuals
+portfolioLinkEl.addEventListener('click', (e) => {
+    const value = 'portfolio';
+    clickedLink(value)
+});
+aboutLinkEl.addEventListener("click", (e) => {
+    const value = 'about';
+    clickedLink(value)
+});
+contactLinkEl.addEventListener("click", (e) => {
+    const value = 'contact';
+    clickedLink(value)
+});
 currentYear();
