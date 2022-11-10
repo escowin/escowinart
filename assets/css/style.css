@@ -11,9 +11,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
-  font-variant: small-caps;
-  font-weight: lighter;
+
   text-decoration: none;
 }
 
@@ -53,6 +51,9 @@ body, .portfolio, .portfolio a {
 
 body {
   height: 100vh;
+  font-variant: small-caps;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
 }
 
 header {
@@ -151,7 +152,6 @@ main {
   box-shadow: var(--box-shadow) var(--tertiary);
   opacity: 90%;
   border-radius: 0 .75rem;
-  transition: 2s;
 }
 
 #fine-art {
@@ -216,11 +216,23 @@ main {
   width: 70%;
 }
 
-.btn {
-  padding: .5rem 1.25rem;
+/* section#contact */
+#contact-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5vw;
+}
+
+.contact-link {
+  min-height: fit-content;
   border-radius: 50rem;
-  min-width: 30%;
   text-align: center;
+  display: flex;
+  transition: 2s;
+}
+
+.contact-link a {
+  padding: .25rem .5rem;
 }
 
 #linkedin-btn {
@@ -234,6 +246,7 @@ a {
   border-radius: inherit;
   text-decoration: none;
   transition: 2s;
+  width: 100%;
 }
 
 .subhead {
@@ -265,8 +278,8 @@ a:hover {
   opacity: 95%;
 }
 
-.btn:active,
-.btn:hover {
+.contact-link:active,
+.contact-link:hover {
   box-shadow: 0 0 1vw var(--quaternary);
 }
 
@@ -367,9 +380,5 @@ a:hover {
 
   #name {
     width: 35%;
-  }
-
-  .btn {
-    padding: .5rem 3.75rem;
   }
 }
