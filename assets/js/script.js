@@ -1,3 +1,17 @@
+// - gets & displays current year
+function currentYear() {
+    let date = new Date().getFullYear();
+    console.log(`
+    \u00A9 ${date} Edwin M. Escobar
+    https://github.com/escowin/escowinart
+    `);
+    const dateEl = document.querySelector("#date");
+    dateEl.textContent = date; 
+};
+currentYear();
+
+// note: either modularize code base, or do an if statement. if (this page = ./index.html) { run code blow }
+
 // dom
 const portfolioLinkEl = document.getElementById('portfolio-link');
 const aboutLinkEl = document.getElementById('about-link');
@@ -30,17 +44,6 @@ function clickedLink(link) {
     portfolioFocus(link);
 };
 
-// - gets & displays current year
-function currentYear() {
-    let date = new Date().getFullYear();
-    console.log(`
-    \u00A9 ${date} Edwin M. Escobar
-    https://github.com/escowin/escowinart
-    `);
-    const dateEl = document.querySelector("#date");
-    dateEl.textContent = date; 
-};
-
 // calls | passing in the constant value to alter visuals
 portfolioLinkEl.addEventListener('click', () => {
     if (portfolioSection.className === 'focus') {
@@ -57,4 +60,3 @@ contactLinkEl.addEventListener("click", (e) => {
     const value = 'contact';
     clickedLink(value)
 });
-currentYear();
