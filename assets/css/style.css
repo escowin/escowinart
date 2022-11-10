@@ -4,7 +4,7 @@
   --tertiary: rgba(19, 19, 21, 0.9);
   --quaternary: rgb(207, 11, 11);
   --box-shadow: 0 1vw 2vw;
-  --focus:  rgba(102, 29, 29, 0.75);
+  --focus:  rgba(70, 33, 33, 0.75);
 }
 
 *, *::after, *::before {
@@ -109,12 +109,20 @@ main {
   grid-template-rows: auto 1fr;
 }
 
-.subhead-wrapper,
-.subhead {
+#portfolio .subhead-wrapper {
   border-radius: 0 0 0 50rem;
 }
 
+#about, #contact {
+  padding-left: .5rem;
+}
+#about .subhead-wrapper,
+#contact .subhead-wrapper {
+  border-radius: 2rem 0 0 2rem;
+}
+
 .subhead {
+  border-radius: inherit;
   padding: .5vh 0 1vh 0;
   margin-top: 0;
   font-size: 1.25em;
@@ -174,8 +182,6 @@ main {
   align-items: center;
 }
 
-
-
 .subhead-wrapper, .wrapper {
   background: fixed url('../images/artwork/edwin-escobar-set-005.jpg');
   background-size: cover;
@@ -213,6 +219,12 @@ main {
 .btn {
   padding: .5rem 1.25rem;
   border-radius: 50rem;
+  min-width: 30%;
+  text-align: center;
+}
+
+#linkedin-btn {
+  border-radius: 50rem 0 0 50rem;
 }
 
 /* typography */
@@ -265,8 +277,23 @@ a:hover {
 
 /* display.tablet */
 @media screen and (min-width: 768px) {
+  header {
+    display: flex;
+    align-items: center;
+    
+  }
+
   #logo {
     height: 1.25rem;
+  }
+
+  
+  nav {
+    flex-grow: 1;
+  }
+
+  #navigation {
+    justify-content: space-around;
   }
 
   .portfolio {
@@ -290,28 +317,19 @@ a:hover {
     font-size: 1.5rem;
     width: 65%;
   }
+
 }
 
 @media screen and (min-width: 1024px) {
-  header {
-    display: flex;
-    align-items: center;
-  }
+
 
   #logo-container {
     padding: .25rem 1rem;
   }
 
-  nav {
-    flex-grow: 1;
-  }
-
-  #navigation {
-    justify-content: space-around;
-  }
   
   #main .container {
-    padding: 1rem .75rem 1.25rem .75rem;
+    padding: 1rem 0 1.25rem .75rem;
   }
 
   #portfolios {
@@ -349,10 +367,6 @@ a:hover {
 
   #name {
     width: 35%;
-  }
-
-  #contact-links {
-    justify-content: space-around;
   }
 
   .btn {

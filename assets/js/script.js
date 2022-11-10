@@ -2,29 +2,35 @@
 const portfolioLinkEl = document.getElementById('portfolio-link');
 const aboutLinkEl = document.getElementById('about-link');
 const contactLinkEl = document.getElementById('contact-link');
+const portfolioSection = document.getElementById('portfolio');
+const aboutSection = document.getElementById('about');
+const contactSection = document.getElementById('contact');
 
 // logic
-function resetStyles(resetValue) {
-    // note | need to work out the logic in resetting class values of the previously clicked element with each click
-    let resetEl = document.getElementById(`${resetValue}`);
-
-    console.log(resetEl);
+// - removes .focus from element
+function resetStyles(element) {
+    element.removeAttribute('class');
 };
 
+// - when user clicks on nav link, section bg color changes
 function portfolioFocus(section) {
-    resetClassName(section);
+    // checks for existing elements that have .focus
+    const currentFocus = document.querySelector('.focus');
+    if (currentFocus) {
+        // runs reset logic for any existing .focus elements 
+        resetStyles(currentFocus);
+    }
+    // sets .focus to corresponding section
     let focusEl = document.getElementById(`${section}`);
-
-    focusEl.className = 'focus';
-    console.log(focusEl);
+    focusEl.setAttribute('class', 'focus');
 }
 
+// - links the menu link with its corresponding section
 function clickedLink(link) {
-    // linking the menu link with its corresponding section
     portfolioFocus(link);
-    // console.log(link)
 };
 
+// - gets & displays current year
 function currentYear() {
     let date = new Date().getFullYear();
     console.log(`
@@ -36,7 +42,10 @@ function currentYear() {
 };
 
 // calls | passing in the constant value to alter visuals
-portfolioLinkEl.addEventListener('click', (e) => {
+portfolioLinkEl.addEventListener('click', () => {
+    if (portfolioSection.className === 'focus') {
+        portfolioSection.classList.remove('focus');
+    }
     const value = 'portfolio';
     clickedLink(value)
 });
