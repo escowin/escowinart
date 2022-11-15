@@ -28,15 +28,25 @@ function resetStyles(element) {
 
 // - when user clicks on nav link, section bg color changes
 function portfolioFocus(section) {
+    // needed for desktop styling
+    const desktop = window.matchMedia("(min-width: 1024px)");
+
     // checks for existing elements that have .focus
     const currentFocus = document.querySelector('.focus');
+
     if (currentFocus) {
         // runs reset logic for any existing .focus elements 
         resetStyles(currentFocus);
     }
     // sets .focus to corresponding section
     let focusEl = document.getElementById(`${section}`);
-    focusEl.setAttribute('class', 'focus');
+ 
+    if (focusEl.id === 'about' && desktop.matches) {
+        focusEl.setAttribute('class', 'focus about-focus');
+    } else {
+        focusEl.setAttribute('class', 'focus');
+    }
+    console.log(focusEl)
 }
 
 // - links the menu link with its corresponding section

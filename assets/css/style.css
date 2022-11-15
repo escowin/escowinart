@@ -349,14 +349,10 @@ a:hover {
 
 @media screen and (min-width: 1024px) {
 
-  /* * {
-    border: 1px dotted blue;
-  } */
-
   /* js styles */
-  /* .focus #about {
-  background: black;
-} */
+  .about-focus {
+  background: linear-gradient(25deg, var(--focus), transparent, transparent);
+}
 
   #logo-container {
     padding: .25rem 1rem;
@@ -381,7 +377,6 @@ a:hover {
   .portfolio {
     min-height: 40vh;
     background-position: left;
-    /* border-radius: 0; */
   }
 
   .subhead {
@@ -389,11 +384,6 @@ a:hover {
     text-align: left;
     padding-left: 2.5rem;
   }
-
-  /* .space {
-    margin-left: .25rem;
-  } */
-
 
   #about-contents {
     align-items: center;
