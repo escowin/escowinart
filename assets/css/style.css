@@ -398,10 +398,6 @@ a:hover {
     margin-top: -1rem;
   }
 
-  #name {
-    width: 35%;
-  }
-
   /* contact section */
   #contact {
     display: grid;
