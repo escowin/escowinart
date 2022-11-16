@@ -163,6 +163,7 @@ main {
   box-shadow: var(--box-shadow) var(--tertiary);
   opacity: 90%;
   border-radius: 0 .75rem;
+  transition: 1s;
 }
 
 #fine-art {
@@ -421,7 +422,7 @@ a:hover {
   }
 
   .contact-link {
-    box-shadow: 0 0 2vw var(--primary);
+    box-shadow: 0 0 2vw var(--secondary);
     background: transparent;
     font-size: 1.2rem;
     letter-spacing: .02rem;
