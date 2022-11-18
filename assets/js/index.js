@@ -21,6 +21,17 @@ const aboutSection = document.getElementById('about');
 const contactSection = document.getElementById('contact');
 
 // logic
+// - random css background style on #fine-art, #illustration and #graphic-design
+function randomizePortfolioImages(){
+    console.log('randomize pics here')
+}
+
+function displayPortfolios() {
+    console.log('before the pics are randomized')
+    randomizePortfolioImages();
+    console.log('after the pics are randomized')
+}
+
 // - removes .focus from element
 function resetStyles(element) {
     element.removeAttribute('class');
@@ -55,6 +66,8 @@ function clickedLink(link) {
 };
 
 // calls | passing in the constant value to alter visuals
+displayPortfolios();
+
 portfolioLinkEl.addEventListener('click', () => {
     if (portfolioSection.className === 'focus') {
         portfolioSection.classList.remove('focus');
