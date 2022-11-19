@@ -20,16 +20,35 @@ const portfolioSection = document.getElementById('portfolio');
 const aboutSection = document.getElementById('about');
 const contactSection = document.getElementById('contact');
 
+// data
+let illustrationsArr = [
+    'img 1', 'img 2', 'img 3', 'img 4', 'img 5'
+];
+let fineartArr = [ 'art 1', 'art 2', 'art 3', 'art 4'];
+let graphicdesignArr = ['graphic 1', 'graphic 2', 'graphic 3', 'graphic 4'];
+
 // logic
 // - random css background style on #fine-art, #illustration and #graphic-design
-function randomizePortfolioImages(){
-    console.log('randomize pics here')
+function randomizePortfolioImages(portfolios){
+    // const random = Math.floor(Math.random() * illustrations.length);
+    // let image = illustrations[random];
+
+    // iterate through each index, each art portfolio goes through the randomzer
+    for (let i = 0; i < portfolios.length; i++) {
+        const random = Math.floor(Math.random() * portfolios[i].length);
+        let image = portfolios[i][random]
+        console.log(image)
+    }
 }
 
-function displayPortfolios() {
-    console.log('before the pics are randomized')
-    randomizePortfolioImages();
-    console.log('after the pics are randomized')
+function displayPortfolios(illustrations, fineart, graphicdesign) {
+    const illustrationPortfolio = document.getElementById('illustration');
+    const fineartPortfolio = document.getElementById('fine-art');
+    const graphicdesignPortfolio = document.getElementById('graphic-design');
+    // pass in each artwork array as an argument in the randomize function call
+    // consolidates the arrays as one object
+    const portfolios = [illustrations, fineart, graphicdesign];
+    randomizePortfolioImages(portfolios);
 }
 
 // - removes .focus from element
@@ -66,7 +85,7 @@ function clickedLink(link) {
 };
 
 // calls | passing in the constant value to alter visuals
-displayPortfolios();
+displayPortfolios(illustrationsArr, fineartArr, graphicdesignArr);
 
 portfolioLinkEl.addEventListener('click', () => {
     if (portfolioSection.className === 'focus') {
