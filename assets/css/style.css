@@ -142,10 +142,10 @@ main {
 
 .portfolio {
   color: var(--primary);
-  background-color: transparent;
-  min-height: 8rem;
-  background-position: center;
+  min-height: 15rem;
   background-size: cover;
+  background-position: center;
+  background-color: var(--secondary);
   box-shadow: inset var(--box-shadow) var(--tertiary), var(--box-shadow) var(--tertiary);
   border-radius: 0 .75rem;
   transition: 2s;
@@ -166,21 +166,13 @@ main {
   transition: 1s;
 }
 
-#fine-art {
-  background-image: url('../images/portfolio-fineart.jpg');
-  background-position: center 45%;
-}
-
-#illustration {
-  background-image: url('../images/artwork/illustration/bluestrawberry/edwin-escobar-20171025-bluestrawberry-02.jpg');
-}
-
 #graphic-design {
-  background-image: url('../images/artwork/graphicdesign/edwin-escobar-20220515-cool-with-coolidge.jpg');
+  background-size: contain;
 }
 
 #coding {
   background-image: url('../images/portfolio-coding.jpg');
+  background-position: left;
 }
 
 .wrapper {
@@ -377,8 +369,9 @@ a:hover {
 
   .portfolio {
     min-height: 40vh;
-    background-position: left;
   }
+
+  /* illustration key animation : move bg-position from top to bottom, reverse, infinite loop */
 
   .subhead {
     padding-top: .25rem;

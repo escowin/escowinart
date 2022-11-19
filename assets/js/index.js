@@ -1,17 +1,4 @@
-// - gets & displays current year
-function currentYear() {
-  let date = new Date().getFullYear();
-  console.log(`
-    \u00A9 ${date} Edwin M. Escobar
-    https://github.com/escowin/escowinart
-    `);
-  const dateEl = document.querySelector("#date");
-  dateEl.textContent = date;
-}
-currentYear();
-
 // note: either modularize code base, or do an if statement. if (this page = ./index.html) { run code blow }
-
 // dom
 const portfolioLinkEl = document.getElementById("portfolio-link");
 const aboutLinkEl = document.getElementById("about-link");
@@ -21,15 +8,43 @@ const aboutSection = document.getElementById("about");
 const contactSection = document.getElementById("contact");
 
 // data
-let fineartArr = ["art 1", "art 2", "art 3", "art 4", "art 5"];
-let illustrationArr = ["img 1", "img 2", "img 3", "img 4", "img 5"];
-let graphicdesignArr = [
-  "graphic 1",
-  "graphic 2",
-  "graphic 3",
-  "graphic 4",
-  "graphic 5",
+let fineartArr = [
+  'url("./assets/images/artwork/fineart/edwin-escobar-set-001.jpg")',
+  'url("./assets/images/artwork/fineart/edwin-escobar-set-002.jpg")',
+  'url("./assets/images/artwork/fineart/edwin-escobar-set-003.jpg")',
+  'url("./assets/images/artwork/fineart/edwin-escobar-set-004.jpg")',
+  'url("./assets/images/artwork/fineart/edwin-escobar-set-005.jpg")',
 ];
+let illustrationArr = [
+  'url("./assets/images/artwork/illustration/bluestrawberry/edwin-escobar-20171018-bluestrawberry-01.jpg")',
+  'url("./assets/images/artwork/illustration/bluestrawberry/edwin-escobar-20171025-bluestrawberry-02.jpg")',
+  'url("./assets/images/artwork/illustration/bluestrawberry/edwin-escobar-20171112-bluestrawberry-03.jpg")',
+  'url("./assets/images/artwork/illustration/bluestrawberry/edwin-escobar-20180502-bluestrawberry-04.jpg")',
+  'url("./assets/images/artwork/illustration/bluestrawberry/edwin-escobar-20180509-bluestrawberry-05.jpg")',
+  'url("./assets/images/artwork/illustration/bluestrawberry/edwin-escobar-20180516-bluestrawberry-06.jpg")',
+  'url("./assets/images/artwork/illustration/bluestrawberry/edwin-escobar-20180523-bluestrawberry-07.jpg")',
+  'url("./assets/images/artwork/illustration/bluestrawberry/edwin-escobar-20180530-bluestrawberry-08.jpg")',
+  'url("./assets/images/artwork/illustration/bluestrawberry/edwin-escobar-20200819-bluestrawberry-hungover-03.jpg")',
+  'url("./assets/images/artwork/illustration/bluestrawberry/edwin-escobar-20201002-bluestrawberry-gertrude.jpg")',
+];
+let graphicdesignArr = [
+  'url("./assets/images/artwork/graphic-design/edwin-escobar-20210220-capitalism.png")',
+  'url("./assets/images/artwork/graphic-design/edwin-escobar-20210225-made-in-a-lab.png")',
+  'url("./assets/images/artwork/graphic-design/edwin-escobar-20220515-cool-with-coolidge.jpg")',
+  'url("./assets/images/artwork/graphic-design/edwin-escobar-20220515-mindlessly-parrot-social-media.png")',
+  'url("./assets/images/artwork/graphic-design/edwin-escobar-20220515-stop-being-poor.png")',
+];
+
+// - gets & displays current year
+function currentYear() {
+  let date = new Date().getFullYear();
+  console.log(`
+      \u00A9 ${date} Edwin M. Escobar
+      https://github.com/escowin/escowinart
+      `);
+  const dateEl = document.querySelector("#date");
+  dateEl.textContent = date;
+}
 
 // portfolio display logic | read from bottom to top
 // - displays the randomly chosen portfolio bg urls each time the user loads the page
@@ -38,9 +53,9 @@ function displayPortfolios(portfolio) {
   const fineartPortfolio = document.getElementById("fine-art");
   const graphicdesignPortfolio = document.getElementById("graphic-design");
 
-  console.log(portfolio[0]); // fine art
-  console.log(portfolio[1]); // illustration
-  console.log(portfolio[2]); // graphic design
+  fineartPortfolio.style.backgroundImage = portfolio[0];
+  illustrationPortfolio.style.backgroundImage = portfolio[1];
+  graphicdesignPortfolio.style.backgroundImage = portfolio[2];
 }
 
 // - shuffles the portfolio array
@@ -98,7 +113,8 @@ function clickedLink(link) {
   portfolioFocus(link);
 }
 
-// calls | passing in the constant value to alter visuals
+// calls
+currentYear();
 getPortfolios(fineartArr, illustrationArr, graphicdesignArr);
 
 portfolioLinkEl.addEventListener("click", () => {
