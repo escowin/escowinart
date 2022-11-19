@@ -61,37 +61,42 @@ const art = [
 
 // console.log(sidescrollEl);
 
-function getDetails(artworks, container) {
-  const detailsEl = document.createElement("section");
-  detailsEl.className = "artwork-details dark";
+function getDetails(artworks) {
+  console.log(artworks[0].title)
+  console.log(artworks[0].length)
+  console.log(artworks[0].width)
 
-  for (let i = 0; i < artworks.length; i++) {
-    const titleEl = document.createElement("p");
-    titleEl.className = "artwork-title";
-    titleEl.innerText = `« ${artworks[i].title} »`;
 
-    const dimensionsEl = document.createElement("p");
-    dimensionsEl.className = "artwork-dimensions";
-    dimensionsEl.innerText = `${artworks[i].length} in &times; ${artworks[i].width} in`;
-
-    detailsEl.appendChild(titleEl);
-    detailsEl.appendChild(dimensionsEl);
-  }
-  container.appendChild(detailsEl);
   // console.log(container)
+  // const detailsEl = document.createElement("section");
+  // detailsEl.className = "artwork-details dark";
+
+  // for (let i = 0; i < artworks.length; i++) {
+  //   const titleEl = document.createElement("p");
+  //   titleEl.className = "artwork-title";
+  //   titleEl.innerText = `« ${artworks[i].title} »`;
+
+  //   const dimensionsEl = document.createElement("p");
+  //   dimensionsEl.className = "artwork-dimensions";
+  //   dimensionsEl.innerText = `${artworks[i].length} in &times; ${artworks[i].width} in`;
+
+  //   detailsEl.appendChild(titleEl);
+  //   detailsEl.appendChild(dimensionsEl);
+  // }
 }
 
 function getArtwork(art) {
   for (let i = 0; i < art.length; i++) {
     const containerEl = document.createElement("article");
     containerEl.setAttribute("id", art[i].set);
+    containerEl.className = "container";
     containerEl.innerHTML = `
       <section class="artwork-header dark">
         <h3>${art[i].set} [ ${art[i].subtitle} ]</h3>
         <p class="medium">${art[i].medium}</p>
       </section>
       <section class="artwork-container"></section>
-       ${getDetails(art[i].artworks, containerEl)}
+       ${getDetails(art[i].artworks)}
     `;
 
     sidescrollEl.appendChild(containerEl);

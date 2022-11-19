@@ -1,3 +1,4 @@
+const page = document.title;
 // note: either modularize code base, or do an if statement. if (this page = ./index.html) { run code blow }
 // dom
 const portfolioLinkEl = document.getElementById("portfolio-link");
@@ -8,32 +9,6 @@ const aboutSection = document.getElementById("about");
 const contactSection = document.getElementById("contact");
 
 // data
-let fineartArr = [
-  'url("./assets/images/artwork/fineart/edwin-escobar-set-001.jpg")',
-  'url("./assets/images/artwork/fineart/edwin-escobar-set-002.jpg")',
-  'url("./assets/images/artwork/fineart/edwin-escobar-set-003.jpg")',
-  'url("./assets/images/artwork/fineart/edwin-escobar-set-004.jpg")',
-  'url("./assets/images/artwork/fineart/edwin-escobar-set-005.jpg")',
-];
-let illustrationArr = [
-  'url("./assets/images/artwork/illustration/bluestrawberry/edwin-escobar-20171018-bluestrawberry-01.jpg")',
-  'url("./assets/images/artwork/illustration/bluestrawberry/edwin-escobar-20171025-bluestrawberry-02.jpg")',
-  'url("./assets/images/artwork/illustration/bluestrawberry/edwin-escobar-20171112-bluestrawberry-03.jpg")',
-  'url("./assets/images/artwork/illustration/bluestrawberry/edwin-escobar-20180502-bluestrawberry-04.jpg")',
-  'url("./assets/images/artwork/illustration/bluestrawberry/edwin-escobar-20180509-bluestrawberry-05.jpg")',
-  'url("./assets/images/artwork/illustration/bluestrawberry/edwin-escobar-20180516-bluestrawberry-06.jpg")',
-  'url("./assets/images/artwork/illustration/bluestrawberry/edwin-escobar-20180523-bluestrawberry-07.jpg")',
-  'url("./assets/images/artwork/illustration/bluestrawberry/edwin-escobar-20180530-bluestrawberry-08.jpg")',
-  'url("./assets/images/artwork/illustration/bluestrawberry/edwin-escobar-20200819-bluestrawberry-hungover-03.jpg")',
-  'url("./assets/images/artwork/illustration/bluestrawberry/edwin-escobar-20201002-bluestrawberry-gertrude.jpg")',
-];
-let graphicdesignArr = [
-  'url("./assets/images/artwork/graphic-design/edwin-escobar-20210220-capitalism.png")',
-  'url("./assets/images/artwork/graphic-design/edwin-escobar-20210225-made-in-a-lab.png")',
-  'url("./assets/images/artwork/graphic-design/edwin-escobar-20220515-cool-with-coolidge.jpg")',
-  'url("./assets/images/artwork/graphic-design/edwin-escobar-20220515-mindlessly-parrot-social-media.png")',
-  'url("./assets/images/artwork/graphic-design/edwin-escobar-20220515-stop-being-poor.png")',
-];
 
 // - gets & displays current year
 function currentYear() {
@@ -113,22 +88,55 @@ function clickedLink(link) {
   portfolioFocus(link);
 }
 
+function script(title) {
+  if (title === "Esᴄᴏᴡɪɴ ᴀʀᴛ") {
+    let fineartArr = [
+      'url("./assets/images/artwork/fineart/edwin-escobar-set-001.jpg")',
+      'url("./assets/images/artwork/fineart/edwin-escobar-set-002.jpg")',
+      'url("./assets/images/artwork/fineart/edwin-escobar-set-003.jpg")',
+      'url("./assets/images/artwork/fineart/edwin-escobar-set-004.jpg")',
+      'url("./assets/images/artwork/fineart/edwin-escobar-set-005.jpg")',
+    ];
+    let illustrationArr = [
+      'url("./assets/images/artwork/illustration/bluestrawberry/edwin-escobar-20171018-bluestrawberry-01.jpg")',
+      'url("./assets/images/artwork/illustration/bluestrawberry/edwin-escobar-20171025-bluestrawberry-02.jpg")',
+      'url("./assets/images/artwork/illustration/bluestrawberry/edwin-escobar-20171112-bluestrawberry-03.jpg")',
+      'url("./assets/images/artwork/illustration/bluestrawberry/edwin-escobar-20180502-bluestrawberry-04.jpg")',
+      'url("./assets/images/artwork/illustration/bluestrawberry/edwin-escobar-20180509-bluestrawberry-05.jpg")',
+      'url("./assets/images/artwork/illustration/bluestrawberry/edwin-escobar-20180516-bluestrawberry-06.jpg")',
+      'url("./assets/images/artwork/illustration/bluestrawberry/edwin-escobar-20180523-bluestrawberry-07.jpg")',
+      'url("./assets/images/artwork/illustration/bluestrawberry/edwin-escobar-20180530-bluestrawberry-08.jpg")',
+      'url("./assets/images/artwork/illustration/bluestrawberry/edwin-escobar-20200819-bluestrawberry-hungover-03.jpg")',
+      'url("./assets/images/artwork/illustration/bluestrawberry/edwin-escobar-20201002-bluestrawberry-gertrude.jpg")',
+    ];
+    let graphicdesignArr = [
+      'url("./assets/images/artwork/graphic-design/edwin-escobar-20210220-capitalism.png")',
+      'url("./assets/images/artwork/graphic-design/edwin-escobar-20210225-made-in-a-lab.png")',
+      'url("./assets/images/artwork/graphic-design/edwin-escobar-20220515-cool-with-coolidge.jpg")',
+      'url("./assets/images/artwork/graphic-design/edwin-escobar-20220515-mindlessly-parrot-social-media.png")',
+      'url("./assets/images/artwork/graphic-design/edwin-escobar-20220515-stop-being-poor.png")',
+    ];
+    
+    getPortfolios(fineartArr, illustrationArr, graphicdesignArr);
+
+    portfolioLinkEl.addEventListener("click", () => {
+      if (portfolioSection.className === "focus") {
+        portfolioSection.classList.remove("focus");
+      }
+      const value = "portfolio";
+      clickedLink(value);
+    });
+    aboutLinkEl.addEventListener("click", (e) => {
+      const value = "about";
+      clickedLink(value);
+    });
+    contactLinkEl.addEventListener("click", (e) => {
+      const value = "contact";
+      clickedLink(value);
+    });
+  }
+}
+
 // calls
 currentYear();
-getPortfolios(fineartArr, illustrationArr, graphicdesignArr);
-
-portfolioLinkEl.addEventListener("click", () => {
-  if (portfolioSection.className === "focus") {
-    portfolioSection.classList.remove("focus");
-  }
-  const value = "portfolio";
-  clickedLink(value);
-});
-aboutLinkEl.addEventListener("click", (e) => {
-  const value = "about";
-  clickedLink(value);
-});
-contactLinkEl.addEventListener("click", (e) => {
-  const value = "contact";
-  clickedLink(value);
-});
+script(page);
