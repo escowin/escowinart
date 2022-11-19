@@ -21,63 +21,49 @@ const aboutSection = document.getElementById("about");
 const contactSection = document.getElementById("contact");
 
 // data
-let illustrationsArr = ["img 1", "img 2", "img 3", "img 4", "img 5"];
 let fineartArr = ["art 1", "art 2", "art 3", "art 4", "art 5"];
-let graphicdesignArr = ["graphic 1", "graphic 2", "graphic 3", "graphic 4", "graphic 5"];
+let illustrationArr = ["img 1", "img 2", "img 3", "img 4", "img 5"];
+let graphicdesignArr = [
+  "graphic 1",
+  "graphic 2",
+  "graphic 3",
+  "graphic 4",
+  "graphic 5",
+];
 
-// logic
+// portfolio display logic | read from bottom to top
+// - displays the randomly chosen portfolio bg urls each time the user loads the page
+function displayPortfolios(portfolio) {
+  const illustrationPortfolio = document.getElementById("illustration");
+  const fineartPortfolio = document.getElementById("fine-art");
+  const graphicdesignPortfolio = document.getElementById("graphic-design");
 
-function displayPortfolios(portfolioImages) {
-    const illustrationPortfolio = document.getElementById("illustration");
-    const fineartPortfolio = document.getElementById("fine-art");
-    const graphicdesignPortfolio = document.getElementById("graphic-design");
-    
-    // when the relative url has the art section, then that corresponding portfolio's bg will be that url
-    let obj = {portfolioImages} 
-    let arr = [portfolioImages]
-
-    // array vs object to meet above goal
-
-    console.log(arr)
-    if (arr[0] === 'graphic 5') {
-        console.log(arr[0])
-    }
-
-    for (let i = 0; i < arr.length; i++) {
-        // console.log(arr[0])
-        // if (arr[i]) {
-        //     console.log(arr[i])
-        // }
-    }
-    // console.log(obj.portfolioImages)
-    // if (obj = 'graphic') {
-    //     console.log(obj)
-    // }
-
+  console.log(portfolio[0]); // fine art
+  console.log(portfolio[1]); // illustration
+  console.log(portfolio[2]); // graphic design
 }
 
-
-// - random css background style on #fine-art, #illustration and #graphic-design
+// - shuffles the portfolio array
 function randomizePortfolioImages(portfolios) {
-  // const random = Math.floor(Math.random() * illustrations.length);
-  // let image = illustrations[random];
+  let randomizedImages = [];
 
-  // iterate through each index, each art portfolio goes through the randomzer
+  // iterates through array. Math & each index's length determines what value random will be.
   for (let i = 0; i < portfolios.length; i++) {
     const random = Math.floor(Math.random() * portfolios[i].length);
     let portfolioImage = portfolios[i][random];
-
-    displayPortfolios(portfolioImage);
+    // pushes the selected values into the randomized array
+    randomizedImages.push(portfolioImage);
   }
+
+  // randomized array is what will be used to determine which url is used
+  displayPortfolios(randomizedImages);
 }
 
-function getPortfolios(illustrations, fineart, graphicdesign) {
-  // pass in each artwork array as an argument in the randomize function call
-  // consolidates the arrays as one object
-  const portfolios = [illustrations, fineart, graphicdesign];
+// - coalesces artwork arrays into a single array. this new array will have its indexes randomized
+function getPortfolios(fineart, illustrations, graphicdesign) {
+  const portfolios = [fineart, illustrations, graphicdesign];
   randomizePortfolioImages(portfolios);
 }
-
 
 // - removes .focus from element
 function resetStyles(element) {
@@ -113,7 +99,7 @@ function clickedLink(link) {
 }
 
 // calls | passing in the constant value to alter visuals
-getPortfolios(illustrationsArr, fineartArr, graphicdesignArr);
+getPortfolios(fineartArr, illustrationArr, graphicdesignArr);
 
 portfolioLinkEl.addEventListener("click", () => {
   if (portfolioSection.className === "focus") {
