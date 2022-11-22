@@ -130,7 +130,6 @@ const art = [
   },
 ];
 
-
 // logic | displaying artwork
 function getArtwork(ouvre) {
   // reverses index order. latest set is 0 index
