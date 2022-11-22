@@ -3,18 +3,18 @@ const mainEl = document.getElementById("illustration-portfolio");
 
 // data | array of illustrations sorted by series, subdivided by volume
 const illustrations = [
-//   {
-//     series: "bluestrawberry",
-//     volumes: [
-//       {
-//         title: "vol 1",
-//         id: "bluestraberry-001",
-//         img: [
-//           { url: "./assets/images/artwork/illustration/bluestrawberry/.jpg" },
-//         ],
-//       },
-//     ],
-//   },
+  // {
+  //   series: "bluestrawberry",
+  //   volumes: [
+  //     {
+  //       title: "vol 1",
+  //       id: "bluestraberry-001",
+  //       img: [
+  //         { url: "./assets/images/artwork/illustration/bluestrawberry/.jpg" },
+  //       ],
+  //     },
+  //   ],
+  // },
   {
     series: "days",
     volumes: [
@@ -181,18 +181,23 @@ function getIllustrations(illustrations) {
     titleEl.className = "series dark";
     titleEl.innerText = `[ ${title} ]`;
 
-    const x = getDetails(seriesArr[i].volumes);
+    const volume = getDetails(seriesArr[i].volumes).replace(/>,/g, ">");
 
-    // console.log(x)
+    // console.log(volume)
+    // console.log(titleEl.outerHTML)
 
-    mainEl.appendChild(titleEl);
-    // mainEl.appendChild(x);
+    // **pause**
+    mainEl.innerHTML = `${titleEl.outerHTML} ${volume}`;
+    // mainEl.appendChild(volume);
   }
-  //   console.log(mainEl)
+    console.log(mainEl)
 }
 
 function getDetails(volumes) {
   let detailsArr = volumes.reverse();
+
+  let htmlArr = [];
+//   let result;
 
   for (let i = 0; i < detailsArr.length; i++) {
     let subheaderEl = document.createElement("h4");
@@ -209,20 +214,23 @@ function getDetails(volumes) {
             </section>
         </article>`;
 
-    const containerEl = document.createElement("article");
-    containerEl.className = "container";
-    console.log(sidescrollEl.innerHTML);
+        let result = subheaderEl.outerHTML + sidescrollEl.outerHTML;
+
+
+    htmlArr.push(result)
+    // return subheaderEl, sidescrollEl
   }
+  let output = htmlArr.toString();
+  return output
 }
 
+// logic | generating the inner html to display each volume img elements
 function displayIllustrations(imgArr) {
   let htmlArr = [];
   for (let i = 0; i < imgArr.length; i++) {
-    // console.log(imgArr[i].url);
     let imgEl = `<img src="${imgArr[i].url}"/>`;
     htmlArr.push(imgEl);
   }
-  // console.log(htmlArr.toString().replace(/>,/g, ">"))
   return htmlArr.toString().replace(/>,/g, ">");
 }
 
