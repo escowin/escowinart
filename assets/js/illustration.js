@@ -169,8 +169,8 @@ const illustrations = [
   },
 ];
 
-// logic | gets illustrations array data
-function getIllustrations(illustrations) {
+// logic | displays illustration portfolio by extracting data from illustrations array
+function displayPortfolio(illustrations) {
   // the last series will display first
   let seriesArr = illustrations.reverse();
 
@@ -183,21 +183,16 @@ function getIllustrations(illustrations) {
 
     const volume = getDetails(seriesArr[i].volumes).replace(/>,/g, ">");
 
-    // console.log(volume)
-    // console.log(titleEl.outerHTML)
-
-    // **pause**
-    mainEl.innerHTML = `${titleEl.outerHTML} ${volume}`;
-    // mainEl.appendChild(volume);
+    mainEl.innerHTML = `<h2 class="subhead dark shadow">Illustration portfolio</h2> ${titleEl.outerHTML} ${volume}`;
   }
-    console.log(mainEl)
-}
+  return mainEl;
+};
 
+// logic | gets & displays the volume details of each series
 function getDetails(volumes) {
+  // rearranging the volumes from most recent
   let detailsArr = volumes.reverse();
-
   let htmlArr = [];
-//   let result;
 
   for (let i = 0; i < detailsArr.length; i++) {
     let subheaderEl = document.createElement("h4");
@@ -208,21 +203,17 @@ function getDetails(volumes) {
     sidescrollEl.className = "horizontal-wrapper dark sidescroll";
     sidescrollEl.setAttribute("id", detailsArr[i].id);
     sidescrollEl.innerHTML = `
-        <article class="container">
-            <section class="artwork-container">
-                ${displayIllustrations(detailsArr[i].img)}
-            </section>
-        </article>`;
+      <article class="container">
+        <section class="artwork-container">
+          ${displayIllustrations(detailsArr[i].img)}
+        </section>
+      </article>`;
 
-        let result = subheaderEl.outerHTML + sidescrollEl.outerHTML;
-
-
-    htmlArr.push(result)
-    // return subheaderEl, sidescrollEl
+    let result = subheaderEl.outerHTML + sidescrollEl.outerHTML;
+    htmlArr.push(result);
   }
-  let output = htmlArr.toString();
-  return output
-}
+  return htmlArr.toString();
+};
 
 // logic | generating the inner html to display each volume img elements
 function displayIllustrations(imgArr) {
@@ -232,9 +223,9 @@ function displayIllustrations(imgArr) {
     htmlArr.push(imgEl);
   }
   return htmlArr.toString().replace(/>,/g, ">");
-}
+};
 
 // calls
-getIllustrations(illustrations);
+displayPortfolio(illustrations);
 // user can rearrange artwork
 $(".artwork-container").sortable();
