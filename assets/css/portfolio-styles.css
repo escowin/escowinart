@@ -142,7 +142,7 @@ body {
 
 #fineart-portfolio .artwork-container {
   background-size: cover;
-  height: 30vh;
+  height: 40vh;
 }
 
 #illustration-portfolio .artwork-container {
@@ -231,12 +231,21 @@ body {
     padding: .25rem 2rem;
     font-size: 1.5rem;
   }
+
+  /* fine arts */
+  #fineart-portfolio .artwork-container {
+    height: 65vh;
+  }
 }
 
 /* display.desktop */
 @media screen and (min-width: 1024px) {
   #fineart-portfolio .container {
     margin: 1rem;
+  }
+
+  #fineart-portfolio .artwork-container {
+    width: 70vw;
   }
 
   .artwork-details {
