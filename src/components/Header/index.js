@@ -1,7 +1,15 @@
 import Logo from "../../assets/icons/logo-header.png";
-import './index.css';
+import "./index.css";
+import Artist from "../Artist";
+import Portfolio from "../Portfolio";
 
-function Header() {
+function Header(props) {
+  const { currentComponent, setCurrentComponent } = props;
+
+  const handleClick = (component) => {
+    setCurrentComponent(component);
+  };
+
   return (
     <header>
       <section id="logo-container">
@@ -11,17 +19,17 @@ function Header() {
       </section>
       <nav>
         <ul id="navigation">
-          <li>
-            <a href="/">Fine art</a>
+          <li
+            className={currentComponent === "portfolio" ? "selected" : ""}
+            onClick={() => handleClick("portfolio")}
+          >
+            Portfolio
           </li>
-          <li>
-            <a href="/">Illustration</a>
-          </li>
-          <li>
-            <a href="/">Graphic design</a>
-          </li>
-          <li>
-            <a href="/">Artist</a>
+          <li
+            className={currentComponent === "artist" ? "selected" : ""}
+            onClick={() => handleClick("artist")}
+          >
+            Artist
           </li>
         </ul>
       </nav>
