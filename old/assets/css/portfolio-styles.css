@@ -1,0 +1,279 @@
+:root {
+  --dark-opaque: rgb(19, 19, 21);
+}
+
+/* typography */
+.medium {
+  color: rgba(255, 255, 255, 0.45);
+  font-size: .75rem;
+  text-align: right;
+  flex-grow: 1;
+}
+
+.artwork-title {
+  font-size: 1rem;
+}
+
+.artwork-dimensions {
+  text-align: end;
+  font-size: .65rem;
+}
+
+/* flow */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: var(--dark-opaque);
+}
+
+.horizontal-wrapper {
+  overflow: auto;
+  white-space: nowrap;
+  display: flex;
+  align-items: baseline;
+}
+
+.portfolio-container,
+#fineart-portfolio .container {
+  display: flex;
+  flex-direction: column;
+}
+
+#fineart-portfolio .container {
+  justify-content: center;
+}
+
+#fineart-portfolio .artwork-header {
+  display: inline-flex;
+  align-items: center;
+
+}
+
+.artwork-details {
+  display: grid;
+  grid-template-columns: 75vw 1fr;
+  align-items: center;
+}
+
+#illustration-portfolio .artwork-container {
+  display: flex;
+}
+
+#illustration-portfolio img {
+  height: 25vh;
+}
+
+/* box */
+.portfolio-container {
+  color: var(--tertiary);
+  flex-grow: 1;
+}
+
+.series {
+  margin-top: .5rem;
+  padding: .25rem 0 0 1.25rem;
+  border-top-left-radius: 50rem;
+}
+
+.graphic-header {
+  border-top-left-radius: 50rem;
+  padding-left: 2rem;
+}
+
+#fineart-portfolio .horizontal-wrapper,
+#graphic-design-portfolio .horizontal-wrapper {
+  height: 100%;
+}
+
+#graphic-design-portfolio img {
+  max-width: 90vw;
+  max-height: 70vh;
+  box-shadow: var(--box-shadow) rgba(255, 255, 255, 0.75);
+}
+
+#fineart-portfolio .container {
+  padding: 0;
+  border-radius: 1.75rem .25rem;
+  margin: 1.25rem 1rem 0 .5rem;
+  box-shadow: 0 0 1rem var(--tertiary);
+  background-color: var(--tertiary);
+}
+
+#graphic-design-portfolio .container {
+  padding: 0;
+  margin: 1rem;
+}
+
+#set-005 .artwork-container {
+  background: url('../images/artwork/fineart/edwin-escobar-set-005.jpg');
+  background-position: 50% 15%;
+}
+
+#set-004 .artwork-container {
+  background: url('../images/artwork/fineart/edwin-escobar-set-004.jpg');
+}
+
+#set-003 .artwork-container {
+  background: url('../images/artwork/fineart/edwin-escobar-set-003.jpg');
+}
+
+#set-002 .artwork-container {
+  background: url('../images/artwork/fineart/edwin-escobar-set-002.jpg');
+  background-position: 50% 105%;
+}
+
+#set-001 .artwork-container {
+  background: url('../images/artwork/fineart/edwin-escobar-set-001.jpg');
+  background-position: 50% 60%;
+}
+
+.artwork-header {
+  padding: .25rem .75rem .25rem 1.25rem;
+  border-start-start-radius: inherit;
+}
+
+.artwork-details {
+  padding: .25rem 1.75rem .25rem .75rem;
+  border-end-end-radius: inherit;
+}
+
+#fineart-portfolio .artwork-container {
+  background-size: cover;
+  height: 40vh;
+}
+
+#illustration-portfolio .artwork-container {
+  border-radius: 2rem;
+}
+
+
+#illustration-portfolio .container {
+  padding: 0 .75rem .75rem .75rem;
+}
+
+#illustration-portfolio .horizontal-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.series-wrapper {
+  margin: 0 0 .5rem .5rem;
+}
+/* display.mobile-landscape */
+@media screen and (min-width: 633px) and (orientation: landscape) {
+  .subhead {
+    padding-left: 2rem;
+  }
+  #fineart-portfolio .container {
+    margin: .75rem 1rem;
+  }
+
+  #fineart-portfolio .artwork-container {
+    height: 60vh;
+  }
+
+  #set-004 .artwork-container {
+    background-position: 50% 10%;
+  }
+
+  #set-003 .artwork-container {
+    background-position: 50% 20%;
+  }
+
+  #set-002 .artwork-container {
+    background-position: 50% 40%;
+  }
+
+  #set-001 .artwork-container {
+    background-position: 50% 0;
+  }
+
+  .artwork-details {
+    grid-template-columns: 65vw 1fr;
+  }
+
+  #illustration-portfolio img {
+    height: 35vh;
+  }
+
+  #graphic-design-portfolio img {
+    max-width: 50vw;
+    max-height: 100vh;
+  }
+
+  .graphic-header {
+    padding-left: 1.25rem;
+    font-size: 1.25rem;
+  }
+}
+
+/* display.tablet */
+@media screen and (min-width: 768px) {
+  .series {
+    padding-top: 1vh;
+  }
+
+  .subhead {
+    text-align: left;
+  }
+
+ .series {
+    padding-left: 1.75rem;
+  }
+
+  .artwork-header, .series {
+    word-spacing: .25rem;
+  }
+
+  .graphic-header {
+    padding: .25rem 2rem;
+    font-size: 1.5rem;
+  }
+
+  /* fine arts */
+  #fineart-portfolio .artwork-container {
+    height: 65vh;
+  }
+}
+
+/* display.desktop */
+@media screen and (min-width: 1024px) {
+  #fineart-portfolio .container {
+    margin: 1rem;
+  }
+
+  #fineart-portfolio .artwork-container {
+    width: 70vw;
+  }
+
+  .artwork-details {
+    grid-template-columns: 35vw 1fr;
+  }
+
+  #graphic-design-portfolio img {
+    max-width: 25vw;
+    max-height: 70vh;
+  }
+
+  /* horizontal scrollbar */
+  ::-webkit-scrollbar-thumb {
+    background: var(--tertiary);
+    transition: 1s;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary);
+  }
+
+  #fineart-portfolio .horizontal-wrapper::-webkit-scrollbar {
+    height: .35rem;
+  }
+
+  #graphic-design-portfolio .horizontal-wrapper::-webkit-scrollbar,
+  #illustration-portfolio .horizontal-wrapper::-webkit-scrollbar {
+    display: block;
+    height: .45rem;
+  }
+}
