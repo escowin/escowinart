@@ -1,11 +1,12 @@
 header {
     display: flex;
+    flex-direction: column;
     position: sticky;
     position: -webkit-sticky;
     top: 0;
     z-index: 9999;
     width: 100vw;
-    padding: .125rem 1rem;
+    padding: .125rem .5rem;
 }
 
 #logo-container {
@@ -13,7 +14,7 @@ header {
 }
 
 #logo {
-    height: 1rem;
+    height: .75rem;
     margin-top: .25rem;
 }
 
@@ -23,7 +24,7 @@ nav {
 
 #navigation {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     list-style: none;
 }
 

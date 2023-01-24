@@ -37,9 +37,6 @@ body {
 
 main {
   flex: 1 0 auto;
-  background-color: var(--primary);
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
 }
 

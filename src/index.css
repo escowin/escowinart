@@ -1,7 +1,7 @@
 :root {
   --primary: rgb(230, 230, 230);
-  --secondary: rgba(155, 151, 151, 0.612);
-  --tertiary: rgba(89, 89, 94, 0.9);
+  --secondary: rgba(155, 151, 151, 0.65);
+  --tertiary: rgba(38, 38, 41, 0.9);
   --quaternary: rgb(207, 11, 11);
   --box-shadow: 0 1vw 2vw;
   --box-shadow-sm: 0 .5vw 1rem;
@@ -29,16 +29,26 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-variant: small-caps;
+  color: var(--tertiary);
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
+} */
 
 #root {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary);
+  flex-grow: 1;
+  /* padding: 1rem 0; */
 }
 
 /* box */
@@ -47,7 +57,13 @@ code {
   color: var(--primary);
 }
 
+/* list styles */
+ul {
+  list-style: none;
+}
+
 /* typography */
+
 a {
   color: inherit;
   transition: 1s;
@@ -56,3 +72,5 @@ a {
 a:hover {
   color: var(--quaternary);
 }
+
+
