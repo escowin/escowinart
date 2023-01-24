@@ -21,11 +21,8 @@ function Header() {
             <a href="/">Graphic design</a>
           </li>
           <li>
-            <a href="/">About</a>
+            <a href="/">Artist</a>
           </li>
-          {/* <li className="link">
-            <a href="/">Contact</a>
-          </li> */}
         </ul>
       </nav>
     </header>

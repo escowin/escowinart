@@ -1,6 +1,6 @@
 :root {
   --primary: rgb(230, 230, 230);
-  --secondary: rgba(155, 151, 151, 0.65);
+  --secondary: rgba(155, 151, 151, 0.85);
   --tertiary: rgba(38, 38, 41, 0.9);
   --quaternary: rgb(207, 11, 11);
   --box-shadow: 0 1vw 2vw;
@@ -48,7 +48,6 @@ main {
   flex-direction: column;
   background-color: var(--primary);
   flex-grow: 1;
-  /* padding: 1rem 0; */
 }
 
 /* box */

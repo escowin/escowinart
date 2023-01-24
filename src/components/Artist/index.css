@@ -1,0 +1,24 @@
+#artist {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    margin: 4vw 0 1.5vw 1.5vw;
+    border-radius: 5rem 0rem 0rem 5rem;
+    box-shadow: .25vw .25vw 1vw var(--secondary);
+    align-items: center;
+    padding: .3rem 0 .3rem .5rem;
+    color: var(--tertiary);
+}
+
+#profile-pic {
+    --size: 35vw;
+    border-radius: 50%;
+    height: var(--size);
+    width: var(--size);
+    background: url('../../assets/images/profile.jpg');
+    background-size: cover;
+    box-shadow: inset .25vw .25vw 4rem var(--tertiary), .2vw .2vw .15rem var(--tertiary);
+}
+
+p, #contact-links li {
+    padding-left: 1rem;
+}
