@@ -1,0 +1,29 @@
+header {
+    display: flex;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 9999;
+    width: 100vw;
+    padding: .125rem 1rem;
+}
+
+#logo-container {
+    justify-content: center;
+}
+
+#logo {
+    height: 1rem;
+    margin-top: .25rem;
+}
+
+nav {
+    flex-grow: 1;
+}
+
+#navigation {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+

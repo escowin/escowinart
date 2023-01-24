@@ -1,13 +1,11 @@
 import Footer from './components/Footer';
-import Nav from './components/Nav';
+import Header from './components/Header';
 // import './App.css';
 
 function App() {
   return (
     <>
-      <header>
-        <Nav/>
-      </header>
+      <Header/>
       <main></main>
       <Footer/>
     </>
