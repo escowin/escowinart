@@ -4,10 +4,12 @@
     display: flex;
     gap: 1rem;
     overflow: auto;
-    /* scrollbar-width: none; */
+    scrollbar-width: none;
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: none;
     white-space: nowrap;
+    flex-grow: 1;
+
 }
 
 /* Style the custom scrollbar */
@@ -62,6 +64,6 @@
     #fine-art {
         margin-top: 2vh;
         margin-bottom: 2vh;
-        gap: 2.5rem
+        gap: 2.5rem;
     }
 }

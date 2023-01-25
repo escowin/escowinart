@@ -1,5 +1,4 @@
 import "./index.css";
-
 // to-do | horizontal mousewheel scrolling
 
 function FineArt() {
