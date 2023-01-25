@@ -1,6 +1,6 @@
 import "./index.css";
 
-// enable mousewheel horizontal scrolling
+// to-do | horizontal mousewheel scrolling
 
 function FineArt() {
   const art = [
@@ -135,23 +135,25 @@ function FineArt() {
       ],
     },
   ];
+  art.reverse();
 
   return (
     <section className="section" id="fine-art">
       {art.map((item) => (
         <article key={item.set} className="artwork">
-          <h2 className="set">{`${item.set} ${item.subtitle}`}</h2>
-          <p className="medium">{item.medium}</p>
           <img
             src={require(`../../assets/images/fineart/${item.img}`)}
             alt={`${item.set} ${item.subtitle}`}
           />
 
           <div className="art-details">
+            <h2>{`${item.set} ${item.subtitle}`}</h2>
+            <p className="text-right medium">{item.medium}</p>
+
             {item.artworks.map((artwork) => (
               <>
                 <p>{artwork.title}</p>
-                <p>
+                <p className="text-right">
                   {artwork.length} x {artwork.width}
                 </p>
               </>
