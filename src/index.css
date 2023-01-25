@@ -32,11 +32,6 @@ body {
   color: var(--tertiary);
 }
 
-/* code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
-
 #root {
   display: flex;
   flex-direction: column;
@@ -54,6 +49,13 @@ main {
 .dark {
   background-color: var(--tertiary);
   color: var(--primary);
+}
+
+.section {
+  color: var(--secondary);
+  box-shadow: .25vw .25vw 1vw var(--secondary);
+  margin: 4vw 0 1.5vw 1.5vw;
+
 }
 
 /* list styles */

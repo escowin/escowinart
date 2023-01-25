@@ -14,7 +14,7 @@ function Artist() {
   };
 
   return (
-    <section id="artist">
+    <section className="section" id="artist">
       <article id="profile-pic"></article>
 
       <article>

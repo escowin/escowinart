@@ -1,7 +1,10 @@
 import Logo from "../../assets/icons/logo-header.png";
 import "./index.css";
 import Artist from "../Artist";
-import Portfolio from "../Portfolio";
+import FineArt from "../FineArt";
+import Illustration from "../Illustration";
+import GraphicDesign from "../GraphicDesign";
+
 
 function Header(props) {
   const { currentComponent, setCurrentComponent } = props;
@@ -20,10 +23,22 @@ function Header(props) {
       <nav>
         <ul id="navigation">
           <li
-            className={currentComponent === "portfolio" ? "selected" : ""}
-            onClick={() => handleClick("portfolio")}
+            className={currentComponent === "fineArt" ? "selected" : ""}
+            onClick={() => handleClick("fineArt")}
           >
-            Portfolio
+            Fine art
+          </li>
+          <li
+            className={currentComponent === "illustration" ? "selected" : ""}
+            onClick={() => handleClick("illustration")}
+          >
+            Illustration
+          </li>
+          <li
+            className={currentComponent === "graphicDesign" ? "selected" : ""}
+            onClick={() => handleClick("graphicDesign")}
+          >
+            Graphic design
           </li>
           <li
             className={currentComponent === "artist" ? "selected" : ""}

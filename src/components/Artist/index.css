@@ -1,9 +1,7 @@
 #artist {
     display: grid;
     grid-template-columns: auto 1fr;
-    margin: 4vw 0 1.5vw 1.5vw;
     border-radius: 5rem 0rem 0rem 5rem;
-    box-shadow: .25vw .25vw 1vw var(--secondary);
     align-items: center;
     padding: .3rem 0 .3rem .5rem;
     color: var(--tertiary);
