@@ -21,15 +21,15 @@ function App() {
         {(() => {
           switch (currentComponent) {
             case "artist":
-              return <Artist />;
+              return <Artist/>;
             case "fineArt":
-              return <FineArt />;
+              return <FineArt/>;
             case "illustration":
-              return <Illustration />;
-            case "graphicDesign":
-              return <GraphicDesign />;
-            default:
               return <Illustration/>;
+            case "graphicDesign":
+              return <GraphicDesign/>;
+            default:
+              return <GraphicDesign/>;
           }
         })()}
       </main>

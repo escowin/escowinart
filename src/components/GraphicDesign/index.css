@@ -1,0 +1,9 @@
+#graphic-design {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#graphic-design img {
+    width: 95vw;
+}
