@@ -1,6 +1,6 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 import "./index.css";
 
@@ -25,20 +25,23 @@ function Artist() {
         <h3>{artist.name}</h3>
         <p>{artist.location}</p>
         <ul id="contact-links">
-          <li className='icon'>
-            <a href={`mailto:${artist.contact.email}`}>
-              <FontAwesomeIcon icon={faEnvelope}/>
-            </a>
+          <li
+            className="icon"
+            onClick={() => window.open(`mailto:${artist.contact.email}`)}
+          >
+            <FontAwesomeIcon icon={faEnvelope} />
           </li>
-          <li className='icon'>
-            <a href={artist.contact.github} target="_blank" rel='noreferrer'>
-              <FontAwesomeIcon icon={faGithub}/>
-            </a>
+          <li
+            className="icon"
+            onClick={() => window.open(artist.contact.github, "_blank")}
+          >
+            <FontAwesomeIcon icon={faGithub} />
           </li>
-          <li className='icon'>
-            <a href={artist.contact.linkedIn} target="_blank" rel='noreferrer'>
-                <FontAwesomeIcon icon={faLinkedin}/>
-            </a>
+          <li
+            className="icon"
+            onClick={() => window.open(artist.contact.linkedIn, "_blank")}
+          >
+            <FontAwesomeIcon icon={faLinkedin} />
           </li>
         </ul>
       </article>

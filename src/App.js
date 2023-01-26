@@ -10,7 +10,7 @@ import Illustration from "./components/Illustration";
 import GraphicDesign from "./components/GraphicDesign";
 
 function App() {
-  const [currentComponent, setCurrentComponent] = useState("fineart");
+  const [currentComponent, setCurrentComponent] = useState("homepage");
 
   return (
     <>
@@ -30,7 +30,7 @@ function App() {
             case "graphicDesign":
               return <GraphicDesign/>;
             default:
-              return <Homepage/>;
+              return <Homepage setCurrentComponent={setCurrentComponent} />;
           }
         })()}
       </main>
