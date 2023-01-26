@@ -1,10 +1,5 @@
 import Logo from "../../assets/icons/logo-header.png";
 import "./index.css";
-import Artist from "../Artist";
-import FineArt from "../FineArt";
-import Illustration from "../Illustration";
-import GraphicDesign from "../GraphicDesign";
-
 
 function Header(props) {
   const { currentComponent, setCurrentComponent } = props;
@@ -14,7 +9,7 @@ function Header(props) {
   };
 
   return (
-    <header>
+    <header className="dark">
       <section id="logo-container">
         <a href="/">
           <img src={Logo} id="logo" alt="Escowin Art" />

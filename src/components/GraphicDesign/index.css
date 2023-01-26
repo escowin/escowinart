@@ -7,3 +7,17 @@
 #graphic-design img {
     width: 95vw;
 }
+
+@media screen and (min-width: 1024px) {
+    #graphic-design {
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    #graphic-design img {
+        height: 40vh;
+        width: auto;
+    }
+}

@@ -7,3 +7,46 @@
 .img-wrapper {
     display: flex;
 }
+
+@media screen and (min-width: 1024px) {
+    * {
+        /* outline: 1px dotted blue */
+    }
+
+    .lg-hide {
+        display: none;
+    }
+
+    .title {
+        padding-left: 1rem;
+    }
+    
+    .volume {
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: none;
+        white-space: nowrap;
+        height: 40vh;
+    }
+
+    /* Style the custom scrollbar */
+    .volume::-webkit-scrollbar {
+        margin-top: 5vw;
+        width: .25rem;
+        /* Width of the scrollbar */
+        background-color: transparent;
+        /* Background color of the scrollbar */
+    }
+
+    .volume::-webkit-scrollbar-thumb {
+        border-radius: 1rem;
+        /* Border radius of the scrollbar thumb */
+        background-color: rgba(0, 0, 0, 0.2);
+        /* Background color of the scrollbar thumb */
+    }
+
+    .volume::-webkit-scrollbar-thumb:active,
+    .volume::-webkit-scrollbar-thumb:hover {
+        background-color: var(--tertiary);
+    }
+}

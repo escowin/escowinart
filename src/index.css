@@ -54,7 +54,7 @@ main {
 .section {
   color: var(--secondary);
   box-shadow: .25vw .25vw 1vw var(--secondary);
-  margin: 4vw 0 1.5vw 1.5vw;
+  margin: 2vh 0 1.5vw 1.5vw;
 
 }
 

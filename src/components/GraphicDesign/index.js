@@ -21,7 +21,7 @@ function GraphicDesign() {
         {portfolio.map((graphic, index) => (
             <article key={index} id={graphic.name} className="graphic-wrapper">
                 <h2>{graphic.name}</h2>
-                <img src={require(`../../assets/images/graphic-design/${graphic.img}`)} />
+                <img src={require(`../../assets/images/graphic-design/${graphic.img}`)} alt={graphic.name} />
             </article>
         ))}
     </section>

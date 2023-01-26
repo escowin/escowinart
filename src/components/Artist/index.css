@@ -1,7 +1,7 @@
 #artist {
     display: grid;
     grid-template-columns: auto 1fr;
-    border-radius: 5rem 0rem 0rem 5rem;
+    border-radius: 5rem 0 0 5rem;
     align-items: center;
     padding: .3rem 0 .3rem .5rem;
     color: var(--tertiary);
@@ -17,6 +17,23 @@
     box-shadow: inset .25vw .25vw 4rem var(--tertiary), .2vw .2vw .15rem var(--tertiary);
 }
 
+#contact-links {
+    display: flex;
+    
+}
 p, #contact-links li {
     padding-left: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+    #artist {
+        border-radius: 10rem 0 0 10rem;
+    }
+
+    #profile-pic {
+        --size: 20vw;
+        height: var(--size);
+        width: var(--size);
+        margin-right: 2vw;
+    }
 }

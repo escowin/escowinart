@@ -1,3 +1,7 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+
 import "./index.css";
 
 function Artist() {
@@ -6,8 +10,8 @@ function Artist() {
     title: "artist",
     location: "austin, tx",
     contact: {
-      github: "escowin",
-      linkedIn: "escowin",
+      github: "https://github.com/escowin",
+      linkedIn: "https://www.linkedin.com/in/escowin/",
       email: "edwin@escowinart.com",
     },
     bio: "minimal",
@@ -21,9 +25,21 @@ function Artist() {
         <h3>{artist.name}</h3>
         <p>{artist.location}</p>
         <ul id="contact-links">
-          <li>{artist.contact.email}</li>
-          <li>linkedin: {artist.contact.linkedIn}</li>
-          <li>github: {artist.contact.github}</li>
+          <li>
+            <a href={`mailto:${artist.contact.email}`}>
+              <FontAwesomeIcon icon={faEnvelope}/>
+            </a>
+          </li>
+          <li>
+            <a href={artist.contact.github} target="_blank" rel='noreferrer'>
+              <FontAwesomeIcon icon={faGithub}/>
+            </a>
+          </li>
+          <li>
+            <a href={artist.contact.linkedIn} target="_blank" rel='noreferrer'>
+                <FontAwesomeIcon icon={faLinkedin}/>
+            </a>
+          </li>
         </ul>
       </article>
     </section>

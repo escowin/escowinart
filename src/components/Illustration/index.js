@@ -98,7 +98,7 @@ function Illustration() {
           <h2>{illustration.series}</h2>
           {illustration.volumes.reverse().map((volume) => (
             <article key={volume.title} id={volume.title} className="volume">
-              <h3>{volume.title}-</h3>
+              <h3 className="title">{volume.title}<span className="lg-hide">-</span></h3>
               <div className="img-wrapper">
                 {volume.images.map((img) => (
                   <img

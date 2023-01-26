@@ -28,3 +28,9 @@ nav {
     list-style: none;
 }
 
+@media screen and (min-width: 1024px) {
+    header {
+        flex-direction: row;
+        gap: 5vw;
+    }
+}
