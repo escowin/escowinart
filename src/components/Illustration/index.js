@@ -96,15 +96,16 @@ function Illustration() {
           className="section"
         >
           <h2>{illustration.series}</h2>
-          {illustration.volumes.map((volume) => (
-            <article key={volume.title} id={volume.title}>
-              <h3>{volume.title}</h3>
-              <div>
+          {illustration.volumes.reverse().map((volume) => (
+            <article key={volume.title} id={volume.title} className="volume">
+              <h3>{volume.title}-</h3>
+              <div className="img-wrapper">
                 {volume.images.map((img) => (
                   <img
                     src={require(`../../assets/images/illustration/${illustration.series}/${img}`)}
                     key={img}
                     alt={volume.title}
+                    className="illustration-img"
                   />
                 ))}
               </div>

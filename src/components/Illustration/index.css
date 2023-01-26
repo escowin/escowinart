@@ -1,0 +1,9 @@
+.volume {
+    display: flex;
+    overflow: auto;
+    height: 30vh
+}
+
+.img-wrapper {
+    display: flex;
+}
