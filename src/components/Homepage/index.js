@@ -31,12 +31,13 @@ function Homepage() {
 
   return (
     <section className="section" id="homepage">
-      <article className="portfolio" id="random-fineart">
+      <article className="portfolio" id="random-fineart" >
         <img
           className="random-img"
           alt="fine art"
           src={require(`../../assets/images/fineart/${randomFineArt}`)}
         />
+        <p>Fine art</p>
       </article>
 
       <article
@@ -49,6 +50,7 @@ function Homepage() {
           alt="illustration"
           src={require(`../../assets/images/illustration/${randomIllustration}`)}
         />
+        <p>Illustration</p>
       </article>
 
       <article
@@ -61,6 +63,7 @@ function Homepage() {
           alt="graphic design"
           src={require(`../../assets/images/graphic-design/${randomGraphicDesign}`)}
         />
+        <p>Graphic design</p>
       </article>
 
       <article className="portfolio" id="software">
@@ -68,7 +71,8 @@ function Homepage() {
           className="random-img"
           alt="software"
           src={require(`../../assets/images/software/professional-portfolio.jpg`)}
-        />{" "}
+        />
+        <p>Software</p>
       </article>
     </section>
   );

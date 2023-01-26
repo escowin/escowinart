@@ -25,17 +25,17 @@ function Artist() {
         <h3>{artist.name}</h3>
         <p>{artist.location}</p>
         <ul id="contact-links">
-          <li>
+          <li className='icon'>
             <a href={`mailto:${artist.contact.email}`}>
               <FontAwesomeIcon icon={faEnvelope}/>
             </a>
           </li>
-          <li>
+          <li className='icon'>
             <a href={artist.contact.github} target="_blank" rel='noreferrer'>
               <FontAwesomeIcon icon={faGithub}/>
             </a>
           </li>
-          <li>
+          <li className='icon'>
             <a href={artist.contact.linkedIn} target="_blank" rel='noreferrer'>
                 <FontAwesomeIcon icon={faLinkedin}/>
             </a>

@@ -10,10 +10,13 @@ function Header(props) {
 
   return (
     <header className="dark">
-      <section id="logo-container">
-        <a href="/">
-          <img src={Logo} id="logo" alt="Escowin Art" onClick={() => handleClick("homepage")} />
-        </a>
+      <section id="logo-container" onClick={() => handleClick("homepage")}>
+        <img
+          src={Logo}
+          id="logo"
+          alt="Escowin Art"
+          className={currentComponent === "homepage" ? "logo-selected" : ""}
+        />
       </section>
       <nav>
         <ul id="navigation">

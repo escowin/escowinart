@@ -35,7 +35,6 @@ function Footer() {
         >
           &copy;<span ref={dateRef}></span> Escowin art
         </a>
-        &emsp; Austin, TX
       </h2>
     </footer>
   );

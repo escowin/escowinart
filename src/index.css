@@ -78,3 +78,7 @@ a:hover {
 .selected {
   color: var(--quaternary);
 }
+
+.logo-selected {
+  background: linear-gradient(to left, transparent, var(--quaternary));
+}

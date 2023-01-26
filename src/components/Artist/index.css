@@ -14,14 +14,14 @@
     width: var(--size);
     background: url('../../assets/images/profile.jpg');
     background-size: cover;
-    box-shadow: inset .25vw .25vw 4rem var(--tertiary), .2vw .2vw .15rem var(--tertiary);
+    box-shadow: inset .25vw .25vw 4rem var(--tertiary), .2vw .2vw .5rem var(--tertiary);
 }
 
 #contact-links {
     display: flex;
     
 }
-p, #contact-links li {
+p, .icon {
     padding-left: 1rem;
 }
 
@@ -35,5 +35,9 @@ p, #contact-links li {
         height: var(--size);
         width: var(--size);
         margin-right: 2vw;
+    }
+
+    .icon {
+        font-size: 1.5rem;
     }
 }
