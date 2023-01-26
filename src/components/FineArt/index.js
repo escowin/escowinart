@@ -134,12 +134,16 @@ function FineArt() {
       ],
     },
   ];
-  art.reverse();
+  const newOrder = art.reverse();
+
+  function getDimensions(length, width) {
+    return `${length} x ${width}`;
+  };
 
   return (
     <section className="section" id="fine-art">
-      {art.map((item) => (
-        <article key={item.set} className="artwork">
+      {newOrder.map((item, setIndex) => (
+        <article key={setIndex} className="artwork">
           <img
             src={require(`../../assets/images/fineart/${item.img}`)}
             alt={`${item.set} ${item.subtitle}`}
@@ -149,11 +153,11 @@ function FineArt() {
             <h2>{`${item.set} ${item.subtitle}`}</h2>
             <p className="text-right medium">{item.medium}</p>
 
-            {item.artworks.map((artwork) => (
+            {item.artworks.map((artwork, artworkIndex) => (
               <>
-                <p>{artwork.title}</p>
-                <p className="text-right">
-                  {artwork.length} x {artwork.width}
+                <p key={`${artwork.title}}`}>{artwork.title}</p>
+                <p key={artworkIndex} className="text-right">
+                  {getDimensions(artwork.length, artwork.width)}
                 </p>
               </>
             ))}

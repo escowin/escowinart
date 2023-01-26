@@ -29,7 +29,7 @@ function App() {
             case "graphicDesign":
               return <GraphicDesign />;
             default:
-              return <FineArt/>;
+              return <Illustration/>;
           }
         })()}
       </main>
