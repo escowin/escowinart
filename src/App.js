@@ -3,6 +3,7 @@ import { useState } from "react";
 // components
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import Homepage from "./components/Homepage";
 import Artist from "./components/Artist";
 import FineArt from "./components/FineArt";
 import Illustration from "./components/Illustration";
@@ -29,7 +30,7 @@ function App() {
             case "graphicDesign":
               return <GraphicDesign/>;
             default:
-              return <FineArt/>;
+              return <Homepage/>;
           }
         })()}
       </main>

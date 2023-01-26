@@ -12,7 +12,7 @@ function Header(props) {
     <header className="dark">
       <section id="logo-container">
         <a href="/">
-          <img src={Logo} id="logo" alt="Escowin Art" />
+          <img src={Logo} id="logo" alt="Escowin Art" onClick={() => handleClick("homepage")} />
         </a>
       </section>
       <nav>

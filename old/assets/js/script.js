@@ -9,18 +9,6 @@ const aboutSection = document.getElementById("about");
 const contactSection = document.getElementById("contact");
 
 // data
-
-// - gets & displays current year
-function currentYear() {
-  let date = new Date().getFullYear();
-  console.log(`
-      \u00A9 ${date} Edwin M. Escobar
-      https://github.com/escowin/escowinart
-      `);
-  const dateEl = document.querySelector("#date");
-  dateEl.textContent = date;
-}
-
 // portfolio display logic | read from bottom to top
 // - displays the randomly chosen portfolio bg urls each time the user loads the page
 function displayPortfolios(portfolio) {
@@ -138,5 +126,4 @@ function script(title) {
 }
 
 // calls
-currentYear();
 script(page);
