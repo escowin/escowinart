@@ -64,16 +64,9 @@ ul {
 }
 
 /* typography */
-
-a {
-  color: inherit;
-  transition: 1s;
+main * {
+  color: var(--tertiary);
 }
-
-a:hover {
-  color: var(--quaternary);
-}
-
 
 .selected {
   color: var(--quaternary);

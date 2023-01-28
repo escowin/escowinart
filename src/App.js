@@ -30,6 +30,7 @@ function App() {
             case "graphicDesign":
               return <GraphicDesign/>;
             default:
+              // return <Artist/>;
               return <Homepage setCurrentComponent={setCurrentComponent} />;
           }
         })()}

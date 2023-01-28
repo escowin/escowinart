@@ -19,13 +19,15 @@
 
 #contact-links {
     display: flex;
-    
+
 }
-p, .icon {
+
+p,
+.icon {
     padding-left: 1rem;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
     #artist {
         border-radius: 10rem 0 0 10rem;
     }
@@ -36,8 +38,18 @@ p, .icon {
         width: var(--size);
         margin-right: 2vw;
     }
+}
+
+@media screen and (min-width: 1024px) {
 
     .icon {
         font-size: 1.5rem;
+    }
+
+    #profile-pic {
+        --size: 12.5vw;
+        height: var(--size);
+        width: var(--size);
+        margin-right: 2vw;
     }
 }

@@ -33,4 +33,8 @@ nav {
         flex-direction: row;
         gap: 5vw;
     }
+
+    #logo {
+        height: 1rem;
+    }
 }

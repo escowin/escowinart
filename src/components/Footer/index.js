@@ -19,22 +19,12 @@ function Footer() {
     const date = new Date().getFullYear();
     // updates the text of the date element using ref
     dateRef.current.textContent = date;
-    console.log(`
-      \u00A9 ${date} Edwin M. Escobar
-      https://github.com/escowin/escowinart
-      `);
   }
 
   return (
     <footer className="dark">
-      <h2>
-        <a
-          href="https://github.com/escowin/escowinart/"
-          target="_blank"
-          rel="noreferrer"
-        >
+      <h2 onClick={() => window.open("https://github.com/escowin/escowinart/", "_blank")}>
           &copy;<span ref={dateRef}></span> Escowin art
-        </a>
       </h2>
     </footer>
   );

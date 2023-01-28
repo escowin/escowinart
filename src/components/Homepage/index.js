@@ -55,7 +55,7 @@ function Homepage({ setCurrentComponent }) {
         className="portfolio"
         id="random-illustration"
         onClick={() => setCurrentComponent("illustration")}
-        >
+      >
         <img
           className="random-img"
           alt="illustration"
@@ -68,7 +68,7 @@ function Homepage({ setCurrentComponent }) {
         className="portfolio"
         id="random-graphic"
         onClick={() => setCurrentComponent("graphicDesign")}
-        >
+      >
         <img
           className="random-img"
           alt="graphic design"
@@ -77,12 +77,18 @@ function Homepage({ setCurrentComponent }) {
         <p>Graphic design</p>
       </article>
 
-      <article className="portfolio" id="software">
+      <article
+        className="portfolio"
+        id="software"
+        onClick={() =>
+          window.open(
+            "https://escowin.github.io/portfolio",
+            "_blank")}
+      >
         <img
           className="random-img"
           alt="software"
           src={require(`../../assets/images/software/professional-portfolio.jpg`)}
-          onClick={() => window.open("https://escowin.github.io/professional-portfolio", "_blank")}
         />
         <p>Software</p>
       </article>
