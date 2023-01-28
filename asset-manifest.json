@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d6659197.css",
-    "main.js": "/static/js/main.d65cd371.js",
+    "main.css": "/static/css/main.d3735874.css",
+    "main.js": "/static/js/main.eeaba9f9.js",
     "static/js/787.42e08ff9.chunk.js": "/static/js/787.42e08ff9.chunk.js",
     "static/media/edwin-escobar-20170404-hebdomas-I-tuesday.jpg": "/static/media/edwin-escobar-20170404-hebdomas-I-tuesday.c0009631bb410426c72d.jpg",
     "static/media/edwin-escobar-20170405-hebdomas-I-wednesday.jpg": "/static/media/edwin-escobar-20170405-hebdomas-I-wednesday.25699f03b33f634a481f.jpg",
@@ -85,12 +85,12 @@
     "static/media/edwin-escobar-20210220-capitalism.png": "/static/media/edwin-escobar-20210220-capitalism.567ea250e00e66d08c92.png",
     "static/media/edwin-escobar-20220515-stop-being-poor.png": "/static/media/edwin-escobar-20220515-stop-being-poor.72d06fa301ab5df01f32.png",
     "index.html": "/index.html",
-    "main.d6659197.css.map": "/static/css/main.d6659197.css.map",
-    "main.d65cd371.js.map": "/static/js/main.d65cd371.js.map",
+    "main.d3735874.css.map": "/static/css/main.d3735874.css.map",
+    "main.eeaba9f9.js.map": "/static/js/main.eeaba9f9.js.map",
     "787.42e08ff9.chunk.js.map": "/static/js/787.42e08ff9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d6659197.css",
-    "static/js/main.d65cd371.js"
+    "static/css/main.d3735874.css",
+    "static/js/main.eeaba9f9.js"
   ]
 }
