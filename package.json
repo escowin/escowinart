@@ -1,7 +1,7 @@
 {
   "name": "escowinart",
   "homepage": "https://escowinart.com",
-  "version": "0.2.0",
+  "version": "2.0.2",
   "private": false,
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.2.1",
