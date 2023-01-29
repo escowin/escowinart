@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d3735874.css",
-    "main.js": "/static/js/main.eeaba9f9.js",
+    "main.css": "/static/css/main.d0b31732.css",
+    "main.js": "/static/js/main.b2fd921a.js",
     "static/js/787.42e08ff9.chunk.js": "/static/js/787.42e08ff9.chunk.js",
     "static/media/edwin-escobar-20170404-hebdomas-I-tuesday.jpg": "/static/media/edwin-escobar-20170404-hebdomas-I-tuesday.c0009631bb410426c72d.jpg",
     "static/media/edwin-escobar-20170405-hebdomas-I-wednesday.jpg": "/static/media/edwin-escobar-20170405-hebdomas-I-wednesday.25699f03b33f634a481f.jpg",
@@ -75,22 +75,24 @@
     "static/media/edwin-escobar-days-20210331-0022.jpg": "/static/media/edwin-escobar-days-20210331-0022.5d96b428920ea0e3eaf3.jpg",
     "static/media/edwin-escobar-days-20210424-0030.jpg": "/static/media/edwin-escobar-days-20210424-0030.ab394c74a3552e6cb6c5.jpg",
     "static/media/edwin-escobar-days-20210423-0029.jpg": "/static/media/edwin-escobar-days-20210423-0029.707d444bf9272b464d95.jpg",
-    "static/media/professional-portfolio.jpg": "/static/media/professional-portfolio.27e55ea2fd6237166a17.jpg",
     "static/media/edwin-escobar-days-20210422-0028.jpg": "/static/media/edwin-escobar-days-20210422-0028.39af490bd3a2f920444a.jpg",
     "static/media/edwin-escobar-days-20210426-0032.jpg": "/static/media/edwin-escobar-days-20210426-0032.480cde958308f2cb8408.jpg",
     "static/media/edwin-escobar-days-20210427-0033.jpg": "/static/media/edwin-escobar-days-20210427-0033.03b4c00ce80de2354079.jpg",
     "static/media/edwin-escobar-days-20210429-0035.jpg": "/static/media/edwin-escobar-days-20210429-0035.7c73e618736b0072c459.jpg",
     "static/media/edwin-escobar-days-20210401-0023.jpg": "/static/media/edwin-escobar-days-20210401-0023.6abb2fcdd9a25166ada8.jpg",
     "static/media/edwin-escobar-days-20210428-0034.jpg": "/static/media/edwin-escobar-days-20210428-0034.5c08ec624b01c0cd2742.jpg",
+    "static/media/portfolio-lg.jpg": "/static/media/portfolio-lg.2a9f86b6fd61dacb7a41.jpg",
     "static/media/edwin-escobar-20210220-capitalism.png": "/static/media/edwin-escobar-20210220-capitalism.567ea250e00e66d08c92.png",
+    "static/media/portfolio-md.jpg": "/static/media/portfolio-md.4b776b4b290cffed115a.jpg",
+    "static/media/portfolio-sm.jpg": "/static/media/portfolio-sm.aa4568de095b22524228.jpg",
     "static/media/edwin-escobar-20220515-stop-being-poor.png": "/static/media/edwin-escobar-20220515-stop-being-poor.72d06fa301ab5df01f32.png",
     "index.html": "/index.html",
-    "main.d3735874.css.map": "/static/css/main.d3735874.css.map",
-    "main.eeaba9f9.js.map": "/static/js/main.eeaba9f9.js.map",
+    "main.d0b31732.css.map": "/static/css/main.d0b31732.css.map",
+    "main.b2fd921a.js.map": "/static/js/main.b2fd921a.js.map",
     "787.42e08ff9.chunk.js.map": "/static/js/787.42e08ff9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d3735874.css",
-    "static/js/main.eeaba9f9.js"
+    "static/css/main.d0b31732.css",
+    "static/js/main.b2fd921a.js"
   ]
 }
