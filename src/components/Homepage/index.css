@@ -29,11 +29,20 @@
 .random-img {
     border-radius: inherit;
     width: 100%;
-    height: 35vh;
+    height: 41.25vh;
     object-fit: cover;
     object-position: center;
     position: relative;
     z-index: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .portfolio p {
+        font-size: 1.25rem;
+    }
+    .random-img {
+        height: 42.5vh;
+    }
 }
 
 @media screen and (min-width: 1024px) {

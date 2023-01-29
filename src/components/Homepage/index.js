@@ -39,6 +39,15 @@ function Homepage({ setCurrentComponent }) {
       Math.floor(Math.random() * portfolios.graphicDesign.length)
     ];
 
+  let suffix = "";
+  if (window.matchMedia("(min-width: 1024px)").matches) {
+    suffix = "-lg";
+  } else if (window.matchMedia("(min-width: 768px)").matches) {
+    suffix = "-md";
+  } else if (!window.matchMedia("(min-width: 768px)").matches && !window.matchMedia("(min-width: 1024px)").matches) {
+    suffix = "-sm";
+  }
+
   return (
     <section className="section" id="homepage">
       <article className="portfolio" id="random-fineart">
@@ -81,14 +90,13 @@ function Homepage({ setCurrentComponent }) {
         className="portfolio"
         id="software"
         onClick={() =>
-          window.open(
-            "https://escowin.github.io/portfolio",
-            "_blank")}
+          window.open("https://escowin.github.io/portfolio", "_blank")
+        }
       >
         <img
           className="random-img"
           alt="software"
-          src={require(`../../assets/images/software/professional-portfolio.jpg`)}
+          src={require(`../../assets/images/software/portfolio${suffix}.jpg`)}
         />
         <p>Software</p>
       </article>
