@@ -10,14 +10,23 @@
 
 @media screen and (min-width: 1024px) {
     #graphic-design {
-        flex-direction: row;
+        padding-left: .5rem;
         align-items: flex-start;
         flex-wrap: wrap;
-        justify-content: space-around;
+        gap: .5rem 0;
+        height: 85vh;
     }
+
 
     #graphic-design img {
         height: 40vh;
         width: auto;
+    }
+
+    #super-ego {
+        height: 95%;
+    }
+    #super-ego img {
+        height: 100%;
     }
 }

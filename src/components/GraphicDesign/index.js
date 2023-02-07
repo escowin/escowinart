@@ -3,15 +3,15 @@ import "./index.css";
 function GraphicDesign() {
   const portfolio = [
     {
-      name: "id | keep cool with coolidge",
+      name: "id",
       img: "edwin-escobar-20220515-cool-with-coolidge.jpg",
     },
     {
-      name: "ego | stop being poor",
+      name: "ego",
       img: "edwin-escobar-20220515-stop-being-poor.png",
     },
     {
-      name: "super-ego | parrot social media",
+      name: "super-ego",
       img: "edwin-escobar-20220515-mindlessly-parrot-social-media.png",
     },
   ];

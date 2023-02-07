@@ -23,7 +23,7 @@ function Artist() {
     <>
       <section className="section" id="artist">
         <article id="profile-pic"></article>
-        <article>
+        <article id="contact">
           <h3>{artist.name}</h3>
           <p>{artist.location}</p>
           <ul id="contact-links">

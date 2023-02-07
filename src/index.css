@@ -68,6 +68,15 @@ main * {
   color: var(--tertiary);
 }
 
+.link, .icon * {
+  cursor: pointer;
+  transition: color 1s;  
+}
+
+.link:hover, .icon *:hover {
+  color: var(--quaternary);
+}
+
 .selected {
   color: var(--quaternary);
 }

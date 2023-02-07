@@ -1,7 +1,6 @@
 footer {
-    font-size: 65%;
-    box-shadow: 0 -.25vh 2rem var(--secondary);
-    padding: .25vh 0 1vh 0;
+    font-size: .65rem;
+    padding: .25vh 0 .45vh 0;
     color: var(--primary);
     opacity: 75%;
     text-align: center;

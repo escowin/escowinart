@@ -23,9 +23,9 @@ function Footer() {
 
   return (
     <footer className="dark">
-      <h2 onClick={() => window.open("https://github.com/escowin/escowinart/", "_blank")}>
+      <p onClick={() => window.open("https://github.com/escowin/escowinart/", "_blank")}>
           &copy;<span ref={dateRef}></span> Escowin art
-      </h2>
+      </p>
     </footer>
   );
 }

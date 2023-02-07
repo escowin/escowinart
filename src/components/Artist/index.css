@@ -41,7 +41,19 @@ p,
 }
 
 @media screen and (min-width: 1024px) {
+    #artist {
+        align-items: flex-start;
+    }
 
+    #contact {
+        margin-top: 3vh;
+    }
+    
+    h3 {
+        width: fit-content;
+        border-bottom: 1px solid var(--secondary);
+        padding-right: .25rem;
+    }
     .icon {
         font-size: 1.5rem;
     }
@@ -51,5 +63,11 @@ p,
         height: var(--size);
         width: var(--size);
         margin-right: 2vw;
+        box-shadow: inset .25vw .25vw 2rem var(--tertiary);
+    }
+
+    .chapter {
+        height: 45vh;
+        width: auto;
     }
 }

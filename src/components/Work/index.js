@@ -3,7 +3,9 @@ import "./index.css";
 function Work() {
   const graphicNovels = [
     {
-      title: "blue strawberry",
+      title: "Blue strawberry",
+      years: "2017 - 2018",
+      url: "https://escowin.github.io/bluestrawberry",
       role: "graphic novelist",
       id: "bluestrawberry",
       chapters: [
@@ -49,7 +51,7 @@ function Work() {
         <h2>Professional experience</h2>
         {graphicNovels.map((graphicNovel, i) => (
           <article key={i} id="graphic-novel">
-            <h3>Graphic novel, {graphicNovel.title}</h3>
+            <h3><span className="link" onClick={() => window.open(graphicNovel.url, "_blank")}>{graphicNovel.title}</span> ({graphicNovel.years}), {graphicNovel.role}</h3>
             <div className="chapters">
               {graphicNovel.chapters.map((chapter, j) => (
                 <img
