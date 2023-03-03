@@ -9,6 +9,7 @@
     overflow-x: scroll;
     gap: .25rem;
 }
+
 .chapter {
     width: 80vw;
 }
@@ -26,21 +27,22 @@
 }
 
 @media screen and (min-width: 1024px) {
-        /* Style the custom scrollbar */
-        .chapters::-webkit-scrollbar {
-            margin-top: 5vw;
-            width: .25rem;
-            background-color: transparent;
-        }
-    
-        .chapters::-webkit-scrollbar-thumb {
-            border-radius: 1rem;
-            background-color: rgba(0, 0, 0, 0.2);
-        }
-    
-        .chapters::-webkit-scrollbar-thumb:active,
-        .chapters::-webkit-scrollbar-thumb:hover {
-            background-color: var(--tertiary);
-        }
-    
+
+    /* Style the custom scrollbar */
+    .chapters::-webkit-scrollbar {
+        margin-top: 5vw;
+        width: .25rem;
+        background-color: transparent;
+    }
+
+    .chapters::-webkit-scrollbar-thumb {
+        border-radius: 1rem;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .chapters::-webkit-scrollbar-thumb:active,
+    .chapters::-webkit-scrollbar-thumb:hover {
+        background-color: var(--tertiary);
+    }
+
 }
