@@ -1,16 +1,21 @@
-import portfolioData from "../../assets/data";
 import "./index.css";
 
-function Work() {
-  const graphicNovels = portfolioData.graphicNovels;
-
+function Work({ graphicNovels }) {
   return (
     <>
       <section className="section" id="work">
         <h2>Professional experience</h2>
         {graphicNovels.map((graphicNovel, i) => (
           <article key={i} id="graphic-novel">
-            <h3><span className="link" onClick={() => window.open(graphicNovel.url, "_blank")}>{graphicNovel.title}</span> ({graphicNovel.years}), {graphicNovel.role}</h3>
+            <h3>
+              <span
+                className="link"
+                onClick={() => window.open(graphicNovel.url, "_blank")}
+              >
+                {graphicNovel.title}
+              </span>{" "}
+              ({graphicNovel.years}), {graphicNovel.role}
+            </h3>
             <div className="chapters">
               {graphicNovel.chapters.map((chapter, j) => (
                 <img
