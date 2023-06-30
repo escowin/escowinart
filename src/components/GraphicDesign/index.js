@@ -1,20 +1,8 @@
+import portfolioData from "../../assets/data";
 import "./index.css";
 
 function GraphicDesign() {
-  const portfolio = [
-    {
-      name: "id",
-      img: "edwin-escobar-20220515-cool-with-coolidge.jpg",
-    },
-    {
-      name: "ego",
-      img: "edwin-escobar-20220515-stop-being-poor.png",
-    },
-    {
-      name: "super-ego",
-      img: "edwin-escobar-20220515-mindlessly-parrot-social-media.png",
-    },
-  ];
+  const portfolio = portfolioData.graphicDesign
 
   return (
     <section id="graphic-design" className="section">

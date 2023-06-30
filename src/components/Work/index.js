@@ -1,49 +1,8 @@
+import portfolioData from "../../assets/data";
 import "./index.css";
 
 function Work() {
-  const graphicNovels = [
-    {
-      title: "Blue strawberry",
-      years: "2017 - 2018",
-      url: "https://escowin.github.io/bluestrawberry",
-      role: "graphic novelist",
-      id: "bluestrawberry",
-      chapters: [
-        {
-          title: "bluestrawberry-01",
-          img: "edwin-escobar-20171018-bluestrawberry-01",
-        },
-        {
-          title: "bluestrawberry-02",
-          img: "edwin-escobar-20171025-bluestrawberry-02",
-        },
-        {
-          title: "bluestrawberry-03",
-          img: "edwin-escobar-20171112-bluestrawberry-03",
-        },
-        {
-          title: "bluestrawberry-04",
-          img: "edwin-escobar-20180502-bluestrawberry-04",
-        },
-        {
-          title: "bluestrawberry-05",
-          img: "edwin-escobar-20180509-bluestrawberry-05",
-        },
-        {
-          title: "bluestrawberry-06",
-          img: "edwin-escobar-20180516-bluestrawberry-06",
-        },
-        {
-          title: "bluestrawberry-07",
-          img: "edwin-escobar-20180523-bluestrawberry-07",
-        },
-        {
-          title: "bluestrawberry-08",
-          img: "edwin-escobar-20180530-bluestrawberry-08",
-        },
-      ],
-    },
-  ];
+  const graphicNovels = portfolioData.graphicNovels;
 
   return (
     <>

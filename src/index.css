@@ -84,3 +84,11 @@ main * {
 .logo-selected {
   background: linear-gradient(to left, transparent, var(--quaternary));
 }
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+}

@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState } from "react";
 
 // components
@@ -10,32 +11,23 @@ import Illustration from "./components/Illustration";
 import GraphicDesign from "./components/GraphicDesign";
 
 function App() {
-  const [currentComponent, setCurrentComponent] = useState("homepage");
+  // const [currentComponent, setCurrentComponent] = useState("homepage");
 
   return (
     <>
-      <Header
-        currentComponent={currentComponent}
-        setCurrentComponent={setCurrentComponent}
-      />
-      <main>
-        {(() => {
-          switch (currentComponent) {
-            case "artist":
-              return <Artist/>;
-            case "fineArt":
-              return <FineArt/>;
-            case "illustration":
-              return <Illustration/>;
-            case "graphicDesign":
-              return <GraphicDesign/>;
-            default:
-              // return <Artist/>;
-              return <Homepage setCurrentComponent={setCurrentComponent} />;
-          }
-        })()}
-      </main>
-      <Footer />
+      <Router>
+        <Header />
+        <main>
+          <Routes>
+            <Route path="/" element={<Homepage />} />
+            <Route path="/artist" element={<Artist />} />
+            <Route path="/fine-art" element={<FineArt />} />
+            <Route path="/illustration" element={<Illustration />} />
+            <Route path="/graphic-design" element={<GraphicDesign />} />
+          </Routes>
+        </main>
+        <Footer />
+      </Router>
     </>
   );
 }
