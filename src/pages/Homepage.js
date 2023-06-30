@@ -54,7 +54,7 @@ function Homepage({ setCurrentComponent }) {
         <img
           className="random-img"
           alt="fine art"
-          src={require(`../../assets/images/fineart/${randomFineArt}`)}
+          src={require(`../assets/images/fineart/${randomFineArt}`)}
           onClick={() => setCurrentComponent("fineArt")}
         />
         <p>Fine art</p>
@@ -68,7 +68,7 @@ function Homepage({ setCurrentComponent }) {
         <img
           className="random-img"
           alt="illustration"
-          src={require(`../../assets/images/illustration/${randomIllustration}`)}
+          src={require(`../assets/images/illustration/${randomIllustration}`)}
         />
         <p>Illustration</p>
       </article>
@@ -81,7 +81,7 @@ function Homepage({ setCurrentComponent }) {
         <img
           className="random-img"
           alt="graphic design"
-          src={require(`../../assets/images/graphic-design/${randomGraphicDesign}`)}
+          src={require(`../assets/images/graphic-design/${randomGraphicDesign}`)}
         />
         <p>Graphic design</p>
       </article>
@@ -96,7 +96,7 @@ function Homepage({ setCurrentComponent }) {
         <img
           className="random-img"
           alt="software"
-          src={require(`../../assets/images/software/portfolio${suffix}.jpg`)}
+          src={require(`../assets/images/software/portfolio${suffix}.jpg`)}
         />
         <p>Software</p>
       </article>

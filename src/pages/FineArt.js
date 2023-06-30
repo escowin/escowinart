@@ -15,7 +15,7 @@ function FineArt() {
       {newOrder.map((item, setIndex) => (
         <article key={setIndex} className="artwork">
           <img
-            src={require(`../../assets/images/fineart/${item.img}`)}
+            src={require(`../assets/images/fineart/${item.img}`)}
             alt={`${item.set} ${item.subtitle}`}
           />
 

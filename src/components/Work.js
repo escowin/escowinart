@@ -21,7 +21,7 @@ function Work({ graphicNovels }) {
                 <img
                   key={`${i}-${j}`}
                   className="chapter"
-                  src={require(`../../assets/images/illustration/${graphicNovel.id}/${chapter.img}.jpg`)}
+                  src={require(`../assets/images/illustration/${graphicNovel.id}/${chapter.img}.jpg`)}
                   alt={chapter.title}
                 />
               ))}

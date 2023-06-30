@@ -3,46 +3,35 @@ import Logo from "../assets/icons/logo-header.png";
 import "../assets/css/header.css";
 
 function Header() {
-  // const { currentComponent, setCurrentComponent } = props;
-  // console.log(props)
-  // const handleClick = (component) => {
-  //   setCurrentComponent(component);
-  // };
-
   const navLinks = [
     {
       name: "Fine art",
-      path: "fine-art"
+      path: "fine-art",
     },
     {
       name: "Illustration",
-      path: "illustration"
+      path: "illustration",
     },
     {
       name: "Graphic design",
-      path: "graphic-design"
+      path: "graphic-design",
     },
     {
       name: "Artist",
-      path: "artist"
-    }
-  ]
+      path: "artist",
+    },
+  ];
 
   return (
     <header className="dark">
-      <section id="logo-container" 
-      // onClick={() => handleClick("homepage")}
-      >
-        <img
-          src={Logo}
-          id="logo"
-          alt="Escowin Art"
-          // className={currentComponent === "homepage" ? "logo-selected" : ""}
-        />
+      <section id="logo-container">
+        <Link to={""}>
+          <img src={Logo} id="logo" alt="Escowin Art" />
+        </Link>
       </section>
       <nav>
         <ul id="navigation">
-        {navLinks.map((navLink, i) => (
+          {navLinks.map((navLink, i) => (
             <li key={i}>
               <Link to={`/${navLink.path}`}>{navLink.name}</Link>
             </li>
