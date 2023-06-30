@@ -1,13 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-// import { useState } from "react";
-
 // pages
 import Homepage from "./pages/Homepage";
 import Artist from "./pages/Artist";
 import FineArt from "./pages/FineArt";
 import Illustration from "./pages/Illustration";
 import GraphicDesign from "./pages/GraphicDesign";
-
 // components
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -15,7 +12,6 @@ import Header from "./components/Header";
 import "./assets/css/index.css"
 
 function App() {
-  // const [currentComponent, setCurrentComponent] = useState("homepage");
 
   return (
     <>

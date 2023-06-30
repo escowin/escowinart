@@ -1,14 +1,14 @@
-import portfolioData from "../assets/data"
+import portfolioData from "../assets/data";
 import "../assets/css/fineart.css";
 // to-do | horizontal mousewheel scrolling
 
 function FineArt() {
-  const art = portfolioData.fineart
+  const art = portfolioData.fineart;
   const newOrder = art.reverse();
 
   function getDimensions(length, width) {
     return `${length} x ${width}`;
-  };
+  }
 
   return (
     <section className="section" id="fine-art">
