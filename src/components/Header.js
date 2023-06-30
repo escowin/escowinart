@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import Logo from "../../assets/icons/logo-header.png";
-import "./index.css";
+import Logo from "../assets/icons/logo-header.png";
+import "../assets/css/header.css";
 
 function Header() {
   // const { currentComponent, setCurrentComponent } = props;

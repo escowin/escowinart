@@ -1,7 +1,7 @@
-import portfolioData from "../../assets/data";
-import About from "../About";
-import Work from "../Work";
-import "./index.css";
+import portfolioData from "../assets/data";
+import About from "../components/About";
+import Work from "../components/Work";
+import "../assets/css/artist.css";
 
 function Artist() {
   return (

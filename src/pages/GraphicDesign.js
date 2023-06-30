@@ -1,5 +1,5 @@
-import portfolioData from "../../assets/data";
-import "./index.css";
+import portfolioData from "../assets/data";
+import "../assets/css/graphicDesign.css";
 
 function GraphicDesign() {
   const portfolio = portfolioData.graphicDesign

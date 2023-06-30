@@ -1,5 +1,5 @@
-import portfolioData from "../../assets/data"
-import "./index.css";
+import portfolioData from "../assets/data"
+import "../assets/css/fineart.css";
 // to-do | horizontal mousewheel scrolling
 
 function FineArt() {

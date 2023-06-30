@@ -1,4 +1,4 @@
-import "./index.css";
+import "../assets/css/work.css";
 
 function Work({ graphicNovels }) {
   return (

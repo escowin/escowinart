@@ -1,4 +1,4 @@
-import "./index.css";
+import "../assets/css/homepage.css";
 
 function Homepage({ setCurrentComponent }) {
   const portfolios = {

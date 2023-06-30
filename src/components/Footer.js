@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import "./index.css";
+import "../assets/css/footer.css";
 
 // hook | useRef
 // - allows creating references to dom elements or js objects. ref is used to acces & direct manipulation of objects or dom elements w/o re-rendering the component.
