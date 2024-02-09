@@ -43,6 +43,7 @@ main {
   flex-direction: column;
   background-color: var(--primary);
   flex-grow: 1;
+  justify-content: center;
 }
 
 /* box */
@@ -61,6 +62,11 @@ main {
 /* list styles */
 ul {
   list-style: none;
+}
+
+#art-nav {
+  display: flex;
+  justify-content: space-around;
 }
 
 /* typography */

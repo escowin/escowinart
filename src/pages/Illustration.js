@@ -1,12 +1,20 @@
+import { useState } from "react";
 import portfolioData from "../assets/data";
 import "../assets/css/illustration.css";
+import ArtNav from "../components/ArtNav";
 
 function Illustration() {
+  const [display, setDisplay] = useState("days");
   const illustrations = portfolioData.illustration;
   const newOrder = illustrations.reverse();
 
+  // current list of illustrations
+  const series = ["days", "bluestrawberry", "hebdomas", "slice"];
+  console.log(display);
+
   return (
     <>
+      <ArtNav links={series} setDisplay={setDisplay} id={"art-nav"} />
       {newOrder.map((illustration) => (
         <section
           key={illustration.series}
