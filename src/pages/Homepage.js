@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 import "../assets/css/homepage.css";
 
-function Homepage({ setCurrentComponent }) {
+function Homepage() {
   const portfolios = {
     fineart: [
       "edwin-escobar-set-001.jpg",
@@ -44,46 +45,46 @@ function Homepage({ setCurrentComponent }) {
     suffix = "-lg";
   } else if (window.matchMedia("(min-width: 768px)").matches) {
     suffix = "-md";
-  } else if (!window.matchMedia("(min-width: 768px)").matches && !window.matchMedia("(min-width: 1024px)").matches) {
+  } else if (
+    !window.matchMedia("(min-width: 768px)").matches &&
+    !window.matchMedia("(min-width: 1024px)").matches
+  ) {
     suffix = "-sm";
   }
 
   return (
     <section className="section" id="homepage">
       <article className="portfolio" id="random-fineart">
-        <img
-          className="random-img"
-          alt="fine art"
-          src={require(`../assets/images/fineart/${randomFineArt}`)}
-          onClick={() => setCurrentComponent("fineArt")}
-        />
-        <p>Fine art</p>
+        <Link to={"/fine-art"}>
+          <img
+            className="random-img"
+            alt="fine art"
+            src={require(`../assets/images/fineart/${randomFineArt}`)}
+          />
+          <p>Fine art</p>
+        </Link>
       </article>
 
-      <article
-        className="portfolio"
-        id="random-illustration"
-        onClick={() => setCurrentComponent("illustration")}
-      >
-        <img
-          className="random-img"
-          alt="illustration"
-          src={require(`../assets/images/illustration/${randomIllustration}`)}
-        />
-        <p>Illustration</p>
+      <article className="portfolio" id="random-illustration">
+        <Link to={"/illustration"}>
+          <img
+            className="random-img"
+            alt="illustration"
+            src={require(`../assets/images/illustration/${randomIllustration}`)}
+          />
+          <p>Illustration</p>
+        </Link>
       </article>
 
-      <article
-        className="portfolio"
-        id="random-graphic"
-        onClick={() => setCurrentComponent("graphicDesign")}
-      >
-        <img
-          className="random-img"
-          alt="graphic design"
-          src={require(`../assets/images/graphic-design/${randomGraphicDesign}`)}
-        />
-        <p>Graphic design</p>
+      <article className="portfolio" id="random-graphic">
+        <Link to={"/graphic-design"}>
+          <img
+            className="random-img"
+            alt="graphic design"
+            src={require(`../assets/images/graphic-design/${randomGraphicDesign}`)}
+          />
+          <p>Graphic design</p>
+        </Link>
       </article>
 
       <article
