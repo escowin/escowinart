@@ -1,7 +1,7 @@
 :root {
   --primary: rgb(230, 230, 230);
   --secondary: rgba(155, 151, 151, 0.85);
-  --tertiary: rgba(38, 38, 41, 0.9);
+  --tertiary: rgba(22, 22, 22, 0.95);
   --quaternary: rgb(142, 40, 40);
   --box-shadow: 0 1vw 2vw;
   --box-shadow-sm: 0 .5vw 1rem;
