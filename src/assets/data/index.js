@@ -1,5 +1,5 @@
 const portfolioData = {
-  fineart: [
+  fineArt: [
     {
       set: "set-001",
       subtitle: "self",

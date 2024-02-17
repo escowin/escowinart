@@ -31,7 +31,7 @@ function Illustration() {
               <div className="img-wrapper">
                 {volume.images.map((img) => (
                   <img
-                    src={require(`../assets/images/illustration/${illustration.series}/${img}`)}
+                    src={require(`../assets/img/illustration/${illustration.series}/${img}`)}
                     key={img}
                     alt={volume.title}
                     className="illustration-img"

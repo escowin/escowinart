@@ -3,7 +3,7 @@ import "../assets/css/fineart.css";
 // to-do | horizontal mousewheel scrolling
 
 function FineArt() {
-  const art = portfolioData.fineart;
+  const art = portfolioData.fineArt;
   const newOrder = art.reverse();
 
   function getDimensions(length, width) {
@@ -15,7 +15,7 @@ function FineArt() {
       {newOrder.map((item, setIndex) => (
         <article key={setIndex} className="artwork">
           <img
-            src={require(`../assets/images/fineart/${item.img}`)}
+            src={require(`../assets/img/fine-art/${item.img}`)}
             alt={`${item.set} ${item.subtitle}`}
           />
 

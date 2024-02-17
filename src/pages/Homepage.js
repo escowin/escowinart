@@ -4,9 +4,10 @@ import "../assets/css/homepage.css";
 
 function Homepage() {
   const portfolios = portfolio.filter((key) => !key.includes("about"));
+  const github = "https://escowin.github.io/portfolio";
 
   const images = {
-    fineart: [
+    fineArt: [
       "edwin-escobar-set-001.jpg",
       "edwin-escobar-set-002.jpg",
       "edwin-escobar-set-003.jpg",
@@ -43,7 +44,7 @@ function Homepage() {
   };
 
   const randomImage = {
-    fineart: images.fineart[Math.floor(Math.random() * images.fineart.length)],
+    fineArt: images.fineArt[Math.floor(Math.random() * images.fineArt.length)],
     illustration:
       images.illustration[
         Math.floor(Math.random() * images.illustration.length)
@@ -74,7 +75,7 @@ function Homepage() {
             <img
               className="portfolio-img"
               alt={format.sentence(art)}
-              src={require(`../assets/images/${format.kebab(art)}/${
+              src={require(`../assets/img/${format.kebab(art)}/${
                 randomImage[art]
               }`)}
             />
@@ -85,14 +86,12 @@ function Homepage() {
 
       <article
         className="portfolio"
-        onClick={() =>
-          window.open("https://escowin.github.io/portfolio", "_blank")
-        }
+        onClick={() => window.open(github, "_blank")}
       >
         <img
           className="portfolio-img"
           alt="software"
-          src={require(`../assets/images/software/portfolio${suffix}.jpg`)}
+          src={require(`../assets/img/software/portfolio${suffix}.jpg`)}
         />
         <p>Software</p>
       </article>

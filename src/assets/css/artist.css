@@ -12,7 +12,7 @@
     border-radius: 50%;
     height: var(--size);
     width: var(--size);
-    background: url('../../assets/images/profile.jpg');
+    background: url('../../assets/img/profile.jpg');
     background-size: cover;
     box-shadow: inset .25vw .25vw 4rem var(--tertiary), .2vw .2vw .5rem var(--tertiary);
 }
