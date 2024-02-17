@@ -4,18 +4,45 @@ import "../assets/css/illustration.css";
 import ArtNav from "../components/ArtNav";
 
 function Illustration() {
-  const [display, setDisplay] = useState("days");
   const illustrations = portfolioData.illustration;
-  const newOrder = illustrations.reverse();
+  // const newOrder = illustrations.reverse();
+  // Returns a list of series titles
+  const list = illustrations.flatMap((series) => {
+    return series.volumes.map((vol) => vol.title);
+  });
+  
+  // State variables
+  const [series, setSeries] = useState("days");
+  const [displaySet, setDisplaySet] = useState(list[0])
 
   // current list of illustrations
-  const series = ["days", "bluestrawberry", "hebdomas", "slice"];
-  console.log(display);
+  const seriesList = ["days", "bluestrawberry", "hebdomas", "slice"];
+  console.log(illustrations); // prints illustrations portfolio array
+  console.log(series) // default prints "days", can change by user
+  console.log(displaySet); // default prints, can be set by user
 
   return (
     <>
-      <ArtNav links={series} setDisplay={setDisplay} id={"art-nav"} />
-      {newOrder.map((illustration) => (
+      <ArtNav links={seriesList} setDisplay={setSeries} id={"art-nav"} />
+
+      {/* use state & hooks to create relationship */}
+      <section className="section" id="illustrations">
+        <h2>{series}</h2>
+        <ul>
+          {list.map((set, i) => (
+            <li key={i} data-focus={"true"} className="title" onClick={() => setDisplaySet(set)}>{set}</li>
+          ))}
+        </ul>
+
+        <article>
+          <div className="img-wrapper">
+            {}
+          </div>
+        </article>
+      </section>
+
+      {/* delete after implementing above */}
+      {/* {newOrder.map((illustration) => (
         <section
           key={illustration.series}
           id={illustration.series}
@@ -41,7 +68,7 @@ function Illustration() {
             </article>
           ))}
         </section>
-      ))}
+      ))} */}
     </>
   );
 }

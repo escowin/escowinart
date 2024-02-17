@@ -25,6 +25,15 @@
 }
 
 @media screen and (min-width: 1024px) {
+    #illustrations {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: .25rem 1rem;
+        & h2 {
+            grid-column: 1 / -1;
+        }
+    }
+    
     .title {
         padding-left: 1rem;
     }
