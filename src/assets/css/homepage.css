@@ -26,7 +26,7 @@
     width: 100%;
 }
 
-.random-img {
+.portfolio-img {
     border-radius: inherit;
     width: 100%;
     height: 41.25vh;
@@ -40,7 +40,7 @@
     .portfolio p {
         font-size: 1.25rem;
     }
-    .random-img {
+    .portfolio-img {
         height: 42.5vh;
     }
 }
@@ -50,7 +50,7 @@
         display: flex;
     }
 
-    .random-img {
+    .portfolio-img {
         height: 85vh;
     }
 }
