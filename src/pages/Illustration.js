@@ -14,11 +14,27 @@ function Illustration() {
   // State variables
   const [series, setSeries] = useState("days");
   const [displaySet, setDisplaySet] = useState(list[0])
+  
+  const handleClick = (series, set) => {
+    console.log("series: " + series)
+    console.log("set: " + set)
+
+    const selectedSeries = illustrations.find((obj) => {
+      return obj.series === series
+    })
+
+    const selectedVol = selectedSeries.volumes.find(obj => {
+      return obj.title === set
+    })
+
+    console.log(selectedVol.images)
+    return setDisplaySet(selectedVol)
+  }
 
   // current list of illustrations
   const seriesList = ["days", "bluestrawberry", "hebdomas", "slice"];
-  console.log(illustrations); // prints illustrations portfolio array
-  console.log(series) // default prints "days", can change by user
+  // console.log(illustrations); // prints illustrations portfolio array
+  // console.log(series) // default prints "days", can change by user
   console.log(displaySet); // default prints, can be set by user
 
   return (
@@ -30,7 +46,7 @@ function Illustration() {
         <h2>{series}</h2>
         <ul>
           {list.map((set, i) => (
-            <li key={i} data-focus={"true"} className="title" onClick={() => setDisplaySet(set)}>{set}</li>
+            <li key={i} data-focus={"true"} className="title" onClick={() => handleClick(series, set)}>{set}</li>
           ))}
         </ul>
 
