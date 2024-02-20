@@ -1,7 +1,7 @@
-function ArtNav({links, setDisplay, id}) {
+function ArtNav({links, setDisplay, id, navClass}) {
 
   return (
-    <nav>
+    <nav className={navClass}>
       <ul id={id}>
         {links.map((set, i) => (
           <li key={i} onClick={() => setDisplay(set)}>

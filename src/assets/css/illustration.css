@@ -8,6 +8,7 @@
 .title {
     text-align: end;
 }
+
 .img-wrapper {
     display: flex;
 }
@@ -25,19 +26,31 @@
 }
 
 @media screen and (min-width: 1024px) {
+    .illustration-nav {
+        flex-grow: 0;
+        height: max-content;
+    }
+
     #illustrations {
         display: grid;
         grid-template-columns: auto 1fr;
+        grid-template-rows: max-content;
         gap: .25rem 1rem;
+        /* flex-grow: 2; */
+
         & h2 {
             grid-column: 1 / -1;
         }
+
+        & .illustration-img {
+            height: 75vh;
+        }
     }
-    
+
     .title {
         padding-left: 1rem;
     }
-    
+
     .volume {
         grid-template-columns: 10rem auto;
         scrollbar-width: none;
@@ -46,12 +59,8 @@
         white-space: nowrap;
     }
 
-    .illustration-img {
-        height: 50vh;
-    }
-
     /* Style the custom scrollbar */
-    .volume::-webkit-scrollbar {
+    ::-webkit-scrollbar {
         margin-top: 5vw;
         width: .25rem;
         /* Width of the scrollbar */
@@ -59,15 +68,15 @@
         /* Background color of the scrollbar */
     }
 
-    .volume::-webkit-scrollbar-thumb {
+    ::-webkit-scrollbar-thumb {
         border-radius: 1rem;
         /* Border radius of the scrollbar thumb */
         background-color: rgba(0, 0, 0, 0.2);
         /* Background color of the scrollbar thumb */
     }
 
-    .volume::-webkit-scrollbar-thumb:active,
-    .volume::-webkit-scrollbar-thumb:hover {
+    ::-webkit-scrollbar-thumb:active,
+    ::-webkit-scrollbar-thumb:hover {
         background-color: var(--tertiary);
     }
 }
