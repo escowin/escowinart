@@ -29,7 +29,7 @@ function Header() {
           <img src={Logo} id="logo" alt="Escowin Art" />
         </Link>
       </section>
-      <nav>
+      <nav className="site-nav">
         <ul id="navigation">
           {navLinks.map((navLink, i) => (
             <li key={i}>

@@ -4,6 +4,11 @@
     padding: .3rem 0 .3rem .5rem;
 }
 
+#graphic-novel .role {
+    display: flex;
+    flex-direction: column;
+}
+
 .chapters {
     display: flex;
     overflow-x: scroll;

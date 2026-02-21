@@ -75,9 +75,7 @@ function Homepage() {
             <img
               className="portfolio-img"
               alt={format.sentence(art)}
-              src={require(`../assets/img/${format.kebab(art)}/${
-                randomImage[art]
-              }`)}
+              src={new URL(`../assets/img/${format.kebab(art)}/${randomImage[art]}`, import.meta.url).href}
             />
             <p>{format.sentence(art)}</p>
           </Link>
@@ -91,7 +89,7 @@ function Homepage() {
         <img
           className="portfolio-img"
           alt="software"
-          src={require(`../assets/img/software/portfolio${suffix}.jpg`)}
+          src={new URL(`../assets/img/software/portfolio${suffix}.jpg`, import.meta.url).href}
         />
         <p>Software</p>
       </article>

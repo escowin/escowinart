@@ -8,7 +8,7 @@ function GraphicDesign() {
     <section id="graphic-design" className="section">
         {portfolio.map((graphic, index) => (
             <article key={index} id={graphic.name} className="graphic-wrapper">
-                <img src={require(`../assets/img/graphic-design/${graphic.img}`)} alt={graphic.name} />
+                <img src={new URL(`../assets/img/graphic-design/${graphic.img}`, import.meta.url).href} alt={graphic.name} />
             </article>
         ))}
     </section>

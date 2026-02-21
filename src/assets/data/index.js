@@ -214,6 +214,36 @@ const portfolioData = {
         },
       ],
     },
+    {
+      series: "bluestrawberry",
+      volumes: [
+        {
+          title: "vol. 001",
+          id: "bluestrawberry-01",
+          images: [
+            "edwin-escobar-20171018-bluestrawberry-01.jpg",
+            "edwin-escobar-20171025-bluestrawberry-02.jpg",
+            "edwin-escobar-20171112-bluestrawberry-03.jpg",
+            "edwin-escobar-20180502-bluestrawberry-04.jpg",
+            "edwin-escobar-20180509-bluestrawberry-05.jpg",
+            "edwin-escobar-20180516-bluestrawberry-06.jpg",
+            "edwin-escobar-20180523-bluestrawberry-07.jpg",
+            "edwin-escobar-20180530-bluestrawberry-08.jpg"
+          ],
+        },
+        {
+          title: "vol. 002",
+          id: "bluestrawberry-02",
+          images: [
+            "edwin-escobar-20200901-bluestrawberry-001.jpg",
+           "edwin-escobar-20200819-bluestrawberry-hungover-02.jpg",
+            "edwin-escobar-20200819-bluestrawberry-hungover-03.jpg",            "edwin-escobar-20200905-bluestrawberry-page001.jpg",
+            "edwin-escobar-20200919-bluestrawberry-002.jpg",
+            "edwin-escobar-20201002-bluestrawberry-gertrude.jpg"
+          ],
+        },
+      ],
+    },
   ],
   graphicDesign: [
     {

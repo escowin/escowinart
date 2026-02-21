@@ -8,20 +8,22 @@ function Work({ graphicNovels }) {
         {graphicNovels.map((graphicNovel, i) => (
           <article key={i} id="graphic-novel">
             <h3>
+              <span className="role">
+                {graphicNovel.role}
+              </span>
               <span
                 className="link"
                 onClick={() => window.open(graphicNovel.url, "_blank")}
               >
-                {graphicNovel.title}
-              </span>{" "}
-              ({graphicNovel.years}), {graphicNovel.role}
+                {graphicNovel.title}, {graphicNovel.years}
+              </span>
             </h3>
             <div className="chapters">
               {graphicNovel.chapters.map((chapter, j) => (
                 <img
                   key={`${i}-${j}`}
                   className="chapter"
-                  src={require(`../assets/img/illustration/${graphicNovel.id}/${chapter.img}.jpg`)}
+                  src={new URL(`../assets/img/illustration/${graphicNovel.id}/${chapter.img}.jpg`, import.meta.url).href}
                   alt={chapter.title}
                 />
               ))}

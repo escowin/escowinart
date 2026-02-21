@@ -18,7 +18,7 @@ header {
     margin-top: .25rem;
 }
 
-nav {
+.site-nav {
     flex-grow: 1;
 }
 
@@ -36,5 +36,9 @@ nav {
 
     #logo {
         height: 1rem;
+    }
+
+    #navigation {
+        justify-content: space-around;
     }
 }
