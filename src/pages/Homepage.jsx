@@ -43,15 +43,15 @@ function Homepage() {
       "days/edwin-escobar-days-20210306-0002.jpg",
     ],
     graphicDesign: [
-      // "edwin-escobar-20210225-made-in-a-lab.png",
+      "edwin-escobar-20210225-made-in-a-lab.png",
       // "edwin-escobar-20220515-cool-with-coolidge.jpg",
       "edwin-escobar-20220515-stop-being-poor.png",
       // "edwin-escobar-20210220-capitalism.png",
-      // "edwin-escobar-20220515-mindlessly-parrot-social-media.png",
-      // "Edwin Escobar 20211021 ACE Posters_CPR.png",
-      // "Edwin Escobar 20211021 ACE Posters_History.png",
-      // "Edwin Escobar 20211021 ACE Posters_Math.png",
-      // "Edwin Escobar 20211021 ACE Posters_English.png"
+      "edwin-escobar-20220515-mindlessly-parrot-social-media.png",
+      "edwin-escobar-20211021-ace-posters_cpr.png",
+      "edwin-escobar-20211021-ace-posters_history.png",
+      "edwin-escobar-20211021-ace-posters_math.png",
+      "edwin-escobar-20211021-ace-posters_english.png"
     ],
   };
 

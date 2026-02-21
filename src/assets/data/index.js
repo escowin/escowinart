@@ -247,17 +247,37 @@ const portfolioData = {
   ],
   graphicDesign: [
     {
-      name: "id",
+      name: "cpr",
+      img: "edwin-escobar-20211021-ace-posters_cpr.png",
+    },
+    {
+      name: "history",
+      img: "edwin-escobar-20211021-ace-posters_history.png",
+    },
+    {
+      name: "math",
+      img: "edwin-escobar-20211021-ace-posters_math.png",
+    },
+    {
+      name: "english",
+      img: "edwin-escobar-20211021-ace-posters_english.png",
+    },
+    {
+      name: "keep cool with coolidge",
       img: "edwin-escobar-20220515-cool-with-coolidge.jpg",
     },
     {
-      name: "ego",
-      img: "edwin-escobar-20220515-stop-being-poor.png",
-    },
-    {
-      name: "super-ego",
+      name: "mindlessly parrot social media",
       img: "edwin-escobar-20220515-mindlessly-parrot-social-media.png",
     },
+    // {
+    //   name: "made in a lab",
+    //   img: "edwin-escobar-20210225-made-in-a-lab.png",
+    // },
+    // {
+    //   name: "stop being poor",
+    //   img: "edwin-escobar-20220515-stop-being-poor.png",
+    // },
   ],
   graphicNovels: [
     {
