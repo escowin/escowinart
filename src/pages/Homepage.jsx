@@ -2,6 +2,18 @@ import { Link } from "react-router-dom";
 import { portfolio, format } from "../utils/helpers";
 import "../assets/css/homepage.css";
 
+// Vite's new URL() does not include files in subdirectories - use glob for paths with subdirs (e.g. illustration/bluestrawberry/...)
+const imageModules = import.meta.glob("../assets/img/**/*.{jpg,jpeg,png}", {
+  eager: true,
+  query: '?url',
+  import: 'default',
+});
+
+function getImageSrc(art, imgFile) {
+  const path = `../assets/img/${format.kebab(art)}/${imgFile}`;
+  return imageModules[path] ?? new URL(path, import.meta.url).href;
+}
+
 function Homepage() {
   const portfolios = portfolio.filter((key) => !key.includes("about"));
   const github = "https://escowin.github.io/portfolio";
@@ -15,14 +27,14 @@ function Homepage() {
       "edwin-escobar-set-005.jpg",
     ],
     illustration: [
-      // "bluestrawberry/edwin-escobar-20171018-bluestrawberry-01.jpg",
-      // "bluestrawberry/edwin-escobar-20171025-bluestrawberry-02.jpg",
-      // "bluestrawberry/edwin-escobar-20171112-bluestrawberry-03.jpg",
-      // "bluestrawberry/edwin-escobar-20180502-bluestrawberry-04.jpg",
-      // "bluestrawberry/edwin-escobar-20180509-bluestrawberry-05.jpg",
-      // "bluestrawberry/edwin-escobar-20180516-bluestrawberry-06.jpg",
-      // "bluestrawberry/edwin-escobar-20180523-bluestrawberry-07.jpg",
-      // "bluestrawberry/edwin-escobar-20180530-bluestrawberry-08.jpg",
+      "bluestrawberry/edwin-escobar-20171018-bluestrawberry-01.jpg",
+      "bluestrawberry/edwin-escobar-20171025-bluestrawberry-02.jpg",
+      "bluestrawberry/edwin-escobar-20171112-bluestrawberry-03.jpg",
+      "bluestrawberry/edwin-escobar-20180502-bluestrawberry-04.jpg",
+      "bluestrawberry/edwin-escobar-20180509-bluestrawberry-05.jpg",
+      "bluestrawberry/edwin-escobar-20180516-bluestrawberry-06.jpg",
+      "bluestrawberry/edwin-escobar-20180523-bluestrawberry-07.jpg",
+      "bluestrawberry/edwin-escobar-20180530-bluestrawberry-08.jpg",
       // "bluestrawberry/edwin-escobar-20200819-bluestrawberry-hungover-03.jpg",
       // "bluestrawberry/edwin-escobar-20201002-bluestrawberry-gertrude.jpg",
       // "days/edwin-escobar-days-20210420-0026.jpg",
@@ -43,17 +55,16 @@ function Homepage() {
     ],
   };
 
-  const randomImage = {
-    fineArt: images.fineArt[Math.floor(Math.random() * images.fineArt.length)],
-    illustration:
-      images.illustration[
-        Math.floor(Math.random() * images.illustration.length)
-      ],
-    graphicDesign:
-      images.graphicDesign[
-        Math.floor(Math.random() * images.graphicDesign.length)
-      ],
-  };
+  const randomImage = Object.fromEntries(
+    portfolios.map((art) => {
+      const imgs = images[art];
+      const img =
+        imgs?.length > 0
+          ? imgs[Math.floor(Math.random() * imgs.length)]
+          : null;
+      return [art, img];
+    })
+  );
 
   let suffix = "";
   if (window.matchMedia("(min-width: 1024px)").matches) {
@@ -69,18 +80,22 @@ function Homepage() {
 
   return (
     <section className="section" id="homepage">
-      {portfolios.map((art, i) => (
+      {portfolios.map((art, i) => {
+        const imgFile = randomImage[art];
+        if (!imgFile) return null;
+        return (
         <article key={i} className="portfolio">
           <Link to={`/${format.kebab(art)}`}>
             <img
               className="portfolio-img"
               alt={format.sentence(art)}
-              src={new URL(`../assets/img/${format.kebab(art)}/${randomImage[art]}`, import.meta.url).href}
+              src={getImageSrc(art, imgFile)}
             />
             <p>{format.sentence(art)}</p>
           </Link>
         </article>
-      ))}
+        );
+      })}
 
       <article
         className="portfolio"
