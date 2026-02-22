@@ -1,8 +1,16 @@
+:root {
+    --scroll-speed-a: 10s;
+    --scroll-speed-b: 15s;
+}
+main:has(#homepage) {
+    justify-content: center;
+}
+
 #homepage {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: .5rem;
-    padding: .25rem; 
+    margin-inline: .5rem; 
     align-items: center;
 }
 
@@ -11,6 +19,28 @@
     border-radius: .25rem;
     overflow: hidden;
     position: relative;
+    box-shadow: 0 0 .25rem 0 var(--tertiary);
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+.portfolio:nth-child(even) .portfolio-img {
+    animation: bg-scroll-right-to-left var(--scroll-speed-a) infinite alternate;
+}
+
+.portfolio:nth-child(odd) .portfolio-img {
+    animation: bg-scroll-left-to-right var(--scroll-speed-b) infinite alternate ;
+}
+
+.portfolio:hover,
+.portfolio:focus {
+    /* outline: 2px solid var(--quaternary); */
+    box-shadow: 0 0 1rem var(--quaternary);
+    & p {
+        color: var(--quaternary);
+        text-shadow: 
+        0 0 2rem rgba(255, 255, 255, 0.25),
+        0 0 1rem var(--quaternary);
+    }
 }
 
 .portfolio p {
@@ -24,6 +54,7 @@
     background-color: var(--tertiary);
     color: var(--primary);
     width: 100%;
+    transition: color 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
 }
 
 .portfolio-img {
@@ -31,11 +62,29 @@
     width: 100%;
     height: 41.25vh;
     object-fit: cover;
-    object-position: center;
+    /* object-position: center; */
     position: relative;
     z-index: 0;
 }
 
+
+@keyframes bg-scroll-left-to-right {
+    0% {
+        object-position: 10%;
+    }
+    100% {
+        object-position: 90%;
+    }
+}
+
+@keyframes bg-scroll-right-to-left {
+    0% {
+        object-position: 90%;
+    }
+    100% {
+        object-position: 10%;
+    }
+}
 @media screen and (min-width: 768px) {
     .portfolio p {
         font-size: 1.25rem;

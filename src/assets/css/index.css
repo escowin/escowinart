@@ -43,7 +43,11 @@ main {
   flex-direction: column;
   background-color: var(--primary);
   flex-grow: 1;
-  /* justify-content: center; */
+  padding-block: 2vh;
+  
+  &:has(.gallery-container) {
+    width: 100vw;
+  }
 }
 
 /* box */
@@ -64,38 +68,21 @@ ul {
   list-style: none;
 }
 
-#art-nav {
-  padding: 0.25rem .5rem 0 .25rem;
-  display: flex;
-  /* gap: 1rem; */
-  /* justify-content: space-around; */
-}
 
-.tab {
-  background-color: var(--tertiary);
-  color: var(--primary);
-  padding: 0.25rem 1rem;
-  border-radius: 0.25rem 0.25rem 0 0;
-  transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out;
-  font-size: 1.25rem;
-  font-weight: 500;
-}
-
-.tab.active {
-  background-color: var(--quaternary);
-  color: var(--primary);
-}
 /* typography */
 main * {
   color: var(--tertiary);
+
 }
 
-.link, .icon * {
+.link,
+.icon * {
   cursor: pointer;
-  transition: color 1s;  
+  transition: color 1s;
 }
 
-.link:hover, .icon *:hover {
+.link:hover,
+.icon *:hover {
   color: var(--quaternary);
 }
 

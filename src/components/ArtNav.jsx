@@ -1,7 +1,7 @@
-function ArtNav({ links, setDisplay, id, navClass, activeLink }) {
+function ArtNav({ links, setDisplay, navClass, activeLink }) {
   return (
-    <nav className={navClass}>
-      <ul id={id}>
+    <nav className={`${navClass} art-nav`}>
+      <ul className="art-nav-tabs">
         {links.map((set, i) => (
           <li
             key={i}

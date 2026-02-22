@@ -70,8 +70,6 @@
 
     #fine-art {
         flex-direction: row;
-        margin-top: 2vh;
-        margin-bottom: 2vh;
         gap: 2.5rem;
     }
 }

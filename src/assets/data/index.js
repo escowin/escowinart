@@ -236,48 +236,78 @@ const portfolioData = {
           id: "bluestrawberry-02",
           images: [
             "edwin-escobar-20200901-bluestrawberry-001.jpg",
-           "edwin-escobar-20200819-bluestrawberry-hungover-02.jpg",
-            "edwin-escobar-20200819-bluestrawberry-hungover-03.jpg",            "edwin-escobar-20200905-bluestrawberry-page001.jpg",
+            "edwin-escobar-20200819-bluestrawberry-hungover-02.jpg",
+            "edwin-escobar-20200819-bluestrawberry-hungover-03.jpg", "edwin-escobar-20200905-bluestrawberry-page001.jpg",
             "edwin-escobar-20200919-bluestrawberry-002.jpg",
             "edwin-escobar-20201002-bluestrawberry-gertrude.jpg"
           ],
         },
       ],
     },
+    {
+      series: "city-life",
+      volumes: [
+        {
+          title: "비",
+          id: "city-life-01",
+          images: [
+            "edwin-escobar-20170227-rain.jpg",
+          ],
+        },
+        {
+          title: "밤",
+          id: "city-life-02",
+          images: [
+            "edwin-escobar-20170217-night-walk.jpeg",
+          ],
+        },
+        {
+          title: "낮술",
+          id: "city-life-03",
+          images: [
+            "edwin-escobar-20170301-nat-sool.jpg",
+          ],
+        },
+        {
+          title: "여름",
+          id: "city-life-04",
+          images: [
+            "edwin-escobar-20170620-chill.jpg",
+          ],
+        },
+      ],
+    }
   ],
   graphicDesign: [
     {
-      name: "cpr",
-      img: "edwin-escobar-20211021-ace-posters_cpr.png",
+      series: "ace",
+      volumes: [
+        { 
+          title: "ace-posters",
+          id: "ace",
+          images: [
+            "edwin-escobar-20211021-ace-posters_cpr.png",
+            "edwin-escobar-20211021-ace-posters_history.png",
+            "edwin-escobar-20211021-ace-posters_math.png",
+            "edwin-escobar-20211021-ace-posters_english.png",
+          ],
+        },
+      ],
     },
     {
-      name: "history",
-      img: "edwin-escobar-20211021-ace-posters_history.png",
+      series: "mindless",
+      volumes: [
+        {
+          title: "mindless",
+          id: "mindless",
+          images: [
+            "edwin-escobar-20220515-cool-with-coolidge.jpg",
+            "edwin-escobar-20220515-mindlessly-parrot-social-media.png",
+            "edwin-escobar-20220515-stop-being-poor.png",
+          ],
+        },
+      ],
     },
-    {
-      name: "math",
-      img: "edwin-escobar-20211021-ace-posters_math.png",
-    },
-    {
-      name: "english",
-      img: "edwin-escobar-20211021-ace-posters_english.png",
-    },
-    {
-      name: "keep cool with coolidge",
-      img: "edwin-escobar-20220515-cool-with-coolidge.jpg",
-    },
-    {
-      name: "mindlessly parrot social media",
-      img: "edwin-escobar-20220515-mindlessly-parrot-social-media.png",
-    },
-    // {
-    //   name: "made in a lab",
-    //   img: "edwin-escobar-20210225-made-in-a-lab.png",
-    // },
-    // {
-    //   name: "stop being poor",
-    //   img: "edwin-escobar-20220515-stop-being-poor.png",
-    // },
   ],
   graphicNovels: [
     {

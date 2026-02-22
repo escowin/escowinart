@@ -1,0 +1,160 @@
+
+/* ================================================ */
+/* art nav: used in all gallery pages */
+/* ================================================ */
+.art-nav-tabs {
+    padding-left: .25rem;
+    display: flex;
+}
+
+.tab {
+    background-color: var(--tertiary);
+    color: var(--primary);
+    padding: 0.25rem 1rem;
+    border-radius: 0.25rem 0.25rem 0 0;
+    transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.tab.active {
+    background-color: var(--quaternary);
+    color: var(--primary);
+}
+
+/* ================================================ */
+/* gallery container: used in all gallery pages */
+/* ================================================ */
+.gallery-container {
+    display: grid;
+    /* grid-template-columns: max-content 1fr; */
+    grid-template-rows: max-content;
+    gap: .25rem 1rem;
+    border: 1px solid var(--quaternary);
+    border-right: none;
+    border-radius: 0 0 0 1rem;
+
+    & h2 {
+        grid-column: 1 / -1;
+        padding-left: .5rem;
+    }
+
+    & ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: .25rem .5rem;
+        justify-content: flex-start;
+        height: max-content;
+    }
+}
+
+.volume {
+    display: grid; 
+    grid-template-columns: 20vw auto;
+    overflow: auto;
+    gap: 1rem;
+}
+
+.title {
+    text-align: end;
+    padding: 0.25rem .5rem  0.25rem 0;
+    border-bottom: 1px solid transparent;
+    transition: color 0.5s ease-in-out, border-color 0.5s ease-in-out;
+}
+
+.title.active {
+    color: var(--quaternary);
+    font-weight: bold;
+    border-color: currentColor;
+}
+
+/* gallery wrapper elements */
+.outer-gallery-wrapper {
+    --_bg-gradient: linear-gradient(to left, #e6e6e6, #171717);
+    background-image: var(--_bg-gradient);
+    background-size: 200%;
+    border-radius: 1rem 0 0 1rem;
+    padding: 1rem;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    animation: gradient 20s infinite alternate;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}
+
+.inner-gallery-wrapper {
+    display: flex;
+    height: 50vh;
+    scroll-snap-type: inline mandatory;
+    scroll-snap-align: start;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    width: fit-content;
+    border-radius: 1rem;
+}
+
+.gallery-img:first-child {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.gallery-img:last-child {
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .art-nav {
+        flex-grow: 0;
+        height: max-content;
+    }
+
+    .gallery-container {
+        grid-template-columns: 8.75rem 1fr;
+        padding-bottom: 1rem;
+
+        & ul {
+            grid-template-columns: 1fr;
+            gap: .5rem;
+        }
+    }
+
+    .title {
+        padding-left: 1rem;
+    }
+
+    .volume {
+        grid-template-columns: 10rem auto;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: none;
+        white-space: nowrap;
+    }
+
+    /* Style the custom scrollbar */
+    ::-webkit-scrollbar {
+        margin-top: 5vw;
+        width: .25rem;
+        /* Width of the scrollbar */
+        background-color: transparent;
+        /* Background color of the scrollbar */
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 1rem;
+        /* Border radius of the scrollbar thumb */
+        background-color: rgba(0, 0, 0, 0.2);
+        /* Background color of the scrollbar thumb */
+    }
+
+    ::-webkit-scrollbar-thumb:active,
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: var(--tertiary);
+    }
+}
