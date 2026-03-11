@@ -6,7 +6,6 @@ function Gallery({
   volumes,
   currentVol,
   setCurrentVol,
-  imgClassName,
   buildImageSrc,
   getImageAlt = (_, __, vol) => vol.title,
   getDataTitle,

@@ -137,24 +137,9 @@
         white-space: nowrap;
     }
 
-    /* Style the custom scrollbar */
-    ::-webkit-scrollbar {
-        margin-top: 5vw;
-        width: .25rem;
-        /* Width of the scrollbar */
-        background-color: transparent;
-        /* Background color of the scrollbar */
-    }
-
-    ::-webkit-scrollbar-thumb {
-        border-radius: 1rem;
-        /* Border radius of the scrollbar thumb */
-        background-color: rgba(0, 0, 0, 0.2);
-        /* Background color of the scrollbar thumb */
-    }
-
-    ::-webkit-scrollbar-thumb:active,
-    ::-webkit-scrollbar-thumb:hover {
-        background-color: var(--tertiary);
+    .outer-gallery-wrapper {
+        scrollbar-width: .25rem;
+        scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+        scrollbar-gutter: stable;
     }
 }
