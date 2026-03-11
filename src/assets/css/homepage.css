@@ -73,7 +73,6 @@ main:has(#homepage) {
     z-index: 0;
 }
 
-
 @keyframes bg-scroll-left-to-right {
     0% {
         object-position: 10%;
@@ -91,6 +90,7 @@ main:has(#homepage) {
         object-position: 10%;
     }
 }
+
 @media screen and (min-width: 768px) {
     .portfolio p {
         font-size: 1.25rem;

@@ -13,7 +13,6 @@
     outline: 1px dotted blue;
 }
 
-
 .artwork {
     display: flex;
     flex-direction: column;
@@ -48,27 +47,7 @@
         scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
         scrollbar-gutter: stable;
     }
-    /* Style the custom scrollbar */
-    #fine-art::-webkit-scrollbar {
-        /* margin-top: 5vw; */
-        /* width: .25rem; */
-        /* Width of the scrollbar */
-        /* background-color: transparent; */
-        /* Background color of the scrollbar */
-    }
-
-    #fine-art::-webkit-scrollbar-thumb {
-        /* border-radius: 1rem; */
-        /* Border radius of the scrollbar thumb */
-        /* background-color: rgba(0, 0, 0, 0.2); */
-        /* Background color of the scrollbar thumb */
-    }
-
-    #fine-art::-webkit-scrollbar-thumb:active,
-    #fine-art::-webkit-scrollbar-thumb:hover {
-        /* background-color: var(--tertiary); */
-    }
-
+    
     .artwork img {
         --size: 90vh;
         width: var(--size);

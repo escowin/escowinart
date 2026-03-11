@@ -68,11 +68,9 @@ ul {
   list-style: none;
 }
 
-
 /* typography */
 main * {
   color: var(--tertiary);
-
 }
 
 .link,
