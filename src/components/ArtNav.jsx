@@ -1,4 +1,14 @@
-function ArtNav({ links, setDisplay, navClass, activeLink }) {
+function ArtNav({
+  links,
+  setDisplay,
+  navClass,
+  activeLink,
+  collapseSingleTab = false,
+}) {
+  if (collapseSingleTab && (!links?.length || links.length < 2)) {
+    return null;
+  }
+
   return (
     <nav className={`${navClass} art-nav`}>
       <ul className="art-nav-tabs">

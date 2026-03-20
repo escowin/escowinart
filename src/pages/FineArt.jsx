@@ -1,40 +1,51 @@
+import { useState, useEffect } from "react";
 import portfolioData from "../assets/data";
 import "../assets/css/fineart.css";
-// to-do | horizontal mousewheel scrolling
+import "../assets/css/gallery.css";
+import ArtNav from "../components/ArtNav";
+import Gallery from "../components/Gallery";
 
 function FineArt() {
-  const art = portfolioData.fineArt;
-  const newOrder = art.reverse();
+  const paintings = portfolioData.fineArt;
+  const seriesList = paintings.map((obj) => obj.series);
 
-  function getDimensions(length, width) {
-    return `${length} x ${width}`;
-  }
+  const [series, setSeries] = useState(seriesList[0]);
+  const [currentVol, setCurrentVol] = useState(paintings[0].volumes[0]);
+
+  const currentSeries = paintings.find((obj) => obj.series === series);
+  const volumes = currentSeries ? currentSeries.volumes : [];
+
+  useEffect(() => {
+    const active = paintings.find((obj) => obj.series === series);
+    if (active?.volumes?.length) {
+      setCurrentVol(active.volumes[0]);
+    }
+  }, [series]);
 
   return (
-    <section className="section" id="fine-art">
-      {newOrder.map((item, setIndex) => (
-        <article key={setIndex} className="artwork">
-          <img
-            src={new URL(`../assets/img/fine-art/${item.img}`, import.meta.url).href}
-            alt={`${item.set} ${item.subtitle}`}
-          />
-
-          <div className="art-details">
-            <h2>{`${item.set} ${item.subtitle}`}</h2>
-            <p className="text-right medium">{item.medium}</p>
-
-            {item.artworks.map((artwork, artworkIndex) => (
-              <>
-                <p key={`${artwork.title}}`}>{artwork.title}</p>
-                <p key={artworkIndex} className="text-right">
-                  {getDimensions(artwork.length, artwork.width)}
-                </p>
-              </>
-            ))}
-          </div>
-        </article>
-      ))}
-    </section>
+    <>
+      <ArtNav
+        links={seriesList}
+        setDisplay={setSeries}
+        navClass="fine-art-nav"
+        activeLink={series}
+        collapseSingleTab
+      />
+      <div className="fine-art-page" id="fine-art">
+        <Gallery
+          galleryId="fine-art-gallery"
+          series={series}
+          volumes={volumes}
+          currentVol={currentVol}
+          setCurrentVol={setCurrentVol}
+          buildImageSrc={(img) =>
+            new URL(`../assets/img/fine-art/${img}`, import.meta.url).href
+          }
+          getImageAlt={(_, __, vol) => `${series} · ${vol.title}`}
+          worksTitle="Works in this set"
+        />
+      </div>
+    </>
   );
 }
 

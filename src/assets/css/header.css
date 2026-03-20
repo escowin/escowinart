@@ -6,7 +6,8 @@ header {
     top: 0;
     z-index: 9999;
     width: 100vw;
-    padding: .125rem .5rem;
+    padding: .5rem;
+    gap: .5rem;
 }
 
 #logo-container {

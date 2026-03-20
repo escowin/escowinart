@@ -1,132 +1,70 @@
 const portfolioData = {
+  // Fine art: same shape as illustration (series → volumes). works[].height/width = inches (former length × width).
   fineArt: [
     {
-      set: "set-001",
-      subtitle: "self",
-      medium: "oil on canvas",
-      year: 2021,
-      img: "edwin-escobar-set-001.jpg",
-      artworks: [
+      series: "Oils",
+      volumes: [
         {
-          title: "0013202110130 : psyche",
-          length: 36,
-          width: 24,
+          id: "set-001",
+          title: "self",
+          medium: "oil on canvas",
+          year: 2021,
+          images: ["edwin-escobar-set-001.jpg"],
+          works: [
+            { title: "0013202110130 : psyche", height: 36, width: 24 },
+            { title: "0012202110129 : super-ego", height: 36, width: 24 },
+            { title: "0010202110127 : ego", height: 36, width: 24 },
+            { title: "0011202110128 : id", height: 36, width: 24 },
+          ],
         },
         {
-          title: "0012202110129 : super-ego",
-          length: 36,
-          width: 24,
+          id: "set-002",
+          title: "focus",
+          medium: "oil on canvas",
+          year: 2021,
+          images: ["edwin-escobar-set-002.jpg"],
+          works: [
+            { title: "001520210210 : white", height: 20, width: 16 },
+            { title: "001620210211 : grey", height: 20, width: 16 },
+            { title: "001720210212 : black", height: 20, width: 16 },
+          ],
         },
         {
-          title: "0010202110127 : ego",
-          length: 36,
-          width: 24,
+          id: "set-003",
+          title: "thought",
+          medium: "oil on canvas",
+          year: 2021,
+          images: ["edwin-escobar-set-003.jpg"],
+          works: [
+            { title: "002420210525 · closed-loop", height: 36, width: 24 },
+            { title: "002520210525 · interlinked", height: 36, width: 24 },
+          ],
         },
         {
-          title: "0011202110128 : id",
-          length: 36,
-          width: 24,
-        },
-      ],
-    },
-    {
-      set: "set-002",
-      subtitle: "focus",
-      medium: "oil on canvas",
-      year: 2021,
-      img: "edwin-escobar-set-002.jpg",
-      artworks: [
-        {
-          title: "001520210210 : white",
-          length: 20,
-          width: 16,
+          id: "set-004",
+          title: "time",
+          medium: "oil on canvas",
+          year: 2021,
+          images: ["edwin-escobar-set-004.jpg"],
+          works: [
+            { title: "002620210902 · onset", height: 24, width: 18 },
+            { title: "002720210902 · float", height: 24, width: 18 },
+            { title: "002820210902 · stare", height: 24, width: 18 },
+            { title: "002920210902 · seated", height: 18, width: 18 },
+            { title: "003020210902 · done", height: 24, width: 18 },
+          ],
         },
         {
-          title: "001620210211 : grey",
-          length: 20,
-          width: 16,
-        },
-        {
-          title: "001720210212 : black",
-          length: 20,
-          width: 16,
-        },
-      ],
-    },
-    {
-      set: "set-003",
-      subtitle: "thought",
-      medium: "oil on canvas",
-      year: 2021,
-      img: "edwin-escobar-set-003.jpg",
-      artworks: [
-        {
-          title: "002420210525 · closed-loop",
-          length: 36,
-          width: 24,
-        },
-        {
-          title: "002520210525 · interlinked",
-          length: 36,
-          width: 24,
-        },
-      ],
-    },
-    {
-      set: "set-004",
-      subtitle: "time",
-      medium: "oil on canvas",
-      year: 2021,
-      img: "edwin-escobar-set-004.jpg",
-      artworks: [
-        {
-          title: "002620210902 · onset",
-          length: 24,
-          width: 18,
-        },
-        {
-          title: "002720210902 · float",
-          length: 24,
-          width: 18,
-        },
-        {
-          title: "002820210902 · stare",
-          length: 24,
-          width: 18,
-        },
-        {
-          title: "002920210902 · seated",
-          length: 18,
-          width: 18,
-        },
-        {
-          title: "003020210902 · done",
-          length: 24,
-          width: 18,
-        },
-      ],
-    },
-    {
-      set: "set-005",
-      subtitle: "frequency",
-      medium: "oil on canvas",
-      year: 2021,
-      img: "edwin-escobar-set-005.jpg",
-      artworks: [
-        {
-          title: "003120210912 · r-g",
-          length: 36,
-          width: 24,
-        },
-        {
-          title: "003220210913 · b-w",
-          length: 36,
-          width: 24,
-        },
-        {
-          title: "003320210914 · y-b",
-          length: 36,
-          width: 24,
+          id: "set-005",
+          title: "frequency",
+          medium: "oil on canvas",
+          year: 2021,
+          images: ["edwin-escobar-set-005.jpg"],
+          works: [
+            { title: "003120210912 · r-g", height: 36, width: 24 },
+            { title: "003220210913 · b-w", height: 36, width: 24 },
+            { title: "003320210914 · y-b", height: 36, width: 24 },
+          ],
         },
       ],
     },

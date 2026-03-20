@@ -1,60 +1,15 @@
-#fine-art {
-    border-radius: 2vw 0 0 .5rem;
-    padding-left: 2vw;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    overflow-x: auto;
-    overscroll-behavior-x: contain;
-    -webkit-overflow-scrolling: touch;
-    -ms-overflow-style: none;
-    white-space: nowrap;
+/* Fine art page shell: gallery layout from gallery.css */
+#fine-art.fine-art-page,
+.fine-art-page {
     flex-grow: 1;
-    outline: 1px dotted blue;
-}
-
-.artwork {
-    display: flex;
-    flex-direction: column;
-}
-
-.artwork img {
-    width: 95vw;
-    border-radius: 0 0 2vw 2vw;
-}
-
-.art-details {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    align-items: center;
-    padding-left: 1vw;
-}
-
-.medium {
-    font-size: .85rem;
-}
-
-.text-right {
-    text-align: end;
-    padding-right: 1rem;
+    min-width: 0;
+    border-radius: 2vw 0 0 var(--space-sm, 0.5rem);
+    padding-left: 2vw;
 }
 
 @media screen and (min-width: 1024px) {
-
-    #fine-art {
-        scrollbar-width: .25rem;
-        /* thumb & track colors */
-        scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+    #fine-art.fine-art-page,
+    .fine-art-page {
         scrollbar-gutter: stable;
-    }
-    
-    .artwork img {
-        --size: 90vh;
-        width: var(--size);
-    }
-
-    #fine-art {
-        flex-direction: row;
-        gap: 2.5rem;
     }
 }
