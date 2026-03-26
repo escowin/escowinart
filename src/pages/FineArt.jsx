@@ -29,9 +29,7 @@ function FineArt() {
         setDisplay={setSeries}
         navClass="fine-art-nav"
         activeLink={series}
-        collapseSingleTab
       />
-      <div className="fine-art-page" id="fine-art">
         <Gallery
           galleryId="fine-art-gallery"
           series={series}
@@ -42,9 +40,8 @@ function FineArt() {
             new URL(`../assets/img/fine-art/${img}`, import.meta.url).href
           }
           getImageAlt={(_, __, vol) => `${series} · ${vol.title}`}
-          worksTitle="Works in this set"
+          worksTitle=""
         />
-      </div>
     </>
   );
 }

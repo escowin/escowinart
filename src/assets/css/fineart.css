@@ -7,6 +7,14 @@
     padding-left: 2vw;
 }
 
+#fine-art-gallery .inner-gallery-wrapper {
+    height: auto;
+}
+
+#fine-art-gallery .gallery-img {
+    height: 60vh;
+}
+
 @media screen and (min-width: 1024px) {
     #fine-art.fine-art-page,
     .fine-art-page {

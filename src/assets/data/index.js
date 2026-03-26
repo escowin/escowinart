@@ -2,7 +2,7 @@ const portfolioData = {
   // Fine art: same shape as illustration (series → volumes). works[].height/width = inches (former length × width).
   fineArt: [
     {
-      series: "Oils",
+      series: "Oil on Canvas",
       volumes: [
         {
           id: "set-001",
