@@ -63,6 +63,12 @@ main:has(#homepage) {
     transition: color 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
 }
 
+.portfolio-img--placeholder {
+    background-color: var(--tertiary);
+    opacity: 0.35;
+    pointer-events: none;
+}
+
 .portfolio-img {
     border-radius: inherit;
     width: 100%;
