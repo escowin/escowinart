@@ -46,7 +46,10 @@
         height: max-content;
         margin-bottom: .5rem;
     }
+
+
 }
+
 
 .volume {
     display: grid; 
@@ -70,14 +73,19 @@
 
 /* gallery wrapper elements */
 .outer-gallery-wrapper {
-    --_bg-gradient: linear-gradient(to left, #e6e6e6, #171717);
+    --_bg-gradient: radial-gradient(#e6e6e6, #171717);
     background-image: var(--_bg-gradient);
     background-size: 200%;
-    border-radius: 1rem 0 0 1rem;
+    border-bottom-left-radius: 1rem;
+    border-top: 2px solid var(--quaternary);
     padding: 1rem;
     overflow-x: auto;
     overscroll-behavior-x: contain;
     animation: gradient 20s infinite alternate;
+
+    &:has([data-series="Oil on Canvas"]) {
+        background-size: 100%;
+    }
 
     /* Illustration — volume-specific gradients */
     &.days-01 {
@@ -149,7 +157,7 @@
 }
 
 .gallery-works__list {
-    margin: 0;
+    margin-right: 2rem;
     display: grid;
     gap: var(--space, 1rem);
 }
@@ -174,8 +182,9 @@
 }
 
 .inner-gallery-wrapper {
+    --_img-height: 50vh;
     display: flex;
-    height: 50vh;
+    height: var(--_img-height);
     scroll-snap-type: inline mandatory;
     scroll-snap-align: start;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
@@ -185,24 +194,38 @@
     &:has(.gallery-img-button) {
         box-shadow: none;
     }
+
+    & .gallery-img {
+        height: 100%;
+    }
+
+    /* select gallery img that has no siblings to prevent layout shifts between these and galleries with horizontal scrollbars */
+    &:has(.gallery-img:only-child) {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Gallery height overrides */
+.gallery-container#fine-art-gallery .inner-gallery-wrapper {
+    --_img-height: 60vh;
 }
 
 /* Illustration — bluestrawberry series row */
 .inner-gallery-wrapper[data-series="bluestrawberry"] {
-    height: 70vh;
+    --_img-height: 70vh;
     gap: 1rem;
     box-shadow: none;
+
+    & .gallery-img {
+        border-radius: 1rem;
+        box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.75);
+    }
 }
 
-.inner-gallery-wrapper[data-series="bluestrawberry"] .gallery-img {
-    border-radius: 1rem;
-    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.75);
-}
 
 /* Graphic design — ACE poster glow by data-title */
 #graphic-design .inner-gallery-wrapper {
     box-shadow: none;
-    background-color: transparent;
     gap: 1rem;
 }
 
@@ -268,13 +291,6 @@
     padding-left: 2vw;
 }
 
-#fine-art-gallery .inner-gallery-wrapper {
-    height: auto;
-}
-
-#fine-art-gallery .gallery-img {
-    height: 60vh;
-}
 
 .gallery-img-button {
     display: block;
@@ -302,10 +318,11 @@
 .gallery-works-dialog {
     width: min(92vw, 36rem);
     margin: auto 0 auto auto;
-    padding: 3rem 2rem;
+    /* padding: 3rem 2rem; */
+    padding: 3rem 0 3rem 2rem;
     border: none;
-    border-radius: var(--space-sm, 0.5rem);
-    background: var(--tertiary, #2a2a2a);
+    border-radius: 1rem 0 0 1rem;
+    background: rgba(0, 0, 0, 0.7);
     box-shadow: 0 0.5rem 3rem var(--tertiary);
 
     & p {
@@ -359,10 +376,12 @@
 }
 
 .gallery-works-dialog__volume-title {
-    margin: 0 2.5rem var(--space-xs, 0.25rem) 0;
+    margin-bottom: .25rem;
+    width: 100%;
     font-size: 1.75rem;
     font-weight: 600;
     color: var(--quaternary) !important;
+    border-bottom: 1px solid var(--quaternary);
 }
 
 .gallery-works-dialog__volume-meta {
@@ -399,13 +418,20 @@
     }
 
     .outer-gallery-wrapper {
-        scrollbar-width: .25rem;
         scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
-        scrollbar-gutter: stable;
+        scrollbar-gutter: auto;
+        border-left: 2px solid var(--quaternary);
+        border-bottom: 2px solid var(--quaternary);
+        border-top-left-radius: 1rem;
     }
 
-    #fine-art.fine-art-page,
-    .fine-art-page {
-        scrollbar-gutter: stable;
+    .gallery-works-dialog {
+        border-radius: 1rem;
+        margin-inline: auto;
+    }
+
+    .inner-gallery-wrapper,
+    .gallery-container#fine-art-gallery .inner-gallery-wrapper {
+        --_img-height: 70vh;
     }
 }

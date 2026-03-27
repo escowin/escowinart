@@ -5,3 +5,9 @@ footer {
     opacity: 75%;
     text-align: center;
   }
+
+@media screen and (min-width: 1024px) {
+    footer {
+        font-size: .85rem;
+    }
+}

@@ -98,3 +98,9 @@ a {
 a:hover {
   color: inherit;
 }
+
+@media screen and (min-width: 1024px) {
+  main {
+    padding-left: 1rem;
+  }
+}

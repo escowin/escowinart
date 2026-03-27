@@ -29,6 +29,14 @@ header {
     list-style: none;
 }
 
+.page {
+    transition: color 0.5s ease-in-out;
+}
+
+.page.active {
+    color: var(--quaternary);
+}
+
 @media screen and (min-width: 1024px) {
     header {
         flex-direction: row;

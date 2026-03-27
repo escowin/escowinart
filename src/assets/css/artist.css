@@ -53,11 +53,12 @@ p,
         margin-top: 3vh;
     }
     
-    h3 {
+    #artist h3 {
         width: fit-content;
         border-bottom: 1px solid var(--secondary);
         padding-right: .25rem;
     }
+    
     .icon {
         font-size: 1.5rem;
     }

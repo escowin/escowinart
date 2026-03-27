@@ -1,3 +1,4 @@
+
 #graphic-novel {
     display: flex;
     flex-direction: column;
@@ -16,12 +17,21 @@
 }
 
 .chapter {
-    width: 80vw;
+    width: 75vw;
+}
+
+section#work {
+    padding: .25rem 0 .25rem .5rem;
 }
 
 @media screen and (min-width: 768px) {
     .chapter {
         width: 20vw;
+    }
+
+    section#work {
+        padding: .5rem 0 .5rem 1rem;
+        border-radius: 1rem 0 0 1rem
     }
 }
 

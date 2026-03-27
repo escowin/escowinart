@@ -1,8 +1,10 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Logo from "../assets/icons/logo-header.png";
 import "../assets/css/header.css";
 
 function Header() {
+  const { pathname } = useLocation();
+
   const navLinks = [
     {
       name: "Fine art",
@@ -31,8 +33,11 @@ function Header() {
       </section>
       <nav className="site-nav">
         <ul id="navigation">
-          {navLinks.map((navLink, i) => (
-            <li key={i}>
+          {navLinks.map((navLink) => (
+            <li
+              key={navLink.path}
+              className={`page${pathname === `/${navLink.path}` ? " active" : ""}`}
+            >
               <Link to={`/${navLink.path}`}>{navLink.name}</Link>
             </li>
           ))}
