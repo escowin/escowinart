@@ -1,0 +1,35 @@
+/* Gallery design tokens (illustration + graphic design). Loaded with gallery.css via Gallery.jsx */
+
+:root {
+    /* Illustration — days series gradients */
+    --days-01: linear-gradient(to left, #cab6a0, #674b3c, #505048);
+    --days-02: linear-gradient(to left, #e3c5b1, #f4bbdd, #306275, #10442c);
+    --days-03: linear-gradient(to left, #ff8643, #d8dcb0, #00e6e7);
+    --days-04: linear-gradient(to left, #f3dead, #e9b87d, #071f5f);
+    --days-05: linear-gradient(to left, #1c5e8e, #00a4d1, #efd598);
+    --days-06: linear-gradient(to left, #ece289, #f1a0eb, #52caed);
+    --days-07: linear-gradient(to left, #54dfe4, #b3bdcc, #c0a48c);
+
+    /* Illustration — bluestrawberry */
+    --bluestrawberry-01: linear-gradient(to left, #061539, #306678, #34203a, #ff69a0, #b65435, #ffda70);
+    --bluestrawberry-02: linear-gradient(to left, #75b4a3, #3f68a0, #121818, #46244c, #9b7173, #fff772);
+
+    /* Illustration — city-life */
+    --city-life-01: linear-gradient(to left, #6c7981, #1e4649, #d7d3a2, #090d00);
+    --city-life-02: linear-gradient(to left, #13181b, #8e7831, #315362, #5b3203);
+    --city-life-03: linear-gradient(to left, #a5984d, #c1c68e, #97c48d, #26402e);
+    --city-life-04: linear-gradient(to left, #b2926e, #4f4c42, #3c641c, #463130);
+
+    /* Graphic design — ACE posters + coolidge */
+    --cpr: #aa1f23;
+    --history: #bd762a;
+    --math: #a42249;
+    --english: #b8ae74;
+    --coolidge: #015a84;
+
+    --cpr-hover: #dc1f26;
+    --history-hover: #f5c38f;
+    --math-hover: #ef3e55;
+    --english-hover: #faf7b1;
+    --coolidge-hover: #d1bfa1;
+}

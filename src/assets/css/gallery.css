@@ -1,8 +1,8 @@
+@import "./gallery-variables.css";
 
 /* ================================================ */
 /* art nav: used in all gallery pages */
-/* ================================================ */
-.art-nav-tabs {
+/* ================================================ */.art-nav-tabs {
     padding-left: .25rem;
     display: flex;
 }
@@ -78,6 +78,59 @@
     overflow-x: auto;
     overscroll-behavior-x: contain;
     animation: gradient 20s infinite alternate;
+
+    /* Illustration — volume-specific gradients */
+    &.days-01 {
+        --_bg-gradient: var(--days-01);
+    }
+
+    &.days-02 {
+        --_bg-gradient: var(--days-02);
+    }
+
+    &.days-03 {
+        --_bg-gradient: var(--days-03);
+    }
+
+    &.days-04 {
+        --_bg-gradient: var(--days-04);
+    }
+
+    &.days-05 {
+        --_bg-gradient: var(--days-05);
+    }
+
+    &.days-06 {
+        --_bg-gradient: var(--days-06);
+    }
+
+    &.days-07 {
+        --_bg-gradient: var(--days-07);
+    }
+
+    &.bluestrawberry-01 {
+        --_bg-gradient: var(--bluestrawberry-01);
+    }
+
+    &.bluestrawberry-02 {
+        --_bg-gradient: var(--bluestrawberry-02);
+    }
+
+    &.city-life-01 {
+        --_bg-gradient: var(--city-life-01);
+    }
+
+    &.city-life-02 {
+        --_bg-gradient: var(--city-life-02);
+    }
+
+    &.city-life-03 {
+        --_bg-gradient: var(--city-life-03);
+    }
+
+    &.city-life-04 {
+        --_bg-gradient: var(--city-life-04);
+    }
 }
 
 @keyframes gradient {
@@ -132,6 +185,95 @@
     &:has(.gallery-img-button) {
         box-shadow: none;
     }
+}
+
+/* Illustration — bluestrawberry series row */
+.inner-gallery-wrapper[data-series="bluestrawberry"] {
+    height: 70vh;
+    gap: 1rem;
+    box-shadow: none;
+}
+
+.inner-gallery-wrapper[data-series="bluestrawberry"] .gallery-img {
+    border-radius: 1rem;
+    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.75);
+}
+
+/* Graphic design — ACE poster glow by data-title */
+#graphic-design .inner-gallery-wrapper {
+    box-shadow: none;
+    background-color: transparent;
+    gap: 1rem;
+}
+
+#graphic-design .gallery-img {
+    --_bg-color: var(--tertiary);
+    --_shadow: 0 0 .75rem;
+    box-shadow: var(--_shadow) var(--_bg-color);
+    border-radius: 1rem;
+    transition: box-shadow 0.5s ease-in-out;
+
+    &[data-title="cpr"] {
+        --_bg-color: var(--cpr);
+    }
+
+    &[data-title="history"] {
+        --_bg-color: var(--history);
+    }
+
+    &[data-title="math"] {
+        --_bg-color: var(--math);
+    }
+
+    &[data-title="english"] {
+        --_bg-color: var(--english);
+    }
+
+    &[data-title="coolidge"] {
+        --_bg-color: var(--coolidge);
+    }
+
+    &:hover {
+        --_bg-color: var(--primary);
+        --_shadow: 0 0 1rem;
+    }
+
+    &[data-title="cpr"]:hover {
+        --_bg-color: var(--cpr-hover);
+    }
+
+    &[data-title="history"]:hover {
+        --_bg-color: var(--history-hover);
+    }
+
+    &[data-title="math"]:hover {
+        --_bg-color: var(--math-hover);
+    }
+
+    &[data-title="english"]:hover {
+        --_bg-color: var(--english-hover);
+    }
+
+    &[data-title="coolidge"]:hover {
+        --_bg-color: var(--coolidge-hover);
+    }
+}
+
+/* Fine art — page shell + tall images */
+#fine-art.fine-art-page,
+.fine-art-page {
+    flex-grow: 1;
+    min-width: 0;
+    border-radius: 2vw 0 0 var(--space-sm, 0.5rem);
+    padding-left: 2vw;
+}
+
+#fine-art-gallery .inner-gallery-wrapper {
+    height: auto;
+}
+
+#fine-art-gallery .gallery-img {
+    height: 60vh;
 }
 
 .gallery-img-button {
@@ -259,6 +401,11 @@
     .outer-gallery-wrapper {
         scrollbar-width: .25rem;
         scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+        scrollbar-gutter: stable;
+    }
+
+    #fine-art.fine-art-page,
+    .fine-art-page {
         scrollbar-gutter: stable;
     }
 }
