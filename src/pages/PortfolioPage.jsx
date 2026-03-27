@@ -7,7 +7,7 @@ const PORTFOLIO_CONFIG = {
   fineArt: {
     navClass: "fine-art-nav",
     galleryId: "fine-art-gallery",
-    collapseSingleTab: true,
+    collapseSingleTab: false,
     buildImageSrc: (img) =>
       new URL(`../assets/img/fine-art/${img}`, import.meta.url).href,
     getGalleryProps: (series) => ({
